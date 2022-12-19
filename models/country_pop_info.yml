@@ -1,0 +1,244 @@
+version: 2
+models:
+  - name: country_pop_info
+    columns:
+      - name: country_code
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: country_name
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: area_sq_km
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: smoking_prevalence
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: diabetes_prevalence
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: infant_mortality_rate
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: nurses_per_1000
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: physicians_per_1000
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: health_expenditure_usd
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: oop_health_spend_usd
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: school_closing
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: workplace_closing
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: cancel_public_events
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: restrictions_on_gatherings
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: public_transport_closing
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: stay_at_home_requirements
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: restrictions_on_internal_movement
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: international_travel_controls
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: income_support
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: debt_relief
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: fiscal_measures
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: international_support
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: public_information_campaigns
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: testing_policy
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: contact_tracing
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: emergency_investment_in_healthcare
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: investment_in_vaccines
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: facial_coverings
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: vaccination_policy
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: stringency_index
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: average_temperature_celsius
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: minimum_temperature_celsius
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: maximum_temperature_celsius
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: rainfall_mm
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: snowfall_mm
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: dew_point
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: relative_humidity
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: population_largest_city
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: population_clustered
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: area_rural_sq_km
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: area_urban_sq_km
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: mobility_retail_and_recreation
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: mobility_grocery_and_pharmacy
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: mobility_parks
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: mobility_transit_stations
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: mobility_workplaces
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: mobility_residential
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: hospital_beds_per_1000
+        description: ""
+        meta:
+          dimension:
+            type: number

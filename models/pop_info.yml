@@ -1,0 +1,84 @@
+version: 2
+models:
+  - name: pop_info
+    columns:
+      - name: country_name
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: population
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: male_pop
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: female_pop
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: rural_pop
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: urban_pop
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: pop_density
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: child_pop
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: teen_pop
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: twenties_pop
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: thirties_pop
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: forties_pop
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: fifties_pop
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: sixties_pop
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: seventies_pop
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: eighties_pop
+        description: ""
+        meta:
+          dimension:
+            type: number

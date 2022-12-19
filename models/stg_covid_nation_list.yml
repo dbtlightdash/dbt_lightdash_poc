@@ -1,0 +1,14 @@
+version: 2
+models:
+  - name: stg_covid_nation_list
+    columns:
+      - name: country_name
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: max_pop
+        description: ""
+        meta:
+          dimension:
+            type: number
