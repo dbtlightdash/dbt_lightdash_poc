@@ -1,0 +1,24 @@
+version: 2
+models:
+  - name: percent_vaccin
+    columns:
+      - name: country_name
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: health_expenditure_usd
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: oop_health_spend_usd
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: perc_vaccin
+        description: ""
+        meta:
+          dimension:
+            type: number

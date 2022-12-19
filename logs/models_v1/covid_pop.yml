@@ -1,0 +1,74 @@
+version: 2
+models:
+  - name: covid_pop
+    columns:
+      - name: country_code
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: country_name
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: new_confirmed
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: new_deceased
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: cumulative_confirmed
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: cumulative_deceased
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: cumulative_tested
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: new_persons_vaccinated
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: cumulative_persons_vaccinated
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: new_persons_fully_vaccinated
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: cumulative_persons_fully_vaccinated
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: new_vaccine_doses_administered
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: cumulative_vaccine_doses_administered
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: population
+        description: ""
+        meta:
+          dimension:
+            type: number
