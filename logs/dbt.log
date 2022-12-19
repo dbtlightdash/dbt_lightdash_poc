@@ -4736,3 +4736,1044 @@ GROUP BY country_name, max_pop, urban_pop, rural_pop, population, pop_density, s
 [0m23:38:09.186314 [info ] [MainThread]: Done.
 [0m23:38:09.192907 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026EB8AC5E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026EB8ADEA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026EB8D64400>]}
 [0m23:38:09.193543 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-12-19 14:30:04.506922 | 6f2d7b11-e53e-4338-b1b4-9dfd7ae6b02b ==============================
+[0m14:30:04.506922 [info ] [MainThread]: Running with dbt=1.3.1
+[0m14:30:04.506922 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\adithya.manohar\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m14:30:04.507944 [debug] [MainThread]: Tracking: tracking
+[0m14:30:04.748847 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC35ADC430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC35ADC760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC35ADC520>]}
+[0m14:30:05.985597 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 8 files changed.
+[0m14:30:05.987351 [debug] [MainThread]: Partial parsing: update schema file: dbt_ld_demo://models\country_pop_info.yml
+[0m14:30:05.987901 [debug] [MainThread]: Partial parsing: update schema file: dbt_ld_demo://models\stg_covid_nation_list.yml
+[0m14:30:05.988484 [debug] [MainThread]: Partial parsing: update schema file: dbt_ld_demo://models\pop_info.yml
+[0m14:30:05.988985 [debug] [MainThread]: Partial parsing: update schema file: dbt_ld_demo://models\covid_date.yml
+[0m14:30:05.989426 [debug] [MainThread]: Partial parsing: update schema file: dbt_ld_demo://models\stg_covid.yml
+[0m14:30:05.990954 [debug] [MainThread]: Partial parsing: update schema file: dbt_ld_demo://models\vulnerable_pop.yml
+[0m14:30:05.991718 [debug] [MainThread]: Partial parsing: update schema file: dbt_ld_demo://models\covid_pop.yml
+[0m14:30:05.992052 [debug] [MainThread]: Partial parsing: update schema file: dbt_ld_demo://models\percent_vaccin.yml
+[0m14:30:06.013195 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6f2d7b11-e53e-4338-b1b4-9dfd7ae6b02b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC35AD78E0>]}
+[0m14:30:06.028181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6f2d7b11-e53e-4338-b1b4-9dfd7ae6b02b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC324EB910>]}
+[0m14:30:06.028181 [info ] [MainThread]: Found 8 models, 0 tests, 0 snapshots, 0 analyses, 319 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m14:30:06.028181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6f2d7b11-e53e-4338-b1b4-9dfd7ae6b02b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC32463C40>]}
+[0m14:30:06.028181 [info ] [MainThread]: 
+[0m14:30:06.028181 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m14:30:06.028181 [debug] [ThreadPool]: Acquiring new bigquery connection "list_dbt-lightdash-test"
+[0m14:30:06.028181 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:30:07.687888 [debug] [ThreadPool]: Acquiring new bigquery connection "list_dbt-lightdash-test_dbt_amanohar"
+[0m14:30:07.687888 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:30:08.403436 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6f2d7b11-e53e-4338-b1b4-9dfd7ae6b02b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC35A1BFD0>]}
+[0m14:30:08.404355 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:30:08.404355 [info ] [MainThread]: 
+[0m14:30:08.418400 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.stg_covid
+[0m14:30:08.418400 [info ] [Thread-1 (]: 1 of 8 START sql table model dbt_amanohar.stg_covid ............................ [RUN]
+[0m14:30:08.418400 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.stg_covid"
+[0m14:30:08.418400 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.stg_covid
+[0m14:30:08.418400 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.stg_covid
+[0m14:30:08.434045 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.stg_covid"
+[0m14:30:08.434045 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:30:08.434045 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.stg_covid
+[0m14:30:08.451739 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m14:30:08.937453 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.stg_covid"
+[0m14:30:08.941827 [debug] [Thread-1 (]: On model.dbt_ld_demo.stg_covid: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.stg_covid"} */
+
+  
+    
+
+    create or replace table `dbt-lightdash-test`.`dbt_amanohar`.`stg_covid`
+    
+    
+    OPTIONS()
+    as (
+      SELECT
+date
+,country_code
+,country_name
+,aggregation_level
+,new_confirmed
+,new_deceased
+,cumulative_confirmed
+,cumulative_deceased
+,cumulative_tested
+,new_persons_vaccinated
+,cumulative_persons_vaccinated
+,new_persons_fully_vaccinated
+,cumulative_persons_fully_vaccinated
+,new_vaccine_doses_administered
+,cumulative_vaccine_doses_administered
+,population
+,population_male
+,population_female
+,population_rural
+,population_urban
+,population_density
+,human_development_index
+,population_age_00_09
+,population_age_10_19
+,population_age_20_29
+,population_age_30_39
+,population_age_40_49
+,population_age_50_59
+,population_age_60_69
+,population_age_70_79
+,population_age_80_and_older
+,gdp_usd
+,gdp_per_capita_usd
+,openstreetmap_id
+,latitude
+,longitude
+,area_sq_km
+,smoking_prevalence
+,diabetes_prevalence
+,infant_mortality_rate
+,nurses_per_1000
+,physicians_per_1000
+,health_expenditure_usd
+,out_of_pocket_health_expenditure_usd
+,school_closing
+,workplace_closing
+,cancel_public_events
+,restrictions_on_gatherings
+,public_transport_closing
+,stay_at_home_requirements
+,restrictions_on_internal_movement
+,international_travel_controls
+,income_support
+,debt_relief
+,fiscal_measures
+,international_support
+,public_information_campaigns
+,testing_policy
+,contact_tracing
+,emergency_investment_in_healthcare
+,investment_in_vaccines
+,facial_coverings
+,vaccination_policy
+,stringency_index
+,average_temperature_celsius
+,minimum_temperature_celsius
+,maximum_temperature_celsius
+,rainfall_mm
+,snowfall_mm
+,dew_point
+,relative_humidity
+,new_tested
+,population_largest_city
+,population_clustered
+,human_capital_index
+,area_rural_sq_km
+,area_urban_sq_km
+,life_expectancy
+,adult_male_mortality_rate
+,adult_female_mortality_rate
+,pollution_mortality_rate
+,comorbidity_mortality_rate
+,mobility_retail_and_recreation
+,mobility_grocery_and_pharmacy
+,mobility_parks
+,mobility_transit_stations
+,mobility_workplaces
+,mobility_residential
+,hospital_beds_per_1000
+,new_recovered
+,cumulative_recovered
+,elevation_m
+,new_hospitalized_patients
+,cumulative_hospitalized_patients
+,new_intensive_care_patients
+,cumulative_intensive_care_patients
+FROM `dbt-lightdash-test.dbt_ncaa_demo.covid19_open_data`
+    );
+  
+[0m14:30:32.975296 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-lightdash-test&j=bq:7be246d4-a989-4a84-b488-3f69aa0ff0a3:US&page=queryresults
+[0m14:30:32.990608 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:30:32.990608 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6f2d7b11-e53e-4338-b1b4-9dfd7ae6b02b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC35A81C30>]}
+[0m14:30:32.990608 [info ] [Thread-1 (]: 1 of 8 OK created sql table model dbt_amanohar.stg_covid ....................... [[32mCREATE TABLE (22.8m rows, 4.7 GB processed)[0m in 24.57s]
+[0m14:30:32.990608 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.stg_covid
+[0m14:30:32.990608 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.country_pop_info
+[0m14:30:32.990608 [info ] [Thread-1 (]: 2 of 8 START sql table model dbt_amanohar.country_pop_info ..................... [RUN]
+[0m14:30:32.990608 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.country_pop_info"
+[0m14:30:33.002737 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.country_pop_info
+[0m14:30:33.003397 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.country_pop_info
+[0m14:30:33.003397 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.country_pop_info"
+[0m14:30:33.003397 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:30:33.007699 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.country_pop_info
+[0m14:30:33.008198 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:30:33.584113 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.country_pop_info"
+[0m14:30:33.584113 [debug] [Thread-1 (]: On model.dbt_ld_demo.country_pop_info: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.country_pop_info"} */
+
+  
+    
+
+    create or replace table `dbt-lightdash-test`.`dbt_amanohar`.`country_pop_info`
+    
+    
+    OPTIONS()
+    as (
+      SELECT 
+country_code,
+country_name,
+area_sq_km,
+smoking_prevalence,
+diabetes_prevalence,
+infant_mortality_rate,
+nurses_per_1000,
+physicians_per_1000,
+health_expenditure_usd,
+out_of_pocket_health_expenditure_usd as OOP_health_spend_usd,
+school_closing,
+workplace_closing,
+cancel_public_events,
+restrictions_on_gatherings,
+public_transport_closing,
+stay_at_home_requirements,
+restrictions_on_internal_movement,
+international_travel_controls,
+income_support,
+debt_relief,
+fiscal_measures,
+international_support,
+public_information_campaigns,
+testing_policy,
+contact_tracing,
+emergency_investment_in_healthcare,
+investment_in_vaccines,
+facial_coverings,
+vaccination_policy,
+stringency_index,
+average_temperature_celsius,
+minimum_temperature_celsius,
+maximum_temperature_celsius,
+rainfall_mm,
+snowfall_mm,
+dew_point,
+relative_humidity,
+population_largest_city,
+population_clustered,
+area_rural_sq_km,
+area_urban_sq_km,
+mobility_retail_and_recreation,
+mobility_grocery_and_pharmacy,
+mobility_parks,
+mobility_transit_stations,
+mobility_workplaces,
+mobility_residential,
+hospital_beds_per_1000
+FROM `dbt-lightdash-test`.`dbt_amanohar`.`stg_covid`
+WHERE
+out_of_pocket_health_expenditure_usd IS NOT NULL
+    );
+  
+[0m14:30:38.903719 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-lightdash-test&j=bq:cc7b3cdc-9d05-4aa7-b0b9-8d8ea41c6de8:US&page=queryresults
+[0m14:30:38.919361 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:30:38.919361 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6f2d7b11-e53e-4338-b1b4-9dfd7ae6b02b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC357FC760>]}
+[0m14:30:38.919361 [info ] [Thread-1 (]: 2 of 8 OK created sql table model dbt_amanohar.country_pop_info ................ [[32mCREATE TABLE (184.3k rows, 1.6 GB processed)[0m in 5.93s]
+[0m14:30:38.919361 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.country_pop_info
+[0m14:30:38.919361 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.covid_date
+[0m14:30:38.919361 [info ] [Thread-1 (]: 3 of 8 START sql table model dbt_amanohar.covid_date ........................... [RUN]
+[0m14:30:38.919361 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.covid_date"
+[0m14:30:38.919361 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.covid_date
+[0m14:30:38.919361 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.covid_date
+[0m14:30:38.919361 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.covid_date"
+[0m14:30:38.919361 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:30:38.919361 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.covid_date
+[0m14:30:38.931520 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:30:39.427411 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.covid_date"
+[0m14:30:39.427411 [debug] [Thread-1 (]: On model.dbt_ld_demo.covid_date: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.covid_date"} */
+
+  
+    
+
+    create or replace table `dbt-lightdash-test`.`dbt_amanohar`.`covid_date`
+    
+    
+    OPTIONS()
+    as (
+      SELECT
+date
+,country_code
+,country_name
+,new_confirmed
+,new_deceased
+,cumulative_confirmed
+,cumulative_deceased
+,cumulative_tested
+,new_persons_vaccinated
+,cumulative_persons_vaccinated
+,new_persons_fully_vaccinated
+,cumulative_persons_fully_vaccinated
+,new_vaccine_doses_administered
+,cumulative_vaccine_doses_administered
+,population
+,population_male
+,population_female
+,population_rural
+,population_urban
+,population_density
+,gdp_usd
+,gdp_per_capita_usd
+,openstreetmap_id
+,latitude
+,longitude
+,average_temperature_celsius
+,new_hospitalized_patients
+,new_intensive_care_patients
+FROM `dbt-lightdash-test`.`dbt_amanohar`.`stg_covid`
+WHERE  
+cumulative_tested IS NOT NULL 
+AND new_persons_vaccinated IS NOT NULL 
+AND new_confirmed IS NOT NULL 
+AND new_deceased IS NOT NULL
+    );
+  
+[0m14:30:46.683619 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-lightdash-test&j=bq:00031a18-2247-48f5-a137-f56c980f8b57:US&page=queryresults
+[0m14:30:46.699106 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:30:46.699106 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6f2d7b11-e53e-4338-b1b4-9dfd7ae6b02b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC35E81060>]}
+[0m14:30:46.703230 [info ] [Thread-1 (]: 3 of 8 OK created sql table model dbt_amanohar.covid_date ...................... [[32mCREATE TABLE (362.8k rows, 2.0 GB processed)[0m in 7.78s]
+[0m14:30:46.703230 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.covid_date
+[0m14:30:46.703230 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.covid_pop
+[0m14:30:46.703230 [info ] [Thread-1 (]: 4 of 8 START sql table model dbt_amanohar.covid_pop ............................ [RUN]
+[0m14:30:46.705280 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.covid_pop"
+[0m14:30:46.705280 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.covid_pop
+[0m14:30:46.705280 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.covid_pop
+[0m14:30:46.706382 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.covid_pop"
+[0m14:30:46.706382 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:30:46.709474 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.covid_pop
+[0m14:30:46.710000 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:30:47.134395 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.covid_pop"
+[0m14:30:47.141099 [debug] [Thread-1 (]: On model.dbt_ld_demo.covid_pop: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.covid_pop"} */
+
+  
+    
+
+    create or replace table `dbt-lightdash-test`.`dbt_amanohar`.`covid_pop`
+    
+    
+    OPTIONS()
+    as (
+      SELECT country_code
+        ,country_name
+        ,population
+        ,COALESCE(new_confirmed, 0) as new_confirmed
+        ,COALESCE(new_deceased, 0) as new_deceased
+        ,COALESCE(cumulative_confirmed, 0) as cumulative_confirmed
+        ,COALESCE(cumulative_deceased, 0) as cumulative_deceased
+        ,COALESCE(cumulative_tested, 0) as cumulative_tested
+        ,COALESCE(new_persons_vaccinated, 0) as new_persons_vaccinated
+        ,COALESCE(cumulative_persons_vaccinated,0) as cumulative_persons_vaccinated
+		,COALESCE(new_persons_fully_vaccinated,0) as new_persons_fully_vaccinated
+        ,COALESCE(cumulative_persons_fully_vaccinated,0) as cumulative_persons_fully_vaccinated
+        
+        ,COALESCE(cumulative_vaccine_doses_administered,0) as cumulative_vaccine_doses_administered
+FROM `dbt-lightdash-test`.`dbt_amanohar`.`stg_covid`
+WHERE 
+cumulative_vaccine_doses_administered != 0
+
+AND cumulative_persons_fully_vaccinated != 0
+AND cumulative_persons_vaccinated != 0
+AND new_confirmed!= 0
+AND cumulative_confirmed != 0
+AND cumulative_tested != 0
+    );
+  
+[0m14:30:51.920333 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-lightdash-test&j=bq:9b09e592-c922-4368-90f2-438fb7cf8f1b:US&page=queryresults
+[0m14:30:51.920333 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:30:51.920333 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6f2d7b11-e53e-4338-b1b4-9dfd7ae6b02b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC35E4AC50>]}
+[0m14:30:51.926458 [info ] [Thread-1 (]: 4 of 8 OK created sql table model dbt_amanohar.covid_pop ....................... [[32mCREATE TABLE (302.8k rows, 935.9 MB processed)[0m in 5.22s]
+[0m14:30:51.926458 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.covid_pop
+[0m14:30:51.927581 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.pop_info
+[0m14:30:51.927581 [info ] [Thread-1 (]: 5 of 8 START sql table model dbt_amanohar.pop_info ............................. [RUN]
+[0m14:30:51.927581 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.pop_info"
+[0m14:30:51.927581 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.pop_info
+[0m14:30:51.927581 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.pop_info
+[0m14:30:51.932482 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.pop_info"
+[0m14:30:51.932482 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:30:51.936731 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.pop_info
+[0m14:30:51.936731 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:30:52.459871 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.pop_info"
+[0m14:30:52.475774 [debug] [Thread-1 (]: On model.dbt_ld_demo.pop_info: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.pop_info"} */
+
+  
+    
+
+    create or replace table `dbt-lightdash-test`.`dbt_amanohar`.`pop_info`
+    
+    
+    OPTIONS()
+    as (
+      SELECT DISTINCT country_name
+        , (population) as population
+        , (population_male) as male_pop
+        , (population_female) as female_pop
+		, (population_rural) as rural_pop
+        , (population_urban) as urban_pop
+        , (population_density) as pop_density
+        , (population_age_00_09) as child_pop
+        , (population_age_10_19) as teen_pop
+        , (population_age_20_29) as twenties_pop
+		, (population_age_30_39) as thirties_pop
+        , (population_age_40_49) as forties_pop
+        , (population_age_50_59) as fifties_pop
+        , (population_age_60_69) as sixties_pop
+        , (population_age_70_79) as seventies_pop
+        , (population_age_80_and_older) as eighties_pop
+FROM `dbt-lightdash-test`.`dbt_amanohar`.`stg_covid`
+WHERE 
+population is not null
+and population_male is not null
+and population_female is not null
+-- and population_rural is not null
+-- and population_urban is not null
+-- and population_density is not null
+-- and population_age_00_09 is not null
+-- and population_age_10_19 is not null
+-- and population_age_20_29 is not null
+-- and population_age_30_39 is not null
+-- and population_age_40_49 is not null
+-- and population_age_50_59 is not null
+-- and population_age_60_69 is not null
+-- and population_age_70_79 is not null
+-- and population_age_80_and_older is not null
+ORDER BY country_name ASC
+    );
+  
+[0m14:30:57.447323 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-lightdash-test&j=bq:e41a41c0-b706-4821-b4c9-e931fc437903:US&page=queryresults
+[0m14:30:57.447323 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:30:57.447323 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6f2d7b11-e53e-4338-b1b4-9dfd7ae6b02b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC35DFC250>]}
+[0m14:30:57.447323 [info ] [Thread-1 (]: 5 of 8 OK created sql table model dbt_amanohar.pop_info ........................ [[32mCREATE TABLE (17.6k rows, 1.8 GB processed)[0m in 5.52s]
+[0m14:30:57.447323 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.pop_info
+[0m14:30:57.456402 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.stg_covid_nation_list
+[0m14:30:57.456943 [info ] [Thread-1 (]: 6 of 8 START sql table model dbt_amanohar.stg_covid_nation_list ................ [RUN]
+[0m14:30:57.457500 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.stg_covid_nation_list"
+[0m14:30:57.457500 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.stg_covid_nation_list
+[0m14:30:57.457500 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.stg_covid_nation_list
+[0m14:30:57.459634 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.stg_covid_nation_list"
+[0m14:30:57.459634 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:30:57.459634 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.stg_covid_nation_list
+[0m14:30:57.459634 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:30:57.916298 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.stg_covid_nation_list"
+[0m14:30:57.921632 [debug] [Thread-1 (]: On model.dbt_ld_demo.stg_covid_nation_list: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.stg_covid_nation_list"} */
+
+  
+    
+
+    create or replace table `dbt-lightdash-test`.`dbt_amanohar`.`stg_covid_nation_list`
+    
+    
+    OPTIONS()
+    as (
+      SELECT DISTINCT country_name, MAX(population) as max_pop
+FROM `dbt-lightdash-test`.`dbt_amanohar`.`stg_covid`
+GROUP BY country_name
+ORDER BY country_name
+    );
+  
+[0m14:31:00.815680 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-lightdash-test&j=bq:a12a4109-990f-4928-8f65-b5af009e7412:US&page=queryresults
+[0m14:31:00.831269 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:31:00.831269 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6f2d7b11-e53e-4338-b1b4-9dfd7ae6b02b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC35DEC3D0>]}
+[0m14:31:00.831269 [info ] [Thread-1 (]: 6 of 8 OK created sql table model dbt_amanohar.stg_covid_nation_list ........... [[32mCREATE TABLE (246.0 rows, 401.1 MB processed)[0m in 3.37s]
+[0m14:31:00.837222 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.stg_covid_nation_list
+[0m14:31:00.837222 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.percent_vaccin
+[0m14:31:00.837222 [info ] [Thread-1 (]: 7 of 8 START sql table model dbt_amanohar.percent_vaccin ....................... [RUN]
+[0m14:31:00.837222 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.percent_vaccin"
+[0m14:31:00.837222 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.percent_vaccin
+[0m14:31:00.842534 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.percent_vaccin
+[0m14:31:00.852509 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.percent_vaccin"
+[0m14:31:00.852509 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:31:00.855811 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.percent_vaccin
+[0m14:31:00.855811 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:31:01.328789 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.percent_vaccin"
+[0m14:31:01.344569 [debug] [Thread-1 (]: On model.dbt_ld_demo.percent_vaccin: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.percent_vaccin"} */
+
+  
+    
+
+    create or replace table `dbt-lightdash-test`.`dbt_amanohar`.`percent_vaccin`
+    
+    
+    OPTIONS()
+    as (
+      SELECT 
+t1.country_name
+,MAX(t1.health_expenditure_usd) as health_expenditure_usd
+,AVG(COALESCE(t1.OOP_health_spend_usd,0)) as OOP_health_spend_usd
+,CEILING(MAX(t2.cumulative_vaccine_doses_administered)/MAX(t2.population)) as perc_vaccin
+FROM `dbt-lightdash-test`.`dbt_amanohar`.`country_pop_info` as t1
+LEFT JOIN `dbt-lightdash-test`.`dbt_amanohar`.`covid_pop` as t2
+ON t1.country_name = t2.country_name
+WHERE t2.population != 0
+GROUP BY country_name
+    );
+  
+[0m14:31:59.595984 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-lightdash-test&j=bq:31cd9722-c7bd-4236-8cec-83b4d69d3c37:US&page=queryresults
+[0m14:31:59.595984 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:31:59.595984 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6f2d7b11-e53e-4338-b1b4-9dfd7ae6b02b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC35DFEA40>]}
+[0m14:31:59.595984 [info ] [Thread-1 (]: 7 of 8 OK created sql table model dbt_amanohar.percent_vaccin .................. [[32mCREATE TABLE (135.0 rows, 12.3 MB processed)[0m in 58.76s]
+[0m14:31:59.608677 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.percent_vaccin
+[0m14:31:59.608677 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.vulnerable_pop
+[0m14:31:59.609834 [info ] [Thread-1 (]: 8 of 8 START sql table model dbt_amanohar.vulnerable_pop ....................... [RUN]
+[0m14:31:59.609834 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.vulnerable_pop"
+[0m14:31:59.611315 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.vulnerable_pop
+[0m14:31:59.611898 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.vulnerable_pop
+[0m14:31:59.615257 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.vulnerable_pop"
+[0m14:31:59.616263 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:31:59.617244 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.vulnerable_pop
+[0m14:31:59.617877 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:32:00.309671 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.vulnerable_pop"
+[0m14:32:00.325260 [debug] [Thread-1 (]: On model.dbt_ld_demo.vulnerable_pop: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.vulnerable_pop"} */
+
+  
+    
+
+    create or replace table `dbt-lightdash-test`.`dbt_amanohar`.`vulnerable_pop`
+    
+    
+    OPTIONS()
+    as (
+      SELECT DISTINCT 
+        t1.country_name
+		,(t1.urban_pop/ t1.rural_pop) as accel_multip
+        ,ROUND((t2.max_pop/t1.pop_density)/100) as accel_factor_pop_den
+        ,ROUND(((t1.sixties_pop + t1.seventies_pop + t1.eighties_pop)/ t2.max_pop) *100) as perc_vulner_pop
+FROM `dbt-lightdash-test`.`dbt_amanohar`.`pop_info` t1
+LEFT JOIN `dbt-lightdash-test`.`dbt_amanohar`.`stg_covid_nation_list` t2 
+ON t1.country_name = t2.country_name
+WHERE t1.rural_pop != 0 AND t1.pop_density != 0
+GROUP BY country_name, max_pop, urban_pop, rural_pop, population, pop_density, sixties_pop, seventies_pop, eighties_pop
+    );
+  
+[0m14:32:03.288214 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-lightdash-test&j=bq:35f6a7ca-be5f-4751-ae6c-887c30be3637:US&page=queryresults
+[0m14:32:03.288214 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:32:03.288214 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6f2d7b11-e53e-4338-b1b4-9dfd7ae6b02b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC35DFC880>]}
+[0m14:32:03.295323 [info ] [Thread-1 (]: 8 of 8 OK created sql table model dbt_amanohar.vulnerable_pop .................. [[32mCREATE TABLE (202.0 rows, 613.5 KB processed)[0m in 3.68s]
+[0m14:32:03.295967 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.vulnerable_pop
+[0m14:32:03.297646 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m14:32:03.298929 [info ] [MainThread]: 
+[0m14:32:03.299473 [info ] [MainThread]: Finished running 8 table models in 0 hours 1 minutes and 57.27 seconds (117.27s).
+[0m14:32:03.300100 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:32:03.300599 [debug] [MainThread]: Connection 'list_dbt-lightdash-test' was properly closed.
+[0m14:32:03.300599 [debug] [MainThread]: Connection 'list_dbt-lightdash-test_dbt_amanohar' was properly closed.
+[0m14:32:03.301123 [debug] [MainThread]: Connection 'model.dbt_ld_demo.vulnerable_pop' was properly closed.
+[0m14:32:03.301123 [info ] [MainThread]: 
+[0m14:32:03.301123 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:32:03.313979 [info ] [MainThread]: 
+[0m14:32:03.314958 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=0 SKIP=0 TOTAL=8
+[0m14:32:03.315457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC357D7C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC32463C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC35AD4E20>]}
+[0m14:32:03.316030 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-12-19 14:33:27.014312 | a478fda8-d3f9-4a5e-ab6f-db9f97336369 ==============================
+[0m14:33:27.014312 [info ] [MainThread]: Running with dbt=1.3.1
+[0m14:33:27.014312 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\adithya.manohar\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m14:33:27.014312 [debug] [MainThread]: Tracking: tracking
+[0m14:33:27.264659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9E315C340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9E315C670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9E315C430>]}
+[0m14:33:27.496244 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:33:27.496244 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:33:27.510908 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a478fda8-d3f9-4a5e-ab6f-db9f97336369', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9E33B9060>]}
+[0m14:33:27.522331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a478fda8-d3f9-4a5e-ab6f-db9f97336369', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9DFB68B80>]}
+[0m14:33:27.524373 [info ] [MainThread]: Found 8 models, 0 tests, 0 snapshots, 0 analyses, 319 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m14:33:27.524913 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a478fda8-d3f9-4a5e-ab6f-db9f97336369', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9E3367FA0>]}
+[0m14:33:27.526668 [info ] [MainThread]: 
+[0m14:33:27.528058 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m14:33:27.530122 [debug] [ThreadPool]: Acquiring new bigquery connection "list_dbt-lightdash-test"
+[0m14:33:27.530469 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:33:28.071397 [debug] [ThreadPool]: Acquiring new bigquery connection "list_dbt-lightdash-test_dbt_amanohar"
+[0m14:33:28.071397 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:33:28.584943 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a478fda8-d3f9-4a5e-ab6f-db9f97336369', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9E3063B20>]}
+[0m14:33:28.586585 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:33:28.586585 [info ] [MainThread]: 
+[0m14:33:28.603181 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.stg_covid
+[0m14:33:28.603726 [info ] [Thread-1 (]: 1 of 8 START sql table model dbt_amanohar.stg_covid ............................ [RUN]
+[0m14:33:28.605075 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.stg_covid"
+[0m14:33:28.605075 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.stg_covid
+[0m14:33:28.605075 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.stg_covid
+[0m14:33:28.605075 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.stg_covid"
+[0m14:33:28.605075 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:33:28.605075 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.stg_covid
+[0m14:33:28.619652 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m14:33:29.203592 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.stg_covid"
+[0m14:33:29.203592 [debug] [Thread-1 (]: On model.dbt_ld_demo.stg_covid: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.stg_covid"} */
+
+  
+    
+
+    create or replace table `dbt-lightdash-test`.`dbt_amanohar`.`stg_covid`
+    
+    
+    OPTIONS()
+    as (
+      SELECT
+date
+,country_code
+,country_name
+,aggregation_level
+,new_confirmed
+,new_deceased
+,cumulative_confirmed
+,cumulative_deceased
+,cumulative_tested
+,new_persons_vaccinated
+,cumulative_persons_vaccinated
+,new_persons_fully_vaccinated
+,cumulative_persons_fully_vaccinated
+,new_vaccine_doses_administered
+,cumulative_vaccine_doses_administered
+,population
+,population_male
+,population_female
+,population_rural
+,population_urban
+,population_density
+,human_development_index
+,population_age_00_09
+,population_age_10_19
+,population_age_20_29
+,population_age_30_39
+,population_age_40_49
+,population_age_50_59
+,population_age_60_69
+,population_age_70_79
+,population_age_80_and_older
+,gdp_usd
+,gdp_per_capita_usd
+,openstreetmap_id
+,latitude
+,longitude
+,area_sq_km
+,smoking_prevalence
+,diabetes_prevalence
+,infant_mortality_rate
+,nurses_per_1000
+,physicians_per_1000
+,health_expenditure_usd
+,out_of_pocket_health_expenditure_usd
+,school_closing
+,workplace_closing
+,cancel_public_events
+,restrictions_on_gatherings
+,public_transport_closing
+,stay_at_home_requirements
+,restrictions_on_internal_movement
+,international_travel_controls
+,income_support
+,debt_relief
+,fiscal_measures
+,international_support
+,public_information_campaigns
+,testing_policy
+,contact_tracing
+,emergency_investment_in_healthcare
+,investment_in_vaccines
+,facial_coverings
+,vaccination_policy
+,stringency_index
+,average_temperature_celsius
+,minimum_temperature_celsius
+,maximum_temperature_celsius
+,rainfall_mm
+,snowfall_mm
+,dew_point
+,relative_humidity
+,new_tested
+,population_largest_city
+,population_clustered
+,human_capital_index
+,area_rural_sq_km
+,area_urban_sq_km
+,life_expectancy
+,adult_male_mortality_rate
+,adult_female_mortality_rate
+,pollution_mortality_rate
+,comorbidity_mortality_rate
+,mobility_retail_and_recreation
+,mobility_grocery_and_pharmacy
+,mobility_parks
+,mobility_transit_stations
+,mobility_workplaces
+,mobility_residential
+,hospital_beds_per_1000
+,new_recovered
+,cumulative_recovered
+,elevation_m
+,new_hospitalized_patients
+,cumulative_hospitalized_patients
+,new_intensive_care_patients
+,cumulative_intensive_care_patients
+FROM `dbt-lightdash-test.dbt_ncaa_demo.covid19_open_data`
+    );
+  
+[0m14:33:53.155333 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-lightdash-test&j=bq:c2c63a1b-7e14-4ab0-a9bf-6fbeeaf295a9:US&page=queryresults
+[0m14:33:53.155333 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:33:53.171002 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a478fda8-d3f9-4a5e-ab6f-db9f97336369', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9E3427EB0>]}
+[0m14:33:53.171689 [info ] [Thread-1 (]: 1 of 8 OK created sql table model dbt_amanohar.stg_covid ....................... [[32mCREATE TABLE (22.8m rows, 4.7 GB processed)[0m in 24.57s]
+[0m14:33:53.171689 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.stg_covid
+[0m14:33:53.173612 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.country_pop_info
+[0m14:33:53.173612 [info ] [Thread-1 (]: 2 of 8 START sql table model dbt_amanohar.country_pop_info ..................... [RUN]
+[0m14:33:53.175537 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.country_pop_info"
+[0m14:33:53.176607 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.country_pop_info
+[0m14:33:53.176607 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.country_pop_info
+[0m14:33:53.181236 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.country_pop_info"
+[0m14:33:53.181236 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:33:53.181236 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.country_pop_info
+[0m14:33:53.181236 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:33:53.988816 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.country_pop_info"
+[0m14:33:54.004351 [debug] [Thread-1 (]: On model.dbt_ld_demo.country_pop_info: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.country_pop_info"} */
+
+  
+    
+
+    create or replace table `dbt-lightdash-test`.`dbt_amanohar`.`country_pop_info`
+    
+    
+    OPTIONS()
+    as (
+      SELECT 
+country_code,
+country_name,
+area_sq_km,
+smoking_prevalence,
+diabetes_prevalence,
+infant_mortality_rate,
+nurses_per_1000,
+physicians_per_1000,
+health_expenditure_usd,
+out_of_pocket_health_expenditure_usd as OOP_health_spend_usd,
+school_closing,
+workplace_closing,
+cancel_public_events,
+restrictions_on_gatherings,
+public_transport_closing,
+stay_at_home_requirements,
+restrictions_on_internal_movement,
+international_travel_controls,
+income_support,
+debt_relief,
+fiscal_measures,
+international_support,
+public_information_campaigns,
+testing_policy,
+contact_tracing,
+emergency_investment_in_healthcare,
+investment_in_vaccines,
+facial_coverings,
+vaccination_policy,
+stringency_index,
+average_temperature_celsius,
+minimum_temperature_celsius,
+maximum_temperature_celsius,
+rainfall_mm,
+snowfall_mm,
+dew_point,
+relative_humidity,
+population_largest_city,
+population_clustered,
+area_rural_sq_km,
+area_urban_sq_km,
+mobility_retail_and_recreation,
+mobility_grocery_and_pharmacy,
+mobility_parks,
+mobility_transit_stations,
+mobility_workplaces,
+mobility_residential,
+hospital_beds_per_1000
+FROM `dbt-lightdash-test`.`dbt_amanohar`.`stg_covid`
+WHERE
+out_of_pocket_health_expenditure_usd IS NOT NULL
+    );
+  
+[0m14:33:59.500287 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-lightdash-test&j=bq:9f68befe-ce47-48ea-adb0-e4f9d967c77f:US&page=queryresults
+[0m14:33:59.500287 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:33:59.500287 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a478fda8-d3f9-4a5e-ab6f-db9f97336369', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9E34142B0>]}
+[0m14:33:59.506240 [info ] [Thread-1 (]: 2 of 8 OK created sql table model dbt_amanohar.country_pop_info ................ [[32mCREATE TABLE (184.3k rows, 1.6 GB processed)[0m in 6.32s]
+[0m14:33:59.506240 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.country_pop_info
+[0m14:33:59.507428 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.covid_date
+[0m14:33:59.507428 [info ] [Thread-1 (]: 3 of 8 START sql table model dbt_amanohar.covid_date ........................... [RUN]
+[0m14:33:59.508457 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.covid_date"
+[0m14:33:59.508457 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.covid_date
+[0m14:33:59.509689 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.covid_date
+[0m14:33:59.509969 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.covid_date"
+[0m14:33:59.513213 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:33:59.513543 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.covid_date
+[0m14:33:59.513543 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:34:00.027524 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.covid_date"
+[0m14:34:00.027524 [debug] [Thread-1 (]: On model.dbt_ld_demo.covid_date: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.covid_date"} */
+
+  
+    
+
+    create or replace table `dbt-lightdash-test`.`dbt_amanohar`.`covid_date`
+    
+    
+    OPTIONS()
+    as (
+      SELECT
+date
+,country_code
+,country_name
+,new_confirmed
+,new_deceased
+,cumulative_confirmed
+,cumulative_deceased
+,cumulative_tested
+,new_persons_vaccinated
+,cumulative_persons_vaccinated
+,new_persons_fully_vaccinated
+,cumulative_persons_fully_vaccinated
+,new_vaccine_doses_administered
+,cumulative_vaccine_doses_administered
+,population
+,population_male
+,population_female
+,population_rural
+,population_urban
+,population_density
+,gdp_usd
+,gdp_per_capita_usd
+,openstreetmap_id
+,latitude
+,longitude
+,average_temperature_celsius
+,new_hospitalized_patients
+,new_intensive_care_patients
+FROM `dbt-lightdash-test`.`dbt_amanohar`.`stg_covid`
+WHERE  
+cumulative_tested IS NOT NULL 
+AND new_persons_vaccinated IS NOT NULL 
+AND new_confirmed IS NOT NULL 
+AND new_deceased IS NOT NULL
+    );
+  
+[0m14:34:07.790682 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-lightdash-test&j=bq:6a4b5efd-08c2-4b9b-bc42-ac4508fd67ba:US&page=queryresults
+[0m14:34:07.790682 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:34:07.790682 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a478fda8-d3f9-4a5e-ab6f-db9f97336369', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9E344C850>]}
+[0m14:34:07.790682 [info ] [Thread-1 (]: 3 of 8 OK created sql table model dbt_amanohar.covid_date ...................... [[32mCREATE TABLE (362.8k rows, 2.0 GB processed)[0m in 8.28s]
+[0m14:34:07.790682 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.covid_date
+[0m14:34:07.790682 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.covid_pop
+[0m14:34:07.804299 [info ] [Thread-1 (]: 4 of 8 START sql table model dbt_amanohar.covid_pop ............................ [RUN]
+[0m14:34:07.804817 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.covid_pop"
+[0m14:34:07.804817 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.covid_pop
+[0m14:34:07.804817 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.covid_pop
+[0m14:34:07.804817 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.covid_pop"
+[0m14:34:07.804817 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:34:07.804817 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.covid_pop
+[0m14:34:07.804817 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:34:08.313302 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.covid_pop"
+[0m14:34:08.313302 [debug] [Thread-1 (]: On model.dbt_ld_demo.covid_pop: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.covid_pop"} */
+
+  
+    
+
+    create or replace table `dbt-lightdash-test`.`dbt_amanohar`.`covid_pop`
+    
+    
+    OPTIONS()
+    as (
+      SELECT country_code
+        ,country_name
+        ,population
+        ,COALESCE(new_confirmed, 0) as new_confirmed
+        ,COALESCE(new_deceased, 0) as new_deceased
+        ,COALESCE(cumulative_confirmed, 0) as cumulative_confirmed
+        ,COALESCE(cumulative_deceased, 0) as cumulative_deceased
+        ,COALESCE(cumulative_tested, 0) as cumulative_tested
+        ,COALESCE(new_persons_vaccinated, 0) as new_persons_vaccinated
+        ,COALESCE(cumulative_persons_vaccinated,0) as cumulative_persons_vaccinated
+		,COALESCE(new_persons_fully_vaccinated,0) as new_persons_fully_vaccinated
+        ,COALESCE(cumulative_persons_fully_vaccinated,0) as cumulative_persons_fully_vaccinated
+        
+        ,COALESCE(cumulative_vaccine_doses_administered,0) as cumulative_vaccine_doses_administered
+FROM `dbt-lightdash-test`.`dbt_amanohar`.`stg_covid`
+WHERE 
+cumulative_vaccine_doses_administered != 0
+
+AND cumulative_persons_fully_vaccinated != 0
+AND cumulative_persons_vaccinated != 0
+AND new_confirmed!= 0
+AND cumulative_confirmed != 0
+AND cumulative_tested != 0
+    );
+  
+[0m14:34:13.180363 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-lightdash-test&j=bq:d2f172e3-ec9c-45d2-ac09-c42e08db04c0:US&page=queryresults
+[0m14:34:13.180363 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:34:13.180363 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a478fda8-d3f9-4a5e-ab6f-db9f97336369', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9E33B9960>]}
+[0m14:34:13.180363 [info ] [Thread-1 (]: 4 of 8 OK created sql table model dbt_amanohar.covid_pop ....................... [[32mCREATE TABLE (302.8k rows, 935.9 MB processed)[0m in 5.38s]
+[0m14:34:13.180363 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.covid_pop
+[0m14:34:13.180363 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.pop_info
+[0m14:34:13.180363 [info ] [Thread-1 (]: 5 of 8 START sql table model dbt_amanohar.pop_info ............................. [RUN]
+[0m14:34:13.180363 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.pop_info"
+[0m14:34:13.180363 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.pop_info
+[0m14:34:13.180363 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.pop_info
+[0m14:34:13.180363 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.pop_info"
+[0m14:34:13.196285 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:34:13.196285 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.pop_info
+[0m14:34:13.202787 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:34:13.634226 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.pop_info"
+[0m14:34:13.634226 [debug] [Thread-1 (]: On model.dbt_ld_demo.pop_info: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.pop_info"} */
+
+  
+    
+
+    create or replace table `dbt-lightdash-test`.`dbt_amanohar`.`pop_info`
+    
+    
+    OPTIONS()
+    as (
+      SELECT DISTINCT country_name
+        , (population) as population
+        , (population_male) as male_pop
+        , (population_female) as female_pop
+		, (population_rural) as rural_pop
+        , (population_urban) as urban_pop
+        , (population_density) as pop_density
+        , (population_age_00_09) as child_pop
+        , (population_age_10_19) as teen_pop
+        , (population_age_20_29) as twenties_pop
+		, (population_age_30_39) as thirties_pop
+        , (population_age_40_49) as forties_pop
+        , (population_age_50_59) as fifties_pop
+        , (population_age_60_69) as sixties_pop
+        , (population_age_70_79) as seventies_pop
+        , (population_age_80_and_older) as eighties_pop
+FROM `dbt-lightdash-test`.`dbt_amanohar`.`stg_covid`
+WHERE 
+population is not null
+and population_male is not null
+and population_female is not null
+-- and population_rural is not null
+-- and population_urban is not null
+-- and population_density is not null
+-- and population_age_00_09 is not null
+-- and population_age_10_19 is not null
+-- and population_age_20_29 is not null
+-- and population_age_30_39 is not null
+-- and population_age_40_49 is not null
+-- and population_age_50_59 is not null
+-- and population_age_60_69 is not null
+-- and population_age_70_79 is not null
+-- and population_age_80_and_older is not null
+ORDER BY country_name ASC
+    );
+  
+[0m14:34:17.425190 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-lightdash-test&j=bq:ef70cb0c-ec55-4755-ac14-4e08d9237f6d:US&page=queryresults
+[0m14:34:17.425190 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:34:17.425190 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a478fda8-d3f9-4a5e-ab6f-db9f97336369', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9E4506B90>]}
+[0m14:34:17.433240 [info ] [Thread-1 (]: 5 of 8 OK created sql table model dbt_amanohar.pop_info ........................ [[32mCREATE TABLE (17.6k rows, 1.8 GB processed)[0m in 4.24s]
+[0m14:34:17.433240 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.pop_info
+[0m14:34:17.433240 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.stg_covid_nation_list
+[0m14:34:17.433240 [info ] [Thread-1 (]: 6 of 8 START sql table model dbt_amanohar.stg_covid_nation_list ................ [RUN]
+[0m14:34:17.433240 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.stg_covid_nation_list"
+[0m14:34:17.433240 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.stg_covid_nation_list
+[0m14:34:17.438061 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.stg_covid_nation_list
+[0m14:34:17.438061 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.stg_covid_nation_list"
+[0m14:34:17.438061 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:34:17.438061 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.stg_covid_nation_list
+[0m14:34:17.438061 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:34:18.048119 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.stg_covid_nation_list"
+[0m14:34:18.048119 [debug] [Thread-1 (]: On model.dbt_ld_demo.stg_covid_nation_list: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.stg_covid_nation_list"} */
+
+  
+    
+
+    create or replace table `dbt-lightdash-test`.`dbt_amanohar`.`stg_covid_nation_list`
+    
+    
+    OPTIONS()
+    as (
+      SELECT DISTINCT country_name, MAX(population) as max_pop
+FROM `dbt-lightdash-test`.`dbt_amanohar`.`stg_covid`
+GROUP BY country_name
+ORDER BY country_name
+    );
+  
+[0m14:34:20.892301 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-lightdash-test&j=bq:13f0a12f-e54c-4f73-878d-0eefb10babfd:US&page=queryresults
+[0m14:34:20.892301 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:34:20.907906 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a478fda8-d3f9-4a5e-ab6f-db9f97336369', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9E352BEB0>]}
+[0m14:34:20.907906 [info ] [Thread-1 (]: 6 of 8 OK created sql table model dbt_amanohar.stg_covid_nation_list ........... [[32mCREATE TABLE (246.0 rows, 401.1 MB processed)[0m in 3.47s]
+[0m14:34:20.909553 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.stg_covid_nation_list
+[0m14:34:20.909921 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.percent_vaccin
+[0m14:34:20.909921 [info ] [Thread-1 (]: 7 of 8 START sql table model dbt_amanohar.percent_vaccin ....................... [RUN]
+[0m14:34:20.911336 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.percent_vaccin"
+[0m14:34:20.911336 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.percent_vaccin
+[0m14:34:20.913025 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.percent_vaccin
+[0m14:34:20.916349 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.percent_vaccin"
+[0m14:34:20.916349 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:34:20.918364 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.percent_vaccin
+[0m14:34:20.918750 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:34:21.417316 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.percent_vaccin"
+[0m14:34:21.418934 [debug] [Thread-1 (]: On model.dbt_ld_demo.percent_vaccin: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.percent_vaccin"} */
+
+  
+    
+
+    create or replace table `dbt-lightdash-test`.`dbt_amanohar`.`percent_vaccin`
+    
+    
+    OPTIONS()
+    as (
+      SELECT 
+t1.country_name
+,MAX(t1.health_expenditure_usd) as health_expenditure_usd
+,AVG(COALESCE(t1.OOP_health_spend_usd,0)) as OOP_health_spend_usd
+,CEILING(MAX(t2.cumulative_vaccine_doses_administered)/MAX(t2.population)) as perc_vaccin
+FROM `dbt-lightdash-test`.`dbt_amanohar`.`country_pop_info` as t1
+LEFT JOIN `dbt-lightdash-test`.`dbt_amanohar`.`covid_pop` as t2
+ON t1.country_name = t2.country_name
+WHERE t2.population != 0
+GROUP BY country_name
+    );
+  
+[0m14:35:11.682601 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-lightdash-test&j=bq:48583a96-1930-47ae-888b-51b88b6397e3:US&page=queryresults
+[0m14:35:11.682601 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:35:11.682601 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a478fda8-d3f9-4a5e-ab6f-db9f97336369', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9E344FB80>]}
+[0m14:35:11.696463 [info ] [Thread-1 (]: 7 of 8 OK created sql table model dbt_amanohar.percent_vaccin .................. [[32mCREATE TABLE (135.0 rows, 12.3 MB processed)[0m in 50.77s]
+[0m14:35:11.696463 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.percent_vaccin
+[0m14:35:11.696463 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.vulnerable_pop
+[0m14:35:11.698258 [info ] [Thread-1 (]: 8 of 8 START sql table model dbt_amanohar.vulnerable_pop ....................... [RUN]
+[0m14:35:11.698258 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.vulnerable_pop"
+[0m14:35:11.698258 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.vulnerable_pop
+[0m14:35:11.700005 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.vulnerable_pop
+[0m14:35:11.700005 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.vulnerable_pop"
+[0m14:35:11.700005 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:35:11.703507 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.vulnerable_pop
+[0m14:35:11.704251 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:35:12.308424 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.vulnerable_pop"
+[0m14:35:12.308424 [debug] [Thread-1 (]: On model.dbt_ld_demo.vulnerable_pop: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.vulnerable_pop"} */
+
+  
+    
+
+    create or replace table `dbt-lightdash-test`.`dbt_amanohar`.`vulnerable_pop`
+    
+    
+    OPTIONS()
+    as (
+      SELECT DISTINCT 
+        t1.country_name
+		,(t1.urban_pop/ t1.rural_pop) as accel_multip
+        ,ROUND((t2.max_pop/t1.pop_density)/100) as accel_factor_pop_den
+        ,ROUND(((t1.sixties_pop + t1.seventies_pop + t1.eighties_pop)/ t2.max_pop) *100) as perc_vulner_pop
+FROM `dbt-lightdash-test`.`dbt_amanohar`.`pop_info` t1
+LEFT JOIN `dbt-lightdash-test`.`dbt_amanohar`.`stg_covid_nation_list` t2 
+ON t1.country_name = t2.country_name
+WHERE t1.rural_pop != 0 AND t1.pop_density != 0
+GROUP BY country_name, max_pop, urban_pop, rural_pop, population, pop_density, sixties_pop, seventies_pop, eighties_pop
+    );
+  
+[0m14:35:20.499910 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-lightdash-test&j=bq:da30067d-dd6a-4c37-b6b5-17f48e9d77f8:US&page=queryresults
+[0m14:35:20.515402 [debug] [Thread-1 (]: finished collecting timing info
+[0m14:35:20.515402 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a478fda8-d3f9-4a5e-ab6f-db9f97336369', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9E3469A80>]}
+[0m14:35:20.515402 [info ] [Thread-1 (]: 8 of 8 OK created sql table model dbt_amanohar.vulnerable_pop .................. [[32mCREATE TABLE (202.0 rows, 613.5 KB processed)[0m in 8.82s]
+[0m14:35:20.518475 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.vulnerable_pop
+[0m14:35:20.520202 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m14:35:20.520202 [info ] [MainThread]: 
+[0m14:35:20.522396 [info ] [MainThread]: Finished running 8 table models in 0 hours 1 minutes and 52.99 seconds (112.99s).
+[0m14:35:20.523433 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:35:20.523770 [debug] [MainThread]: Connection 'list_dbt-lightdash-test' was properly closed.
+[0m14:35:20.523965 [debug] [MainThread]: Connection 'list_dbt-lightdash-test_dbt_amanohar' was properly closed.
+[0m14:35:20.523965 [debug] [MainThread]: Connection 'model.dbt_ld_demo.vulnerable_pop' was properly closed.
+[0m14:35:20.541249 [info ] [MainThread]: 
+[0m14:35:20.541249 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:35:20.547310 [info ] [MainThread]: 
+[0m14:35:20.547648 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=0 SKIP=0 TOTAL=8
+[0m14:35:20.547648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9E2E5D690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9E2E5D390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9E315E890>]}
+[0m14:35:20.549218 [debug] [MainThread]: Flushing usage events
