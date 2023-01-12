@@ -8,7 +8,7 @@ SELECT
 perm_table.date
 ,EXTRACT(MONTH FROM perm_table.date) AS MONTH
 , EXTRACT(YEAR FROM perm_table.date) AS YEAR
-,perm_table.country_code
+-- ,perm_table.country_code
 ,perm_table.country_name
 ,perm_table.aggregation_level
 ,perm_table.new_confirmed
