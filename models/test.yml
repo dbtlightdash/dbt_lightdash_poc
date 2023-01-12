@@ -1,23 +1,23 @@
 version: 2
 models:
-  - name: vulnerable_pop
+  - name: test
     columns:
       - name: country_name
         description: ""
         meta:
           dimension:
             type: string
-      - name: accel_multip
+      - name: population
         description: ""
         meta:
           dimension:
             type: number
-      - name: accel_factor_pop_den
+      - name: male_pop
         description: ""
         meta:
           dimension:
             type: number
-      - name: perc_vulner_pop
+      - name: female_pop
         description: ""
         meta:
           dimension:

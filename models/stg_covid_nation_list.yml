@@ -3,6 +3,9 @@ models:
   - name: stg_covid_nation_list
     columns:
       - name: country_name
+        tests:
+          - unique
+          - not_null
         description: ""
         meta:
           dimension:

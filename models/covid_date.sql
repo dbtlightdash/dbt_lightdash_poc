@@ -21,12 +21,12 @@ date
 ,population_density
 ,gdp_usd
 ,gdp_per_capita_usd
-,openstreetmap_id
-,latitude
-,longitude
-,average_temperature_celsius
-,new_hospitalized_patients
-,new_intensive_care_patients
+-- ,openstreetmap_id
+-- ,latitude
+-- ,longitude
+-- ,average_temperature_celsius
+-- ,new_hospitalized_patients
+-- ,new_intensive_care_patients
 FROM {{ ref('stg_covid') }}
 WHERE  
 cumulative_tested IS NOT NULL 

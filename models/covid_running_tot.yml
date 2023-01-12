@@ -1,23 +1,23 @@
 version: 2
 models:
-  - name: vulnerable_pop
+  - name: covid_running_tot
     columns:
+      - name: month
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: year
+        description: ""
+        meta:
+          dimension:
+            type: number
       - name: country_name
         description: ""
         meta:
           dimension:
             type: string
-      - name: accel_multip
-        description: ""
-        meta:
-          dimension:
-            type: number
-      - name: accel_factor_pop_den
-        description: ""
-        meta:
-          dimension:
-            type: number
-      - name: perc_vulner_pop
+      - name: total_confirmed
         description: ""
         meta:
           dimension:
