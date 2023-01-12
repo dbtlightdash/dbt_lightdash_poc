@@ -28,7 +28,7 @@ perm_table.date
 ,perm_table.population_rural
 ,perm_table.population_urban
 ,perm_table.population_density
--- ,perm_table.human_development_index
+,perm_table.human_development_index
 ,perm_table.population_age_00_09
 ,perm_table.population_age_10_19
 ,perm_table.population_age_20_29
