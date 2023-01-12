@@ -1,0 +1,14 @@
+version: 2 
+metrics:
+  - name: confirmed_cases_time
+    model: ref('stg_covid')
+    label: Total Num Data Points
+    timestamp: date
+    time_grains: [month, year, all_time]
+    calculation_method: sum
+    expression: new_confirmed
+    dimensions:
+      - new_confirmed
+      - country_name
+      - date
+
