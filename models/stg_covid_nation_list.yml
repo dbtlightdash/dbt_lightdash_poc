@@ -6,6 +6,8 @@ models:
         tests:
           - unique
           - not_null
+          - accepted_values: 
+              values: ['Argentina', 'Austria', 'Brazil', 'Canada', 'Chile', 'Colombia', 'France', 'Germany', 'India', 'Indonesia', 'Israel', 'Mexico', 'Netherlands', 'Peru', 'Philippines', 'Poland', 'Spain' , 'United Kingdom', 'United States of America', 'Italy']
         description: ""
         meta:
           dimension:

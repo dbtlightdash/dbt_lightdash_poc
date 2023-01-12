@@ -1,1 +1,0 @@
-SELECT * FROM `dulcet-answer-373817.dbt_ld.ghcnm_tavg`
