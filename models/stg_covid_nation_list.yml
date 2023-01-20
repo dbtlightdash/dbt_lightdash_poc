@@ -8,12 +8,12 @@ models:
           - not_null
           - accepted_values: 
               values: ['Argentina', 'Austria', 'Brazil', 'Canada', 'Chile', 'Colombia', 'Germany', 'India', 'Indonesia', 'Israel', 'Mexico', 'Netherlands', 'Peru', 'Philippines', 'Poland', 'Spain' , 'United Kingdom', 'United States of America', 'Italy']
-        description: ""
+        description: "This table is a distinct list of every country participating with the public COVID-19 dataset. "
         meta:
           dimension:
             type: string
       - name: max_pop
-        description: ""
+        description: "The max population of each country from 2019-2022"
         meta:
           dimension:
             type: number

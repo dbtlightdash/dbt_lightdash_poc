@@ -26922,3 +26922,3341 @@ GROUP BY country_name, max_pop, urban_pop, rural_pop, population, pop_density, s
 [0m16:13:24.226785 [info ] [MainThread]: Done. PASS=12 WARN=0 ERROR=0 SKIP=0 TOTAL=12
 [0m16:13:24.227787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002350385DC90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235074AF010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235074ADFC0>]}
 [0m16:13:24.227787 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-01-20 15:21:54.465263 | 6b8c0975-54d1-43e3-b911-27de607b3aba ==============================
+[0m15:21:54.465263 [info ] [MainThread]: Running with dbt=1.3.1
+[0m15:21:54.465263 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\adithya.manohar\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m15:21:54.465263 [debug] [MainThread]: Tracking: tracking
+[0m15:21:54.628208 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182C7C2C040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182C7C2C430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182C7C2C1F0>]}
+[0m15:21:54.628208 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182C7C2C130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182C7C2C4C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182C7C2C1C0>]}
+[0m15:21:54.634722 [debug] [MainThread]: Flushing usage events
+[0m15:21:54.891713 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found 1 package(s) specified in packages.yml, but only 0 package(s) installed in dbt_packages. Run "dbt deps" to install package dependencies.
+
+
+============================== 2023-01-20 15:27:20.427487 | ddcc3f52-c676-4165-9273-ad4e6f2f0b68 ==============================
+[0m15:27:20.427487 [info ] [MainThread]: Running with dbt=1.3.1
+[0m15:27:20.427487 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\adithya.manohar\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+[0m15:27:20.427487 [debug] [MainThread]: Tracking: tracking
+[0m15:27:20.550338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F92AF09C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F92AF0B730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F92AF0A050>]}
+[0m15:27:20.557559 [debug] [MainThread]: Set downloads directory='C:\Users\ADITHY~1.MAN\AppData\Local\Temp\dbt-downloads-tdk84m39'
+[0m15:27:20.558061 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m15:27:20.875654 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m15:27:20.875654 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/metrics.json
+[0m15:27:21.134905 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/metrics.json 200
+[0m15:27:21.150630 [info ] [MainThread]: Installing dbt-labs/metrics
+[0m15:27:23.647985 [info ] [MainThread]:   Installed from version 1.3.2
+[0m15:27:23.647985 [info ] [MainThread]:   Up to date!
+[0m15:27:23.647985 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'ddcc3f52-c676-4165-9273-ad4e6f2f0b68', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F92AF0B640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F92AF0BA90>]}
+[0m15:27:23.647985 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F92AF9E170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F92AF9E1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F92AF08D00>]}
+[0m15:27:23.647985 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-01-20 15:28:18.276675 | dd1b9d85-1cb6-4629-9128-806a046d1921 ==============================
+[0m15:28:18.276675 [info ] [MainThread]: Running with dbt=1.3.1
+[0m15:28:18.276675 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\adithya.manohar\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m15:28:18.276675 [debug] [MainThread]: Tracking: tracking
+[0m15:28:18.418740 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AC77AC5B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AC77AC8E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AC77AC6A0>]}
+[0m15:28:18.434460 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+[0m15:28:18.434460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'dd1b9d85-1cb6-4629-9128-806a046d1921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AC77ACBB0>]}
+[0m15:28:19.495184 [debug] [MainThread]: Parsing macros\adapters.sql
+[0m15:28:19.503638 [debug] [MainThread]: Parsing macros\catalog.sql
+[0m15:28:19.503638 [debug] [MainThread]: Parsing macros\etc.sql
+[0m15:28:19.519484 [debug] [MainThread]: Parsing macros\adapters\apply_grants.sql
+[0m15:28:19.519484 [debug] [MainThread]: Parsing macros\materializations\copy.sql
+[0m15:28:19.519484 [debug] [MainThread]: Parsing macros\materializations\incremental.sql
+[0m15:28:19.519484 [debug] [MainThread]: Parsing macros\materializations\seed.sql
+[0m15:28:19.535247 [debug] [MainThread]: Parsing macros\materializations\snapshot.sql
+[0m15:28:19.535247 [debug] [MainThread]: Parsing macros\materializations\table.sql
+[0m15:28:19.535247 [debug] [MainThread]: Parsing macros\materializations\view.sql
+[0m15:28:19.535247 [debug] [MainThread]: Parsing macros\utils\array_append.sql
+[0m15:28:19.535247 [debug] [MainThread]: Parsing macros\utils\array_concat.sql
+[0m15:28:19.535247 [debug] [MainThread]: Parsing macros\utils\array_construct.sql
+[0m15:28:19.535247 [debug] [MainThread]: Parsing macros\utils\bool_or.sql
+[0m15:28:19.535247 [debug] [MainThread]: Parsing macros\utils\dateadd.sql
+[0m15:28:19.535247 [debug] [MainThread]: Parsing macros\utils\datediff.sql
+[0m15:28:19.535247 [debug] [MainThread]: Parsing macros\utils\date_trunc.sql
+[0m15:28:19.535247 [debug] [MainThread]: Parsing macros\utils\escape_single_quotes.sql
+[0m15:28:19.535247 [debug] [MainThread]: Parsing macros\utils\except.sql
+[0m15:28:19.535247 [debug] [MainThread]: Parsing macros\utils\hash.sql
+[0m15:28:19.535247 [debug] [MainThread]: Parsing macros\utils\intersect.sql
+[0m15:28:19.535247 [debug] [MainThread]: Parsing macros\utils\listagg.sql
+[0m15:28:19.535247 [debug] [MainThread]: Parsing macros\utils\position.sql
+[0m15:28:19.550796 [debug] [MainThread]: Parsing macros\utils\right.sql
+[0m15:28:19.551127 [debug] [MainThread]: Parsing macros\utils\safe_cast.sql
+[0m15:28:19.551127 [debug] [MainThread]: Parsing macros\utils\split_part.sql
+[0m15:28:19.551127 [debug] [MainThread]: Parsing macros\utils\timestamps.sql
+[0m15:28:19.551127 [debug] [MainThread]: Parsing macros\adapters\apply_grants.sql
+[0m15:28:19.551127 [debug] [MainThread]: Parsing macros\adapters\columns.sql
+[0m15:28:19.567020 [debug] [MainThread]: Parsing macros\adapters\freshness.sql
+[0m15:28:19.567020 [debug] [MainThread]: Parsing macros\adapters\indexes.sql
+[0m15:28:19.567020 [debug] [MainThread]: Parsing macros\adapters\metadata.sql
+[0m15:28:19.575910 [debug] [MainThread]: Parsing macros\adapters\persist_docs.sql
+[0m15:28:19.575910 [debug] [MainThread]: Parsing macros\adapters\relation.sql
+[0m15:28:19.588506 [debug] [MainThread]: Parsing macros\adapters\schema.sql
+[0m15:28:19.592173 [debug] [MainThread]: Parsing macros\adapters\timestamps.sql
+[0m15:28:19.594887 [debug] [MainThread]: Parsing macros\etc\datetime.sql
+[0m15:28:19.602611 [debug] [MainThread]: Parsing macros\etc\statement.sql
+[0m15:28:19.606617 [debug] [MainThread]: Parsing macros\generic_test_sql\accepted_values.sql
+[0m15:28:19.607425 [debug] [MainThread]: Parsing macros\generic_test_sql\not_null.sql
+[0m15:28:19.608573 [debug] [MainThread]: Parsing macros\generic_test_sql\relationships.sql
+[0m15:28:19.609124 [debug] [MainThread]: Parsing macros\generic_test_sql\unique.sql
+[0m15:28:19.610066 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_alias.sql
+[0m15:28:19.610821 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_database.sql
+[0m15:28:19.612688 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_schema.sql
+[0m15:28:19.613809 [debug] [MainThread]: Parsing macros\materializations\configs.sql
+[0m15:28:19.613809 [debug] [MainThread]: Parsing macros\materializations\hooks.sql
+[0m15:28:19.613809 [debug] [MainThread]: Parsing macros\materializations\models\incremental\column_helpers.sql
+[0m15:28:19.613809 [debug] [MainThread]: Parsing macros\materializations\models\incremental\incremental.sql
+[0m15:28:19.629566 [debug] [MainThread]: Parsing macros\materializations\models\incremental\is_incremental.sql
+[0m15:28:19.629566 [debug] [MainThread]: Parsing macros\materializations\models\incremental\merge.sql
+[0m15:28:19.629566 [debug] [MainThread]: Parsing macros\materializations\models\incremental\on_schema_change.sql
+[0m15:28:19.645319 [debug] [MainThread]: Parsing macros\materializations\models\incremental\strategies.sql
+[0m15:28:19.645319 [debug] [MainThread]: Parsing macros\materializations\models\table\create_table_as.sql
+[0m15:28:19.645319 [debug] [MainThread]: Parsing macros\materializations\models\table\table.sql
+[0m15:28:19.660941 [debug] [MainThread]: Parsing macros\materializations\models\view\create_or_replace_view.sql
+[0m15:28:19.660941 [debug] [MainThread]: Parsing macros\materializations\models\view\create_view_as.sql
+[0m15:28:19.660941 [debug] [MainThread]: Parsing macros\materializations\models\view\helpers.sql
+[0m15:28:19.660941 [debug] [MainThread]: Parsing macros\materializations\models\view\view.sql
+[0m15:28:19.660941 [debug] [MainThread]: Parsing macros\materializations\seeds\helpers.sql
+[0m15:28:19.677124 [debug] [MainThread]: Parsing macros\materializations\seeds\seed.sql
+[0m15:28:19.677124 [debug] [MainThread]: Parsing macros\materializations\snapshots\helpers.sql
+[0m15:28:19.677124 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot.sql
+[0m15:28:19.692795 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot_merge.sql
+[0m15:28:19.692795 [debug] [MainThread]: Parsing macros\materializations\snapshots\strategies.sql
+[0m15:28:19.708580 [debug] [MainThread]: Parsing macros\materializations\tests\helpers.sql
+[0m15:28:19.708580 [debug] [MainThread]: Parsing macros\materializations\tests\test.sql
+[0m15:28:19.708580 [debug] [MainThread]: Parsing macros\materializations\tests\where_subquery.sql
+[0m15:28:19.708580 [debug] [MainThread]: Parsing macros\python_model\python.sql
+[0m15:28:19.708580 [debug] [MainThread]: Parsing macros\utils\any_value.sql
+[0m15:28:19.708580 [debug] [MainThread]: Parsing macros\utils\array_append.sql
+[0m15:28:19.708580 [debug] [MainThread]: Parsing macros\utils\array_concat.sql
+[0m15:28:19.708580 [debug] [MainThread]: Parsing macros\utils\array_construct.sql
+[0m15:28:19.708580 [debug] [MainThread]: Parsing macros\utils\bool_or.sql
+[0m15:28:19.708580 [debug] [MainThread]: Parsing macros\utils\cast_bool_to_text.sql
+[0m15:28:19.724529 [debug] [MainThread]: Parsing macros\utils\concat.sql
+[0m15:28:19.724529 [debug] [MainThread]: Parsing macros\utils\data_types.sql
+[0m15:28:19.724529 [debug] [MainThread]: Parsing macros\utils\dateadd.sql
+[0m15:28:19.724529 [debug] [MainThread]: Parsing macros\utils\datediff.sql
+[0m15:28:19.724529 [debug] [MainThread]: Parsing macros\utils\date_trunc.sql
+[0m15:28:19.724529 [debug] [MainThread]: Parsing macros\utils\escape_single_quotes.sql
+[0m15:28:19.724529 [debug] [MainThread]: Parsing macros\utils\except.sql
+[0m15:28:19.724529 [debug] [MainThread]: Parsing macros\utils\hash.sql
+[0m15:28:19.724529 [debug] [MainThread]: Parsing macros\utils\intersect.sql
+[0m15:28:19.724529 [debug] [MainThread]: Parsing macros\utils\last_day.sql
+[0m15:28:19.724529 [debug] [MainThread]: Parsing macros\utils\length.sql
+[0m15:28:19.724529 [debug] [MainThread]: Parsing macros\utils\listagg.sql
+[0m15:28:19.724529 [debug] [MainThread]: Parsing macros\utils\literal.sql
+[0m15:28:19.740135 [debug] [MainThread]: Parsing macros\utils\position.sql
+[0m15:28:19.740135 [debug] [MainThread]: Parsing macros\utils\replace.sql
+[0m15:28:19.740135 [debug] [MainThread]: Parsing macros\utils\right.sql
+[0m15:28:19.740135 [debug] [MainThread]: Parsing macros\utils\safe_cast.sql
+[0m15:28:19.740135 [debug] [MainThread]: Parsing macros\utils\split_part.sql
+[0m15:28:19.740135 [debug] [MainThread]: Parsing tests\generic\builtin.sql
+[0m15:28:19.740135 [debug] [MainThread]: Parsing macros\calculate.sql
+[0m15:28:19.740135 [debug] [MainThread]: Parsing macros\develop.sql
+[0m15:28:19.755755 [debug] [MainThread]: Parsing macros\get_metric_sql.sql
+[0m15:28:19.755755 [debug] [MainThread]: Parsing macros\graph_parsing\get_metric_relation.sql
+[0m15:28:19.755755 [debug] [MainThread]: Parsing macros\graph_parsing\get_model_relation.sql
+[0m15:28:19.755755 [debug] [MainThread]: Parsing macros\misc\metrics__date_spine.sql
+[0m15:28:19.755755 [debug] [MainThread]: Parsing macros\misc\metrics__equality.sql
+[0m15:28:19.771298 [debug] [MainThread]: Parsing macros\secondary_calculations\generate_secondary_calculation_alias.sql
+[0m15:28:19.775427 [debug] [MainThread]: Parsing macros\secondary_calculations\perform_secondary_calculation.sql
+[0m15:28:19.775427 [debug] [MainThread]: Parsing macros\secondary_calculations\secondary_calculation_period_over_period.sql
+[0m15:28:19.775427 [debug] [MainThread]: Parsing macros\secondary_calculations\secondary_calculation_period_to_date.sql
+[0m15:28:19.775427 [debug] [MainThread]: Parsing macros\secondary_calculations\secondary_calculation_prior.sql
+[0m15:28:19.775427 [debug] [MainThread]: Parsing macros\secondary_calculations\secondary_calculation_rolling.sql
+[0m15:28:19.786934 [debug] [MainThread]: Parsing macros\secondary_calculations_configuration\period_over_period.sql
+[0m15:28:19.786934 [debug] [MainThread]: Parsing macros\secondary_calculations_configuration\period_to_date.sql
+[0m15:28:19.786934 [debug] [MainThread]: Parsing macros\secondary_calculations_configuration\prior.sql
+[0m15:28:19.786934 [debug] [MainThread]: Parsing macros\secondary_calculations_configuration\rolling.sql
+[0m15:28:19.786934 [debug] [MainThread]: Parsing macros\sql_gen\build_metric_sql.sql
+[0m15:28:19.786934 [debug] [MainThread]: Parsing macros\sql_gen\gen_aggregate_cte.sql
+[0m15:28:19.801957 [debug] [MainThread]: Parsing macros\sql_gen\gen_base_query.sql
+[0m15:28:19.810796 [debug] [MainThread]: Parsing macros\sql_gen\gen_calendar_cte.sql
+[0m15:28:19.815779 [debug] [MainThread]: Parsing macros\sql_gen\gen_calendar_table_join.sql
+[0m15:28:19.826659 [debug] [MainThread]: Parsing macros\sql_gen\gen_dimensions_cte.sql
+[0m15:28:19.830148 [debug] [MainThread]: Parsing macros\sql_gen\gen_filters.sql
+[0m15:28:19.834350 [debug] [MainThread]: Parsing macros\sql_gen\gen_final_cte.sql
+[0m15:28:19.838767 [debug] [MainThread]: Parsing macros\sql_gen\gen_group_by.sql
+[0m15:28:19.847211 [debug] [MainThread]: Parsing macros\sql_gen\gen_joined_metrics_cte.sql
+[0m15:28:19.865805 [debug] [MainThread]: Parsing macros\sql_gen\gen_metric_cte.sql
+[0m15:28:19.875726 [debug] [MainThread]: Parsing macros\sql_gen\gen_order_by.sql
+[0m15:28:19.875726 [debug] [MainThread]: Parsing macros\sql_gen\gen_primary_metric_aggregate.sql
+[0m15:28:19.875726 [debug] [MainThread]: Parsing macros\sql_gen\gen_secondary_calculations_cte.sql
+[0m15:28:19.875726 [debug] [MainThread]: Parsing macros\sql_gen\gen_spine_time_cte.sql
+[0m15:28:19.875726 [debug] [MainThread]: Parsing macros\validation\is_valid_dimension.sql
+[0m15:28:19.875726 [debug] [MainThread]: Parsing macros\validation\validate_aggregate_coherence.sql
+[0m15:28:19.875726 [debug] [MainThread]: Parsing macros\validation\validate_derived_metrics.sql
+[0m15:28:19.892015 [debug] [MainThread]: Parsing macros\validation\validate_develop_grain.sql
+[0m15:28:19.892015 [debug] [MainThread]: Parsing macros\validation\validate_dimension_list.sql
+[0m15:28:19.894419 [debug] [MainThread]: Parsing macros\validation\validate_grain.sql
+[0m15:28:19.894419 [debug] [MainThread]: Parsing macros\validation\validate_grain_order.sql
+[0m15:28:19.894419 [debug] [MainThread]: Parsing macros\validation\validate_metric_config.sql
+[0m15:28:19.894419 [debug] [MainThread]: Parsing macros\variables\get_base_metrics.sql
+[0m15:28:19.894419 [debug] [MainThread]: Parsing macros\variables\get_calendar_dimensions.sql
+[0m15:28:19.894419 [debug] [MainThread]: Parsing macros\variables\get_develop_unique_metric_id_list.sql
+[0m15:28:19.894419 [debug] [MainThread]: Parsing macros\variables\get_faux_metric_tree.sql
+[0m15:28:19.894419 [debug] [MainThread]: Parsing macros\variables\get_grain_order.sql
+[0m15:28:19.894419 [debug] [MainThread]: Parsing macros\variables\get_metrics_dictionary.sql
+[0m15:28:19.910602 [debug] [MainThread]: Parsing macros\variables\get_metric_allowlist.sql
+[0m15:28:19.910602 [debug] [MainThread]: Parsing macros\variables\get_metric_definition.sql
+[0m15:28:19.910602 [debug] [MainThread]: Parsing macros\variables\get_metric_list.sql
+[0m15:28:19.918995 [debug] [MainThread]: Parsing macros\variables\get_metric_model_name.sql
+[0m15:28:19.921068 [debug] [MainThread]: Parsing macros\variables\get_metric_tree.sql
+[0m15:28:19.926071 [debug] [MainThread]: Parsing macros\variables\get_metric_unique_id_list.sql
+[0m15:28:19.927858 [debug] [MainThread]: Parsing macros\variables\get_non_calendar_dimension_list.sql
+[0m15:28:19.928776 [debug] [MainThread]: Parsing macros\variables\get_relevent_periods.sql
+[0m15:28:19.930025 [debug] [MainThread]: Parsing macros\variables\update_faux_metric_tree.sql
+[0m15:28:19.930025 [debug] [MainThread]: Parsing macros\variables\update_metric_tree.sql
+[0m15:28:20.214388 [debug] [MainThread]: 1699: static parser successfully parsed base_pollutant_mo_yr.sql
+[0m15:28:20.214388 [debug] [MainThread]: 1699: static parser successfully parsed country_pop_info.sql
+[0m15:28:20.214388 [debug] [MainThread]: 1699: static parser successfully parsed covid_date.sql
+[0m15:28:20.230906 [debug] [MainThread]: 1699: static parser successfully parsed covid_pop.sql
+[0m15:28:20.230906 [debug] [MainThread]: 1699: static parser successfully parsed covid_running_tot.sql
+[0m15:28:20.230906 [debug] [MainThread]: 1699: static parser successfully parsed CO_risk_vs_pollution.sql
+[0m15:28:20.230906 [debug] [MainThread]: 1603: static parser failed on Month_us_cases.sql
+[0m15:28:20.276853 [debug] [MainThread]: 1602: parser fallback to jinja rendering on Month_us_cases.sql
+[0m15:28:20.286942 [debug] [MainThread]: 1699: static parser successfully parsed percent_vaccin.sql
+[0m15:28:20.286942 [debug] [MainThread]: 1699: static parser successfully parsed pollutant_avg_yr.sql
+[0m15:28:20.286942 [debug] [MainThread]: 1699: static parser successfully parsed pop_info.sql
+[0m15:28:20.286942 [debug] [MainThread]: 1699: static parser successfully parsed stg_covid.sql
+[0m15:28:20.286942 [debug] [MainThread]: 1699: static parser successfully parsed stg_covid_nation_list.sql
+[0m15:28:20.286942 [debug] [MainThread]: 1699: static parser successfully parsed tgt_pollutant_mo_yr.sql
+[0m15:28:20.286942 [debug] [MainThread]: 1699: static parser successfully parsed vulnerable_pop.sql
+[0m15:28:20.302665 [debug] [MainThread]: 1603: static parser failed on YR_cases.sql
+[0m15:28:20.302665 [debug] [MainThread]: 1602: parser fallback to jinja rendering on YR_cases.sql
+[0m15:28:20.318454 [debug] [MainThread]: 1603: static parser failed on dbt_metrics_default_calendar.sql
+[0m15:28:20.334130 [debug] [MainThread]: 1602: parser fallback to jinja rendering on dbt_metrics_default_calendar.sql
+[0m15:28:20.477041 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'test' in the 'models' section of file 'models\test.yml'
+[0m15:28:20.508209 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dd1b9d85-1cb6-4629-9128-806a046d1921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AC7B52080>]}
+[0m15:28:20.508209 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'dd1b9d85-1cb6-4629-9128-806a046d1921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AC40824D0>]}
+[0m15:28:20.523963 [info ] [MainThread]: Found 16 models, 3 tests, 0 snapshots, 0 analyses, 420 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 1 metric
+[0m15:28:20.524464 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dd1b9d85-1cb6-4629-9128-806a046d1921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AC7A295D0>]}
+[0m15:28:20.525937 [info ] [MainThread]: 
+[0m15:28:20.527746 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m15:28:20.529143 [debug] [ThreadPool]: Acquiring new bigquery connection "list_dulcet-answer-373817"
+[0m15:28:20.529143 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:28:21.627709 [debug] [ThreadPool]: Acquiring new bigquery connection "list_dulcet-answer-373817_dbt_amanohar"
+[0m15:28:21.627709 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:28:22.670629 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dd1b9d85-1cb6-4629-9128-806a046d1921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AC7B53310>]}
+[0m15:28:22.670629 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:28:22.670629 [info ] [MainThread]: 
+[0m15:28:22.686673 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.base_pollutant_mo_yr
+[0m15:28:22.686673 [info ] [Thread-1 (]: 1 of 16 START sql table model dbt_amanohar.base_pollutant_mo_yr ................ [RUN]
+[0m15:28:22.686673 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.base_pollutant_mo_yr"
+[0m15:28:22.686673 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.base_pollutant_mo_yr
+[0m15:28:22.686673 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.base_pollutant_mo_yr
+[0m15:28:22.686673 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.base_pollutant_mo_yr"
+[0m15:28:22.702336 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:28:22.702336 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.base_pollutant_mo_yr
+[0m15:28:22.702336 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:28:23.369908 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.base_pollutant_mo_yr"
+[0m15:28:23.369908 [debug] [Thread-1 (]: On model.dbt_ld_demo.base_pollutant_mo_yr: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.base_pollutant_mo_yr"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`base_pollutant_mo_yr`
+    
+    
+    OPTIONS()
+    as (
+      SELECT 
+country
+, pollutant
+, AVG(value) as average_val
+,EXTRACT(MONTH FROM timestamp) AS MONTH
+, EXTRACT(YEAR FROM timestamp) AS YEAR
+FROM `dulcet-answer-373817.dbt_ld.global_air_quality` 
+GROUP BY country, MONTH, YEAR, pollutant
+HAVING YEAR > 2019
+    );
+  
+[0m15:28:27.143873 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:06f1b79f-21b3-4c5c-a080-4f412f8c198c:US&page=queryresults
+[0m15:28:27.194465 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:28:27.194465 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dd1b9d85-1cb6-4629-9128-806a046d1921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AC7BDF2B0>]}
+[0m15:28:27.194465 [info ] [Thread-1 (]: 1 of 16 OK created sql table model dbt_amanohar.base_pollutant_mo_yr ........... [[32mCREATE TABLE (2.5k rows, 133.8 MB processed)[0m in 4.51s]
+[0m15:28:27.194465 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.base_pollutant_mo_yr
+[0m15:28:27.194465 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.pollutant_avg_yr
+[0m15:28:27.194465 [info ] [Thread-1 (]: 2 of 16 START sql table model dbt_amanohar.pollutant_avg_yr .................... [RUN]
+[0m15:28:27.194465 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.pollutant_avg_yr"
+[0m15:28:27.194465 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.pollutant_avg_yr
+[0m15:28:27.194465 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.pollutant_avg_yr
+[0m15:28:27.216342 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.pollutant_avg_yr"
+[0m15:28:27.223927 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:28:27.223927 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.pollutant_avg_yr
+[0m15:28:27.223927 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:28:27.716201 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.pollutant_avg_yr"
+[0m15:28:27.716201 [debug] [Thread-1 (]: On model.dbt_ld_demo.pollutant_avg_yr: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.pollutant_avg_yr"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`pollutant_avg_yr`
+    
+    
+    OPTIONS()
+    as (
+      WITH temptable as (
+SELECT 
+  country
+  , pollutant
+  , value
+  ,EXTRACT(YEAR FROM timestamp) AS YEAR
+FROM `dulcet-answer-373817.dbt_ld.global_air_quality` 
+WHERE EXTRACT(YEAR FROM timestamp) > 2019
+)
+SELECT 
+  country
+  , pollutant
+  , AVG(value) AS AMT_PARTICULATE
+FROM temptable 
+GROUP BY country, pollutant
+    );
+  
+[0m15:28:30.787563 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:a50cdf39-804d-4450-8a75-105151151565:US&page=queryresults
+[0m15:28:30.787563 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:28:30.787563 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dd1b9d85-1cb6-4629-9128-806a046d1921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AC7B69570>]}
+[0m15:28:30.787563 [info ] [Thread-1 (]: 2 of 16 OK created sql table model dbt_amanohar.pollutant_avg_yr ............... [[32mCREATE TABLE (378.0 rows, 133.8 MB processed)[0m in 3.59s]
+[0m15:28:30.787563 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.pollutant_avg_yr
+[0m15:28:30.787563 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.stg_covid
+[0m15:28:30.803088 [info ] [Thread-1 (]: 3 of 16 START sql table model dbt_amanohar.stg_covid ........................... [RUN]
+[0m15:28:30.803088 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.stg_covid"
+[0m15:28:30.803088 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.stg_covid
+[0m15:28:30.803088 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.stg_covid
+[0m15:28:30.803088 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.stg_covid"
+[0m15:28:30.823565 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:28:30.824526 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.stg_covid
+[0m15:28:30.824526 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:28:31.308496 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.stg_covid"
+[0m15:28:31.327310 [debug] [Thread-1 (]: On model.dbt_ld_demo.stg_covid: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.stg_covid"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`stg_covid`
+    
+    
+    OPTIONS()
+    as (
+      WITH temp_table as (
+  SELECT country_name, COUNT(country_name) as data_points
+FROM `dulcet-answer-373817.dbt_ld.covid19_open_data`
+GROUP BY country_name
+HAVING data_points > 100000
+)
+SELECT
+perm_table.date
+,EXTRACT(MONTH FROM perm_table.date) AS MONTH
+, EXTRACT(YEAR FROM perm_table.date) AS YEAR
+,perm_table.country_code
+,perm_table.country_name
+,perm_table.aggregation_level
+,perm_table.new_confirmed
+,perm_table.new_deceased
+,perm_table.cumulative_confirmed
+,perm_table.cumulative_deceased
+,perm_table.cumulative_tested
+,perm_table.new_persons_vaccinated
+,perm_table.cumulative_persons_vaccinated
+,perm_table.new_persons_fully_vaccinated
+,perm_table.cumulative_persons_fully_vaccinated
+,perm_table.new_vaccine_doses_administered
+,perm_table.cumulative_vaccine_doses_administered
+,perm_table.population
+,perm_table.population_male
+,perm_table.population_female
+,perm_table.population_rural
+,perm_table.population_urban
+,perm_table.population_density
+,perm_table.human_development_index
+,perm_table.population_age_00_09
+,perm_table.population_age_10_19
+,perm_table.population_age_20_29
+,perm_table.population_age_30_39
+,perm_table.population_age_40_49
+,perm_table.population_age_50_59
+,perm_table.population_age_60_69
+,perm_table.population_age_70_79
+,perm_table.population_age_80_and_older
+,perm_table.gdp_usd
+,perm_table.gdp_per_capita_usd
+-- ,perm_table.openstreetmap_id
+-- ,perm_table.latitude
+-- ,perm_table.longitude
+,perm_table.area_sq_km
+,perm_table.smoking_prevalence
+,perm_table.diabetes_prevalence
+,perm_table.infant_mortality_rate
+,perm_table.nurses_per_1000
+,perm_table.physicians_per_1000
+,perm_table.health_expenditure_usd
+,perm_table.out_of_pocket_health_expenditure_usd
+-- ,perm_table.school_closing
+-- ,perm_table.workplace_closing
+-- ,perm_table.cancel_public_events
+-- ,perm_table.restrictions_on_gatherings
+-- ,perm_table.public_transport_closing
+-- ,perm_table.stay_at_home_requirements
+-- ,perm_table.restrictions_on_internal_movement
+-- ,perm_table.international_travel_controls
+-- ,perm_table.income_support
+-- ,perm_table.debt_relief
+-- ,perm_table.fiscal_measures
+-- ,perm_table.international_support
+-- ,perm_table.public_information_campaigns
+-- ,perm_table.testing_policy
+-- ,perm_table.contact_tracing
+-- ,perm_table.emergency_investment_in_healthcare
+-- ,perm_table.investment_in_vaccines
+-- ,perm_table.facial_coverings
+-- ,perm_table.vaccination_policy
+-- ,perm_table.stringency_index
+-- ,perm_table.average_temperature_celsius
+-- ,perm_table.minimum_temperature_celsius
+-- ,perm_table.maximum_temperature_celsius
+-- ,perm_table.rainfall_mm
+-- ,perm_table.snowfall_mm
+-- ,perm_table.dew_point
+-- ,perm_table.relative_humidity
+,perm_table.new_tested
+,perm_table.population_largest_city
+-- ,perm_table.population_clustered
+-- ,perm_table.human_capital_index
+,perm_table.area_rural_sq_km
+,perm_table.area_urban_sq_km
+,perm_table.life_expectancy
+,perm_table.adult_male_mortality_rate
+,perm_table.adult_female_mortality_rate
+-- ,perm_table.pollution_mortality_rate
+-- ,perm_table.comorbidity_mortality_rate
+-- ,perm_table.mobility_retail_and_recreation
+-- ,perm_table.mobility_grocery_and_pharmacy
+-- ,perm_table.mobility_parks
+-- ,perm_table.mobility_transit_stations
+-- ,perm_table.mobility_workplaces
+-- ,perm_table.mobility_residential
+,perm_table.hospital_beds_per_1000
+,perm_table.new_hospitalized_patients
+,perm_table.cumulative_hospitalized_patients
+,perm_table.new_intensive_care_patients
+,perm_table.cumulative_intensive_care_patients
+FROM `dulcet-answer-373817.dbt_ld.covid19_open_data` as perm_table, temp_table
+WHERE perm_table.country_name = temp_table.country_name
+    );
+  
+[0m15:28:53.387906 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:b7dc6e53-df9a-4c62-a575-71e064714fff:US&page=queryresults
+[0m15:28:53.387906 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:28:53.387906 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dd1b9d85-1cb6-4629-9128-806a046d1921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AC7B69840>]}
+[0m15:28:53.387906 [info ] [Thread-1 (]: 3 of 16 OK created sql table model dbt_amanohar.stg_covid ...................... [[32mCREATE TABLE (21.3m rows, 3.0 GB processed)[0m in 22.58s]
+[0m15:28:53.403677 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.stg_covid
+[0m15:28:53.403677 [debug] [Thread-1 (]: Began running node model.metrics.dbt_metrics_default_calendar
+[0m15:28:53.403677 [info ] [Thread-1 (]: 4 of 16 START sql table model dbt_amanohar.dbt_metrics_default_calendar ........ [RUN]
+[0m15:28:53.403677 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.metrics.dbt_metrics_default_calendar"
+[0m15:28:53.403677 [debug] [Thread-1 (]: Began compiling node model.metrics.dbt_metrics_default_calendar
+[0m15:28:53.403677 [debug] [Thread-1 (]: Compiling model.metrics.dbt_metrics_default_calendar
+[0m15:28:53.419290 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:28:53.434831 [debug] [Thread-1 (]: On model.metrics.dbt_metrics_default_calendar: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.metrics.dbt_metrics_default_calendar"} */
+
+
+        select 
+
+    datetime_diff(
+        cast(cast('2030-01-01' as date) as datetime),
+        cast(cast('1990-01-01' as date) as datetime),
+        day
+    )
+
+  
+[0m15:28:56.391983 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:ff0d566e-d924-43c3-b3ac-7cce3c0b66ab:US&page=queryresults
+[0m15:28:56.391983 [debug] [Thread-1 (]: Writing injected SQL for node "model.metrics.dbt_metrics_default_calendar"
+[0m15:28:56.407897 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:28:56.407897 [debug] [Thread-1 (]: Began executing node model.metrics.dbt_metrics_default_calendar
+[0m15:28:56.582336 [debug] [Thread-1 (]: Writing runtime sql for node "model.metrics.dbt_metrics_default_calendar"
+[0m15:28:56.582336 [debug] [Thread-1 (]: On model.metrics.dbt_metrics_default_calendar: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.metrics.dbt_metrics_default_calendar"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`dbt_metrics_default_calendar`
+    
+    
+    OPTIONS()
+    as (
+      
+
+with days as (
+    
+
+
+
+
+
+with rawdata as (
+
+    
+
+    
+
+    with p as (
+        select 0 as generated_number union all select 1
+    ), unioned as (
+
+    select
+
+    
+    p0.generated_number * power(2, 0)
+     + 
+    
+    p1.generated_number * power(2, 1)
+     + 
+    
+    p2.generated_number * power(2, 2)
+     + 
+    
+    p3.generated_number * power(2, 3)
+     + 
+    
+    p4.generated_number * power(2, 4)
+     + 
+    
+    p5.generated_number * power(2, 5)
+     + 
+    
+    p6.generated_number * power(2, 6)
+     + 
+    
+    p7.generated_number * power(2, 7)
+     + 
+    
+    p8.generated_number * power(2, 8)
+     + 
+    
+    p9.generated_number * power(2, 9)
+     + 
+    
+    p10.generated_number * power(2, 10)
+     + 
+    
+    p11.generated_number * power(2, 11)
+     + 
+    
+    p12.generated_number * power(2, 12)
+     + 
+    
+    p13.generated_number * power(2, 13)
+    
+    
+    + 1
+    as generated_number
+
+    from
+
+    
+    p as p0
+     cross join 
+    
+    p as p1
+     cross join 
+    
+    p as p2
+     cross join 
+    
+    p as p3
+     cross join 
+    
+    p as p4
+     cross join 
+    
+    p as p5
+     cross join 
+    
+    p as p6
+     cross join 
+    
+    p as p7
+     cross join 
+    
+    p as p8
+     cross join 
+    
+    p as p9
+     cross join 
+    
+    p as p10
+     cross join 
+    
+    p as p11
+     cross join 
+    
+    p as p12
+     cross join 
+    
+    p as p13
+    
+    
+
+    )
+
+    select *
+    from unioned
+    where generated_number <= 14610
+    order by generated_number
+
+
+
+),
+
+all_periods as (
+
+    select (
+        
+
+        datetime_add(
+            cast( cast('1990-01-01' as date) as datetime),
+        interval row_number() over (order by 1) - 1 day
+        )
+
+
+    ) as date_day
+    from rawdata
+
+),
+
+filtered as (
+
+    select *
+    from all_periods
+    where date_day <= cast('2030-01-01' as date)
+
+)
+
+select * from filtered
+
+
+),
+
+final as (
+    select 
+        cast(date_day as date) as date_day,
+        cast(timestamp_trunc(
+        cast(date_day as timestamp),
+        week
+    ) as date) as date_week,
+        cast(timestamp_trunc(
+        cast(date_day as timestamp),
+        month
+    ) as date) as date_month,
+        cast(timestamp_trunc(
+        cast(date_day as timestamp),
+        quarter
+    ) as date) as date_quarter,
+        cast(timestamp_trunc(
+        cast(date_day as timestamp),
+        year
+    ) as date) as date_year
+    from days
+)
+
+select * from final
+    );
+  
+[0m15:29:00.834505 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:2f5d8bf9-c503-4e66-a9e2-be6b60a2c324:US&page=queryresults
+[0m15:29:00.834505 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:29:00.834505 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dd1b9d85-1cb6-4629-9128-806a046d1921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AC7CC6770>]}
+[0m15:29:00.848094 [info ] [Thread-1 (]: 4 of 16 OK created sql table model dbt_amanohar.dbt_metrics_default_calendar ... [[32mCREATE TABLE (14.6k rows, 0 processed)[0m in 7.43s]
+[0m15:29:00.848094 [debug] [Thread-1 (]: Finished running node model.metrics.dbt_metrics_default_calendar
+[0m15:29:00.848094 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.tgt_pollutant_mo_yr
+[0m15:29:00.848094 [info ] [Thread-1 (]: 5 of 16 START sql table model dbt_amanohar.tgt_pollutant_mo_yr ................. [RUN]
+[0m15:29:00.848094 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.tgt_pollutant_mo_yr"
+[0m15:29:00.848094 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.tgt_pollutant_mo_yr
+[0m15:29:00.848094 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.tgt_pollutant_mo_yr
+[0m15:29:00.863858 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.tgt_pollutant_mo_yr"
+[0m15:29:00.863858 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:29:00.863858 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.tgt_pollutant_mo_yr
+[0m15:29:00.872897 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:29:01.417520 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.tgt_pollutant_mo_yr"
+[0m15:29:01.417520 [debug] [Thread-1 (]: On model.dbt_ld_demo.tgt_pollutant_mo_yr: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.tgt_pollutant_mo_yr"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`tgt_pollutant_mo_yr`
+    
+    
+    OPTIONS()
+    as (
+      WITH country_key as
+(SELECT country_name, alpha_2_code
+FROM `dulcet-answer-373817.dbt_ld.country_codes`
+)
+
+SELECT *
+FROM `dulcet-answer-373817`.`dbt_amanohar`.`pollutant_avg_yr`
+LEFT JOIN country_key ON country_key.alpha_2_code = pollutant_avg_yr.country
+    );
+  
+[0m15:29:04.202170 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:0d59c526-e535-4ab0-b88a-469d1721d0ed:US&page=queryresults
+[0m15:29:04.202170 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:29:04.202170 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dd1b9d85-1cb6-4629-9128-806a046d1921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AC7C66050>]}
+[0m15:29:04.202170 [info ] [Thread-1 (]: 5 of 16 OK created sql table model dbt_amanohar.tgt_pollutant_mo_yr ............ [[32mCREATE TABLE (378.0 rows, 10.7 KB processed)[0m in 3.35s]
+[0m15:29:04.202170 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.tgt_pollutant_mo_yr
+[0m15:29:04.217662 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.country_pop_info
+[0m15:29:04.217662 [info ] [Thread-1 (]: 6 of 16 START sql table model dbt_amanohar.country_pop_info .................... [RUN]
+[0m15:29:04.217662 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.country_pop_info"
+[0m15:29:04.217662 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.country_pop_info
+[0m15:29:04.217662 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.country_pop_info
+[0m15:29:04.217662 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.country_pop_info"
+[0m15:29:04.233292 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:29:04.233292 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.country_pop_info
+[0m15:29:04.233292 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:29:04.768170 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.country_pop_info"
+[0m15:29:04.784390 [debug] [Thread-1 (]: On model.dbt_ld_demo.country_pop_info: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.country_pop_info"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`country_pop_info`
+    
+    
+    OPTIONS()
+    as (
+      SELECT 
+country_code,
+country_name,
+area_sq_km,
+smoking_prevalence,
+diabetes_prevalence,
+infant_mortality_rate,
+nurses_per_1000,
+physicians_per_1000,
+health_expenditure_usd,
+out_of_pocket_health_expenditure_usd as OOP_health_spend_usd,
+-- school_closing,
+-- workplace_closing,
+-- cancel_public_events,
+-- restrictions_on_gatherings,
+-- public_transport_closing,
+-- stay_at_home_requirements,
+-- restrictions_on_internal_movement,
+-- international_travel_controls,
+-- income_support,
+-- debt_relief,
+-- fiscal_measures,
+-- international_support,
+-- public_information_campaigns,
+-- testing_policy,
+-- contact_tracing,
+-- emergency_investment_in_healthcare,
+-- investment_in_vaccines,
+-- facial_coverings,
+-- vaccination_policy,
+-- stringency_index,
+-- average_temperature_celsius,
+-- minimum_temperature_celsius,
+-- maximum_temperature_celsius,
+-- rainfall_mm,
+-- snowfall_mm,
+-- dew_point,
+-- relative_humidity,
+-- population_largest_city,
+-- population_clustered,
+-- area_rural_sq_km,
+-- area_urban_sq_km,
+-- mobility_retail_and_recreation,
+-- mobility_grocery_and_pharmacy,
+-- mobility_parks,
+-- mobility_transit_stations,
+-- mobility_workplaces,
+-- mobility_residential,
+hospital_beds_per_1000
+FROM `dulcet-answer-373817`.`dbt_amanohar`.`stg_covid`
+WHERE
+out_of_pocket_health_expenditure_usd IS NOT NULL
+    );
+  
+[0m15:29:07.716072 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:fee8e301-dd47-4588-bc4d-c9b62367f1df:US&page=queryresults
+[0m15:29:07.731566 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:29:07.731566 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dd1b9d85-1cb6-4629-9128-806a046d1921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AC7B697E0>]}
+[0m15:29:07.731566 [info ] [Thread-1 (]: 6 of 16 OK created sql table model dbt_amanohar.country_pop_info ............... [[32mCREATE TABLE (19.8k rows, 441.6 MB processed)[0m in 3.51s]
+[0m15:29:07.731566 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.country_pop_info
+[0m15:29:07.731566 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.covid_date
+[0m15:29:07.731566 [info ] [Thread-1 (]: 7 of 16 START sql table model dbt_amanohar.covid_date .......................... [RUN]
+[0m15:29:07.731566 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.covid_date"
+[0m15:29:07.731566 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.covid_date
+[0m15:29:07.731566 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.covid_date
+[0m15:29:07.747187 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.covid_date"
+[0m15:29:07.747187 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:29:07.747187 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.covid_date
+[0m15:29:07.762810 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:29:08.223425 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.covid_date"
+[0m15:29:08.223425 [debug] [Thread-1 (]: On model.dbt_ld_demo.covid_date: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.covid_date"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`covid_date`
+    
+    
+    OPTIONS()
+    as (
+      SELECT
+date
+,country_code
+,country_name
+,new_confirmed
+,new_deceased
+,cumulative_confirmed
+,cumulative_deceased
+,cumulative_tested
+,new_persons_vaccinated
+,cumulative_persons_vaccinated
+,new_persons_fully_vaccinated
+,cumulative_persons_fully_vaccinated
+,new_vaccine_doses_administered
+,cumulative_vaccine_doses_administered
+,population
+,population_male
+,population_female
+,population_rural
+,population_urban
+,population_density
+,gdp_usd
+,gdp_per_capita_usd
+-- ,openstreetmap_id
+-- ,latitude
+-- ,longitude
+-- ,average_temperature_celsius
+-- ,new_hospitalized_patients
+-- ,new_intensive_care_patients
+FROM `dulcet-answer-373817`.`dbt_amanohar`.`stg_covid`
+WHERE  
+cumulative_tested IS NOT NULL 
+AND new_persons_vaccinated IS NOT NULL 
+AND new_confirmed IS NOT NULL 
+AND new_deceased IS NOT NULL
+    );
+  
+[0m15:29:14.963247 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:7f393ea4-1af1-413b-8fb7-647460e241bb:US&page=queryresults
+[0m15:29:14.963247 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:29:14.963247 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dd1b9d85-1cb6-4629-9128-806a046d1921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AC7C7E890>]}
+[0m15:29:14.963247 [info ] [Thread-1 (]: 7 of 16 OK created sql table model dbt_amanohar.covid_date ..................... [[32mCREATE TABLE (309.1k rows, 1.3 GB processed)[0m in 7.23s]
+[0m15:29:14.963247 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.covid_date
+[0m15:29:14.963247 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.covid_pop
+[0m15:29:14.963247 [info ] [Thread-1 (]: 8 of 16 START sql table model dbt_amanohar.covid_pop ........................... [RUN]
+[0m15:29:14.963247 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.covid_pop"
+[0m15:29:14.963247 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.covid_pop
+[0m15:29:14.963247 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.covid_pop
+[0m15:29:14.979551 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.covid_pop"
+[0m15:29:14.979551 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:29:14.979551 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.covid_pop
+[0m15:29:14.979551 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:29:15.497319 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.covid_pop"
+[0m15:29:15.503907 [debug] [Thread-1 (]: On model.dbt_ld_demo.covid_pop: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.covid_pop"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`covid_pop`
+    
+    
+    OPTIONS()
+    as (
+      SELECT country_code
+        ,country_name
+        ,population
+        ,COALESCE(new_confirmed, 0) as new_confirmed
+        ,COALESCE(new_deceased, 0) as new_deceased
+        ,COALESCE(cumulative_confirmed, 0) as cumulative_confirmed
+        ,COALESCE(cumulative_deceased, 0) as cumulative_deceased
+        ,COALESCE(cumulative_tested, 0) as cumulative_tested
+        ,COALESCE(new_persons_vaccinated, 0) as new_persons_vaccinated
+        ,COALESCE(cumulative_persons_vaccinated,0) as cumulative_persons_vaccinated
+		,COALESCE(new_persons_fully_vaccinated,0) as new_persons_fully_vaccinated
+        ,COALESCE(cumulative_persons_fully_vaccinated,0) as cumulative_persons_fully_vaccinated
+        
+        ,COALESCE(cumulative_vaccine_doses_administered,0) as cumulative_vaccine_doses_administered
+FROM `dulcet-answer-373817`.`dbt_amanohar`.`stg_covid`
+WHERE 
+cumulative_vaccine_doses_administered != 0
+
+AND cumulative_persons_fully_vaccinated != 0
+AND cumulative_persons_vaccinated != 0
+AND new_confirmed!= 0
+AND cumulative_confirmed != 0
+AND cumulative_tested != 0
+    );
+  
+[0m15:29:20.701131 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:4762a7d3-888b-4d15-9f9c-2fc99437c93b:US&page=queryresults
+[0m15:29:20.717241 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:29:20.717241 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dd1b9d85-1cb6-4629-9128-806a046d1921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AC7C7C760>]}
+[0m15:29:20.717241 [info ] [Thread-1 (]: 8 of 16 OK created sql table model dbt_amanohar.covid_pop ...................... [[32mCREATE TABLE (256.7k rows, 879.8 MB processed)[0m in 5.75s]
+[0m15:29:20.717241 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.covid_pop
+[0m15:29:20.717241 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.covid_running_tot
+[0m15:29:20.717241 [info ] [Thread-1 (]: 9 of 16 START sql view model dbt_amanohar.covid_running_tot .................... [RUN]
+[0m15:29:20.717241 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.covid_running_tot"
+[0m15:29:20.733559 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.covid_running_tot
+[0m15:29:20.734057 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.covid_running_tot
+[0m15:29:20.743728 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.covid_running_tot"
+[0m15:29:20.745386 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:29:20.745386 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.covid_running_tot
+[0m15:29:20.762316 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.covid_running_tot"
+[0m15:29:20.762316 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:29:20.762316 [debug] [Thread-1 (]: On model.dbt_ld_demo.covid_running_tot: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.covid_running_tot"} */
+
+
+  create or replace view `dulcet-answer-373817`.`dbt_amanohar`.`covid_running_tot`
+  OPTIONS()
+  as 
+
+WITH temptable as (SELECT EXTRACT(MONTH FROM date) as month,EXTRACT(YEAR FROM date) as year, country_name, new_confirmed 
+FROM `dulcet-answer-373817`.`dbt_amanohar`.`stg_covid`
+WHERE new_confirmed IS NOT NULL)
+SELECT DISTINCT month, year, country_name,SUM(new_confirmed) 
+  OVER (PARTITION BY year ORDER BY month) as total_confirmed 
+FROM temptable
+ORDER BY month;
+
+
+[0m15:29:21.835740 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:86d86f3b-8c31-4d22-8305-a6f8d0968f8d:US&page=queryresults
+[0m15:29:21.851300 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:29:21.851300 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dd1b9d85-1cb6-4629-9128-806a046d1921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AC7D2FF40>]}
+[0m15:29:21.851300 [info ] [Thread-1 (]: 9 of 16 OK created sql view model dbt_amanohar.covid_running_tot ............... [[32mCREATE VIEW (0 processed)[0m in 1.13s]
+[0m15:29:21.851300 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.covid_running_tot
+[0m15:29:21.851300 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.pop_info
+[0m15:29:21.851300 [info ] [Thread-1 (]: 10 of 16 START sql table model dbt_amanohar.pop_info ........................... [RUN]
+[0m15:29:21.867672 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.pop_info"
+[0m15:29:21.867672 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.pop_info
+[0m15:29:21.867672 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.pop_info
+[0m15:29:21.883565 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.pop_info"
+[0m15:29:21.883565 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:29:21.883565 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.pop_info
+[0m15:29:21.899433 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:29:22.434335 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.pop_info"
+[0m15:29:22.437876 [debug] [Thread-1 (]: On model.dbt_ld_demo.pop_info: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.pop_info"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`pop_info`
+    
+    
+    OPTIONS()
+    as (
+      SELECT DISTINCT country_name
+        , (population) as population
+        , (population_male) as male_pop
+        , (population_female) as female_pop
+		, (population_rural) as rural_pop
+        , (population_urban) as urban_pop
+        , (population_density) as pop_density
+        , (population_age_00_09) as child_pop
+        , (population_age_10_19) as teen_pop
+        , (population_age_20_29) as twenties_pop
+		, (population_age_30_39) as thirties_pop
+        , (population_age_40_49) as forties_pop
+        , (population_age_50_59) as fifties_pop
+        , (population_age_60_69) as sixties_pop
+        , (population_age_70_79) as seventies_pop
+        , (population_age_80_and_older) as eighties_pop
+FROM `dulcet-answer-373817`.`dbt_amanohar`.`stg_covid`
+WHERE 
+population is not null
+and population_male is not null
+and population_female is not null
+-- and population_rural is not null
+-- and population_urban is not null
+-- and population_density is not null
+-- and population_age_00_09 is not null
+-- and population_age_10_19 is not null
+-- and population_age_20_29 is not null
+-- and population_age_30_39 is not null
+-- and population_age_40_49 is not null
+-- and population_age_50_59 is not null
+-- and population_age_60_69 is not null
+-- and population_age_70_79 is not null
+-- and population_age_80_and_older is not null
+ORDER BY country_name ASC
+    );
+  
+[0m15:29:26.973626 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:949978e4-b50c-45c5-aba5-dab70fb51502:US&page=queryresults
+[0m15:29:26.973626 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:29:26.973626 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dd1b9d85-1cb6-4629-9128-806a046d1921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AC7C99210>]}
+[0m15:29:26.973626 [info ] [Thread-1 (]: 10 of 16 OK created sql table model dbt_amanohar.pop_info ...................... [[32mCREATE TABLE (16.7k rows, 1.7 GB processed)[0m in 5.12s]
+[0m15:29:26.989139 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.pop_info
+[0m15:29:26.989139 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.stg_covid_nation_list
+[0m15:29:26.989139 [info ] [Thread-1 (]: 11 of 16 START sql table model dbt_amanohar.stg_covid_nation_list .............. [RUN]
+[0m15:29:26.989139 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.stg_covid_nation_list"
+[0m15:29:26.989139 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.stg_covid_nation_list
+[0m15:29:26.989139 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.stg_covid_nation_list
+[0m15:29:26.989139 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.stg_covid_nation_list"
+[0m15:29:27.004743 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:29:27.004743 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.stg_covid_nation_list
+[0m15:29:27.004743 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:29:27.491364 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.stg_covid_nation_list"
+[0m15:29:27.491364 [debug] [Thread-1 (]: On model.dbt_ld_demo.stg_covid_nation_list: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.stg_covid_nation_list"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`stg_covid_nation_list`
+    
+    
+    OPTIONS()
+    as (
+      SELECT DISTINCT country_name, MAX(population) as max_pop
+FROM `dulcet-answer-373817`.`dbt_amanohar`.`stg_covid`
+GROUP BY country_name
+ORDER BY country_name
+    );
+  
+[0m15:29:30.529058 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:4fc054dd-e81c-46e9-b1f2-1251f8bdcf9b:US&page=queryresults
+[0m15:29:30.529058 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:29:30.529058 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dd1b9d85-1cb6-4629-9128-806a046d1921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AC7C993F0>]}
+[0m15:29:30.529058 [info ] [Thread-1 (]: 11 of 16 OK created sql table model dbt_amanohar.stg_covid_nation_list ......... [[32mCREATE TABLE (20.0 rows, 376.3 MB processed)[0m in 3.54s]
+[0m15:29:30.529058 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.stg_covid_nation_list
+[0m15:29:30.529058 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.Month_us_cases
+[0m15:29:30.529058 [info ] [Thread-1 (]: 12 of 16 START sql table model dbt_amanohar.Month_us_cases ..................... [RUN]
+[0m15:29:30.529058 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.Month_us_cases"
+[0m15:29:30.544536 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.Month_us_cases
+[0m15:29:30.544536 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.Month_us_cases
+[0m15:29:30.843660 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.Month_us_cases"
+[0m15:29:30.843660 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:29:30.843660 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.Month_us_cases
+[0m15:29:30.859285 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:29:31.394951 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.Month_us_cases"
+[0m15:29:31.394951 [debug] [Thread-1 (]: On model.dbt_ld_demo.Month_us_cases: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.Month_us_cases"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`Month_us_cases`
+    
+    
+    OPTIONS()
+    as (
+      
+
+select *
+from 
+-- depends on: `dulcet-answer-373817`.`dbt_amanohar`.`dbt_metrics_default_calendar`
+    
+
+(
+
+with calendar as (
+
+    select 
+        * 
+    from `dulcet-answer-373817`.`dbt_amanohar`.`dbt_metrics_default_calendar`
+     
+)
+
+
+
+, confirmed_cases_time__aggregate as (
+    select
+        date_month,
+        date_year,
+                
+        country_name,
+        sum(property_to_aggregate) as confirmed_cases_time,
+        logical_or(metric_date_day is not null) as has_data
+        
+
+    from (
+
+    
+        select 
+        
+            cast(base_model.date as date) as metric_date_day, -- timestamp field
+            calendar_table.date_month as date_month,
+            calendar_table.date_day as window_filter_date,
+
+            
+            calendar_table.date_year,
+                
+                base_model.country_name,
+                (new_confirmed) as property_to_aggregate
+
+        from `dulcet-answer-373817`.`dbt_amanohar`.`stg_covid` base_model 
+        
+
+    left join `dulcet-answer-373817`.`dbt_amanohar`.`dbt_metrics_default_calendar` calendar_table
+    
+        on cast(base_model.date as date) = calendar_table.date_day
+    
+
+ 
+
+        where 1=1
+        
+        
+    ) as base_query
+
+    where 1=1
+
+    
+
+    
+        group by
+        1, 2, 3
+
+
+
+)
+
+, confirmed_cases_time__dims as (
+    select distinct
+        
+        country_name
+        
+    from confirmed_cases_time__aggregate
+)
+
+, confirmed_cases_time__spine_time as (
+
+    select
+        calendar.date_month, calendar.date_year
+        , confirmed_cases_time__dims.country_name
+
+    from calendar
+    cross join confirmed_cases_time__dims
+    
+        group by
+        1, 2, 3
+
+
+
+)
+
+, confirmed_cases_time__final as (
+    
+    select
+        
+        parent_metric_cte.date_month,
+        parent_metric_cte.date_year,
+        parent_metric_cte.country_name,
+        coalesce(confirmed_cases_time, 0) as confirmed_cases_time
+
+    from confirmed_cases_time__spine_time as parent_metric_cte
+    left outer join confirmed_cases_time__aggregate
+        using (
+            date_month
+            , country_name
+        )
+
+        where (
+            parent_metric_cte.date_month >= (
+                select 
+                    min(case when has_data then date_month end) 
+                from confirmed_cases_time__aggregate
+            )
+            and parent_metric_cte.date_month <= (
+                select 
+                    max(case when has_data then date_month end) 
+                from confirmed_cases_time__aggregate
+            )
+             
+        )      
+         
+    )
+
+
+
+, secondary_calculations as (
+
+    select 
+        *
+
+            
+        , coalesce(
+            cast(confirmed_cases_time as FLOAT64) / nullif(
+            
+            lag(
+                confirmed_cases_time, 1
+            ) over (
+                partition by country_name 
+                order by date_month
+            )
+            , 0) 
+        , 0) as confirmed_cases_time_pop_1wk
+
+            
+        , coalesce(confirmed_cases_time, 0) - coalesce(
+        
+            lag(
+                confirmed_cases_time, 1
+            ) over (
+                partition by country_name 
+                order by date_month
+            )
+        , 0) as confirmed_cases_time_difference_to_1_month_ago
+
+            
+        , 
+        avg(confirmed_cases_time)over (
+            partition by date_month
+            , country_name
+            order by date_month
+            rows between unbounded preceding and current row
+        ) as confirmed_cases_time_this_month_average
+
+            
+        , 
+        sum(confirmed_cases_time)over (
+            partition by date_year
+            , country_name
+            order by date_month
+            rows between unbounded preceding and current row
+        ) as confirmed_cases_time_sum_for_year
+
+            
+        , 
+        
+        avg(confirmed_cases_time)
+        over (
+            partition by country_name 
+            order by date_month
+            
+            rows between 3 preceding and current row
+            
+        )
+     as confirmed_cases_time_avg_past_4wks
+
+            
+        , 
+        
+        min(confirmed_cases_time)
+        over (
+            partition by country_name 
+            order by date_month
+            
+            rows between 3 preceding and current row
+            
+        )
+     as confirmed_cases_time_rolling_min_4_month
+
+
+    from confirmed_cases_time__final
+)
+
+
+
+, final as (
+
+        select
+            *
+        from secondary_calculations
+    )
+
+    select * from final 
+
+    
+    where country_name='United States of America'
+    
+        order by
+        1 desc, 2 desc, 3 desc
+
+
+
+
+
+) metric_subq
+    );
+  
+[0m15:29:36.022294 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:84010d25-1ca8-4c33-8f69-bffef33fedbc:US&page=queryresults
+[0m15:29:36.022294 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:29:36.037875 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dd1b9d85-1cb6-4629-9128-806a046d1921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AC7D363B0>]}
+[0m15:29:36.037875 [info ] [Thread-1 (]: 12 of 16 OK created sql table model dbt_amanohar.Month_us_cases ................ [[32mCREATE TABLE (33.0 rows, 474.3 MB processed)[0m in 5.51s]
+[0m15:29:36.037875 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.Month_us_cases
+[0m15:29:36.037875 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.YR_cases
+[0m15:29:36.037875 [info ] [Thread-1 (]: 13 of 16 START sql table model dbt_amanohar.YR_cases ........................... [RUN]
+[0m15:29:36.037875 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.YR_cases"
+[0m15:29:36.037875 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.YR_cases
+[0m15:29:36.037875 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.YR_cases
+[0m15:29:36.131167 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.YR_cases"
+[0m15:29:36.131167 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:29:36.131167 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.YR_cases
+[0m15:29:36.131167 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:29:36.619427 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.YR_cases"
+[0m15:29:36.619427 [debug] [Thread-1 (]: On model.dbt_ld_demo.YR_cases: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.YR_cases"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`YR_cases`
+    
+    
+    OPTIONS()
+    as (
+      
+
+select *
+from 
+-- depends on: `dulcet-answer-373817`.`dbt_amanohar`.`dbt_metrics_default_calendar`
+    
+
+(
+
+with calendar as (
+
+    select 
+        * 
+    from `dulcet-answer-373817`.`dbt_amanohar`.`dbt_metrics_default_calendar`
+     
+)
+
+
+
+, confirmed_cases_time__aggregate as (
+    select
+        date_year,
+        country_name,
+        sum(property_to_aggregate) as confirmed_cases_time,
+        logical_or(metric_date_day is not null) as has_data
+        
+
+    from (
+
+    
+        select 
+        
+            cast(base_model.date as date) as metric_date_day, -- timestamp field
+            calendar_table.date_year as date_year,
+            calendar_table.date_day as window_filter_date,
+
+            
+                base_model.country_name,
+                (new_confirmed) as property_to_aggregate
+
+        from `dulcet-answer-373817`.`dbt_amanohar`.`stg_covid` base_model 
+        
+
+    left join `dulcet-answer-373817`.`dbt_amanohar`.`dbt_metrics_default_calendar` calendar_table
+    
+        on cast(base_model.date as date) = calendar_table.date_day
+    
+
+ 
+
+        where 1=1
+        
+        
+    ) as base_query
+
+    where 1=1
+
+    
+
+    
+        group by
+        1, 2
+
+
+
+)
+
+, confirmed_cases_time__dims as (
+    select distinct
+        
+        country_name
+        
+    from confirmed_cases_time__aggregate
+)
+
+, confirmed_cases_time__spine_time as (
+
+    select
+        calendar.date_year
+        , confirmed_cases_time__dims.country_name
+
+    from calendar
+    cross join confirmed_cases_time__dims
+    
+        group by
+        1, 2
+
+
+
+)
+
+, confirmed_cases_time__final as (
+    
+    select
+        
+        parent_metric_cte.date_year,
+        parent_metric_cte.country_name,
+        coalesce(confirmed_cases_time, 0) as confirmed_cases_time
+
+    from confirmed_cases_time__spine_time as parent_metric_cte
+    left outer join confirmed_cases_time__aggregate
+        using (
+            date_year
+            , country_name
+        )
+
+        where (
+            parent_metric_cte.date_year >= (
+                select 
+                    min(case when has_data then date_year end) 
+                from confirmed_cases_time__aggregate
+            )
+            and parent_metric_cte.date_year <= (
+                select 
+                    max(case when has_data then date_year end) 
+                from confirmed_cases_time__aggregate
+            )
+             
+        )      
+         
+    )
+
+
+
+, secondary_calculations as (
+
+    select 
+        *
+
+
+    from confirmed_cases_time__final
+)
+
+
+
+
+
+    select * from confirmed_cases_time__final
+        order by
+        1 desc, 2 desc
+
+
+
+) metric_subq
+    );
+  
+[0m15:29:40.440282 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:e62471b7-3845-4e77-8682-1d150f170588:US&page=queryresults
+[0m15:29:40.440282 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:29:40.456150 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dd1b9d85-1cb6-4629-9128-806a046d1921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AC7CC10C0>]}
+[0m15:29:40.456150 [info ] [Thread-1 (]: 13 of 16 OK created sql table model dbt_amanohar.YR_cases ...................... [[32mCREATE TABLE (60.0 rows, 474.2 MB processed)[0m in 4.42s]
+[0m15:29:40.456150 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.YR_cases
+[0m15:29:40.456150 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.percent_vaccin
+[0m15:29:40.456150 [info ] [Thread-1 (]: 14 of 16 START sql table model dbt_amanohar.percent_vaccin ..................... [RUN]
+[0m15:29:40.461621 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.percent_vaccin"
+[0m15:29:40.462590 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.percent_vaccin
+[0m15:29:40.462590 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.percent_vaccin
+[0m15:29:40.462590 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.percent_vaccin"
+[0m15:29:40.462590 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:29:40.462590 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.percent_vaccin
+[0m15:29:40.462590 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:29:40.963789 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.percent_vaccin"
+[0m15:29:40.963789 [debug] [Thread-1 (]: On model.dbt_ld_demo.percent_vaccin: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.percent_vaccin"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`percent_vaccin`
+    
+    
+    OPTIONS()
+    as (
+      SELECT 
+t1.country_name
+,MAX(t1.health_expenditure_usd) as health_expenditure_usd
+,AVG(COALESCE(t1.OOP_health_spend_usd,0)) as OOP_health_spend_usd
+,CEILING(MAX(t2.cumulative_vaccine_doses_administered)/MAX(t2.population)) as perc_vaccin
+FROM `dulcet-answer-373817`.`dbt_amanohar`.`country_pop_info` as t1
+LEFT JOIN `dulcet-answer-373817`.`dbt_amanohar`.`covid_pop` as t2
+ON t1.country_name = t2.country_name
+WHERE t2.population != 0
+GROUP BY country_name
+    );
+  
+[0m15:30:11.536944 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:76a111ab-2caa-4808-aa63-55601bba6f76:US&page=queryresults
+[0m15:30:11.536944 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:30:11.536944 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dd1b9d85-1cb6-4629-9128-806a046d1921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AC7C0FFD0>]}
+[0m15:30:11.536944 [info ] [Thread-1 (]: 14 of 16 OK created sql table model dbt_amanohar.percent_vaccin ................ [[32mCREATE TABLE (18.0 rows, 6.9 MB processed)[0m in 31.08s]
+[0m15:30:11.536944 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.percent_vaccin
+[0m15:30:11.552715 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.vulnerable_pop
+[0m15:30:11.552715 [info ] [Thread-1 (]: 15 of 16 START sql table model dbt_amanohar.vulnerable_pop ..................... [RUN]
+[0m15:30:11.552715 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.vulnerable_pop"
+[0m15:30:11.552715 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.vulnerable_pop
+[0m15:30:11.552715 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.vulnerable_pop
+[0m15:30:11.552715 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.vulnerable_pop"
+[0m15:30:11.552715 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:30:11.552715 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.vulnerable_pop
+[0m15:30:11.552715 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:30:14.377020 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.vulnerable_pop"
+[0m15:30:14.378040 [debug] [Thread-1 (]: On model.dbt_ld_demo.vulnerable_pop: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.vulnerable_pop"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`vulnerable_pop`
+    
+    
+    OPTIONS()
+    as (
+      SELECT DISTINCT 
+        t1.country_name
+		,(t1.urban_pop/ t1.rural_pop) as accel_multip
+        ,ROUND((t2.max_pop/t1.pop_density)/100) as accel_factor_pop_den
+        ,ROUND(((t1.sixties_pop + t1.seventies_pop + t1.eighties_pop)/ t2.max_pop) *100) as perc_vulner_pop
+FROM `dulcet-answer-373817`.`dbt_amanohar`.`pop_info` t1
+LEFT JOIN `dulcet-answer-373817`.`dbt_amanohar`.`stg_covid_nation_list` t2 
+ON t1.country_name = t2.country_name
+WHERE t1.rural_pop != 0 AND t1.pop_density != 0
+GROUP BY country_name, max_pop, urban_pop, rural_pop, population, pop_density, sixties_pop, seventies_pop, eighties_pop
+    );
+  
+[0m15:30:17.397812 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:0c370034-4b51-46a7-bc6f-e3d018bb0395:US&page=queryresults
+[0m15:30:17.397812 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:30:17.397812 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dd1b9d85-1cb6-4629-9128-806a046d1921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AC79FB790>]}
+[0m15:30:17.397812 [info ] [Thread-1 (]: 15 of 16 OK created sql table model dbt_amanohar.vulnerable_pop ................ [[32mCREATE TABLE (20.0 rows, 574.1 KB processed)[0m in 5.85s]
+[0m15:30:17.397812 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.vulnerable_pop
+[0m15:30:17.397812 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.CO_risk_vs_pollution
+[0m15:30:17.404326 [info ] [Thread-1 (]: 16 of 16 START sql table model dbt_amanohar.CO_risk_vs_pollution ............... [RUN]
+[0m15:30:17.404326 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.CO_risk_vs_pollution"
+[0m15:30:17.404326 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.CO_risk_vs_pollution
+[0m15:30:17.404326 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.CO_risk_vs_pollution
+[0m15:30:17.404326 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.CO_risk_vs_pollution"
+[0m15:30:17.404326 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:30:17.404326 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.CO_risk_vs_pollution
+[0m15:30:17.412937 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:30:17.856216 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.CO_risk_vs_pollution"
+[0m15:30:17.856216 [debug] [Thread-1 (]: On model.dbt_ld_demo.CO_risk_vs_pollution: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.CO_risk_vs_pollution"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`CO_risk_vs_pollution`
+    
+    
+    OPTIONS()
+    as (
+      -- WITH temptable as (
+-- UPDATE `dulcet-answer-373817`.`dbt_amanohar`.`tgt_pollutant_mo_yr`
+-- SET country_name = 'United States of America'
+-- WHERE country_name = 'United States of America (the)';
+-- ),
+-- final_temp as (
+-- UPDATE temptable
+-- SET country_name = 'United Kingdom'
+-- WHERE country_name = 'United Kingdom of Great Britain and Northern Ireland (the)';
+-- )
+
+SELECT DISTINCT vulnerable_pop.country_name, vulnerable_pop.perc_vulner_pop, tgt_pollutant_mo_yr.AMT_PARTICULATE
+FROM `dulcet-answer-373817`.`dbt_amanohar`.`vulnerable_pop`
+LEFT JOIN `dulcet-answer-373817`.`dbt_amanohar`.`tgt_pollutant_mo_yr`
+ON tgt_pollutant_mo_yr.country_name = vulnerable_pop.country_name
+WHERE tgt_pollutant_mo_yr.pollutant = 'co'
+    );
+  
+[0m15:30:20.556417 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:b5976f61-c979-4952-928d-23e66ea3726a:US&page=queryresults
+[0m15:30:20.556417 [debug] [Thread-1 (]: finished collecting timing info
+[0m15:30:20.556417 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dd1b9d85-1cb6-4629-9128-806a046d1921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AC79F9F60>]}
+[0m15:30:20.556417 [info ] [Thread-1 (]: 16 of 16 OK created sql table model dbt_amanohar.CO_risk_vs_pollution .......... [[32mCREATE TABLE (14.0 rows, 9.3 KB processed)[0m in 3.15s]
+[0m15:30:20.556417 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.CO_risk_vs_pollution
+[0m15:30:20.556417 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m15:30:20.556417 [info ] [MainThread]: 
+[0m15:30:20.556417 [info ] [MainThread]: Finished running 15 table models, 1 view model in 0 hours 2 minutes and 0.03 seconds (120.03s).
+[0m15:30:20.556417 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:30:20.556417 [debug] [MainThread]: Connection 'list_dulcet-answer-373817' was properly closed.
+[0m15:30:20.556417 [debug] [MainThread]: Connection 'list_dulcet-answer-373817_dbt_amanohar' was properly closed.
+[0m15:30:20.556417 [debug] [MainThread]: Connection 'model.dbt_ld_demo.CO_risk_vs_pollution' was properly closed.
+[0m15:30:20.577866 [info ] [MainThread]: 
+[0m15:30:20.577866 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:30:20.577866 [info ] [MainThread]: 
+[0m15:30:20.577866 [info ] [MainThread]: Done. PASS=16 WARN=0 ERROR=0 SKIP=0 TOTAL=16
+[0m15:30:20.577866 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AC7A21F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AC79FA170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AC79FB7C0>]}
+[0m15:30:20.581460 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-01-20 18:04:34.924912 | 437f456e-fdc7-4ae6-8d7b-6ae3a2c5db14 ==============================
+[0m18:04:34.924912 [info ] [MainThread]: Running with dbt=1.3.1
+[0m18:04:34.931821 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\adithya.manohar\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m18:04:34.932887 [debug] [MainThread]: Tracking: tracking
+[0m18:04:35.120766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002496557C310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002496557C640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002496557C400>]}
+[0m18:04:36.985445 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:04:36.985445 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:04:36.992530 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '437f456e-fdc7-4ae6-8d7b-6ae3a2c5db14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249658200D0>]}
+[0m18:04:37.001538 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '437f456e-fdc7-4ae6-8d7b-6ae3a2c5db14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002496566D000>]}
+[0m18:04:37.001538 [info ] [MainThread]: Found 16 models, 3 tests, 0 snapshots, 0 analyses, 420 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 1 metric
+[0m18:04:37.002484 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '437f456e-fdc7-4ae6-8d7b-6ae3a2c5db14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024961E7DC90>]}
+[0m18:04:37.003512 [info ] [MainThread]: 
+[0m18:04:37.004537 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m18:04:37.006093 [debug] [ThreadPool]: Acquiring new bigquery connection "list_dulcet-answer-373817"
+[0m18:04:37.007194 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:04:37.637876 [debug] [ThreadPool]: Acquiring new bigquery connection "create_dulcet-answer-373817_dbt_amanohar"
+[0m18:04:37.639980 [debug] [ThreadPool]: Acquiring new bigquery connection "create_dulcet-answer-373817_dbt_amanohar"
+[0m18:04:37.640973 [debug] [ThreadPool]: Creating schema "_ReferenceKey(database='dulcet-answer-373817', schema='dbt_amanohar', identifier=None)"
+[0m18:04:37.650950 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:04:37.651879 [debug] [ThreadPool]: On create_dulcet-answer-373817_dbt_amanohar: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "connection_name": "create_dulcet-answer-373817_dbt_amanohar"} */
+create schema if not exists `dulcet-answer-373817`.`dbt_amanohar`
+  
+[0m18:04:39.139359 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:eedc457d-e056-489d-8c6e-4f3ad461ce04:US&page=queryresults
+[0m18:04:39.143395 [debug] [ThreadPool]: Acquiring new bigquery connection "list_dulcet-answer-373817_dbt_amanohar"
+[0m18:04:39.144394 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:04:39.807762 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '437f456e-fdc7-4ae6-8d7b-6ae3a2c5db14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002496566CDF0>]}
+[0m18:04:39.810765 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:04:39.811781 [info ] [MainThread]: 
+[0m18:04:39.824680 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.base_pollutant_mo_yr
+[0m18:04:39.825680 [info ] [Thread-1 (]: 1 of 16 START sql table model dbt_amanohar.base_pollutant_mo_yr ................ [RUN]
+[0m18:04:39.826681 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.base_pollutant_mo_yr"
+[0m18:04:39.826681 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.base_pollutant_mo_yr
+[0m18:04:39.826681 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.base_pollutant_mo_yr
+[0m18:04:39.828679 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.base_pollutant_mo_yr"
+[0m18:04:39.829679 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:04:39.829679 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.base_pollutant_mo_yr
+[0m18:04:39.855844 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.base_pollutant_mo_yr"
+[0m18:04:39.856845 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:04:39.857841 [debug] [Thread-1 (]: On model.dbt_ld_demo.base_pollutant_mo_yr: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.base_pollutant_mo_yr"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`base_pollutant_mo_yr`
+    
+    
+    OPTIONS()
+    as (
+      SELECT 
+country
+, pollutant
+, AVG(value) as average_val
+,EXTRACT(MONTH FROM timestamp) AS MONTH
+, EXTRACT(YEAR FROM timestamp) AS YEAR
+FROM `dulcet-answer-373817.dbt_ld.global_air_quality` 
+GROUP BY country, MONTH, YEAR, pollutant
+HAVING YEAR > 2019
+    );
+  
+[0m18:04:44.296733 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:58aa8fc7-02c9-41b7-ab6d-02cea1eb7954:US&page=queryresults
+[0m18:04:44.312250 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:04:44.313302 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '437f456e-fdc7-4ae6-8d7b-6ae3a2c5db14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024965815150>]}
+[0m18:04:44.313302 [info ] [Thread-1 (]: 1 of 16 OK created sql table model dbt_amanohar.base_pollutant_mo_yr ........... [[32mCREATE TABLE (2.5k rows, 133.8 MB processed)[0m in 4.49s]
+[0m18:04:44.314304 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.base_pollutant_mo_yr
+[0m18:04:44.314304 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.pollutant_avg_yr
+[0m18:04:44.314304 [info ] [Thread-1 (]: 2 of 16 START sql table model dbt_amanohar.pollutant_avg_yr .................... [RUN]
+[0m18:04:44.315304 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.pollutant_avg_yr"
+[0m18:04:44.315304 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.pollutant_avg_yr
+[0m18:04:44.316306 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.pollutant_avg_yr
+[0m18:04:44.317305 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.pollutant_avg_yr"
+[0m18:04:44.318305 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:04:44.319164 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.pollutant_avg_yr
+[0m18:04:44.325131 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.pollutant_avg_yr"
+[0m18:04:44.326121 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:04:44.327121 [debug] [Thread-1 (]: On model.dbt_ld_demo.pollutant_avg_yr: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.pollutant_avg_yr"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`pollutant_avg_yr`
+    
+    
+    OPTIONS()
+    as (
+      WITH temptable as (
+SELECT 
+  country
+  , pollutant
+  , value
+  ,EXTRACT(YEAR FROM timestamp) AS YEAR
+FROM `dulcet-answer-373817.dbt_ld.global_air_quality` 
+WHERE EXTRACT(YEAR FROM timestamp) > 2019
+)
+SELECT 
+  country
+  , pollutant
+  , AVG(value) AS AMT_PARTICULATE
+FROM temptable 
+GROUP BY country, pollutant
+    );
+  
+[0m18:04:47.700355 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:20b4f403-6202-4392-a0c0-09439933b5ba:US&page=queryresults
+[0m18:04:47.704458 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:04:47.706438 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '437f456e-fdc7-4ae6-8d7b-6ae3a2c5db14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249655EEB60>]}
+[0m18:04:47.708466 [info ] [Thread-1 (]: 2 of 16 OK created sql table model dbt_amanohar.pollutant_avg_yr ............... [[32mCREATE TABLE (378.0 rows, 133.8 MB processed)[0m in 3.39s]
+[0m18:04:47.709359 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.pollutant_avg_yr
+[0m18:04:47.710460 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.stg_covid
+[0m18:04:47.712685 [info ] [Thread-1 (]: 3 of 16 START sql table model dbt_amanohar.stg_covid ........................... [RUN]
+[0m18:04:47.713792 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.stg_covid"
+[0m18:04:47.713792 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.stg_covid
+[0m18:04:47.714771 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.stg_covid
+[0m18:04:47.733551 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.stg_covid"
+[0m18:04:47.736477 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:04:47.737477 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.stg_covid
+[0m18:04:47.744712 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.stg_covid"
+[0m18:04:47.746743 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:04:47.749660 [debug] [Thread-1 (]: On model.dbt_ld_demo.stg_covid: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.stg_covid"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`stg_covid`
+    
+    
+    OPTIONS()
+    as (
+      WITH temp_table as (
+  SELECT country_name, COUNT(country_name) as data_points
+FROM `dulcet-answer-373817.dbt_ld.covid19_open_data`
+GROUP BY country_name
+HAVING data_points > 100000
+)
+SELECT
+perm_table.date
+,EXTRACT(MONTH FROM perm_table.date) AS MONTH
+, EXTRACT(YEAR FROM perm_table.date) AS YEAR
+,perm_table.country_code
+,perm_table.country_name
+,perm_table.aggregation_level
+,perm_table.new_confirmed
+,perm_table.new_deceased
+,perm_table.cumulative_confirmed
+,perm_table.cumulative_deceased
+,perm_table.cumulative_tested
+,perm_table.new_persons_vaccinated
+,perm_table.cumulative_persons_vaccinated
+,perm_table.new_persons_fully_vaccinated
+,perm_table.cumulative_persons_fully_vaccinated
+,perm_table.new_vaccine_doses_administered
+,perm_table.cumulative_vaccine_doses_administered
+,perm_table.population
+,perm_table.population_male
+,perm_table.population_female
+,perm_table.population_rural
+,perm_table.population_urban
+,perm_table.population_density
+,perm_table.human_development_index
+,perm_table.population_age_00_09
+,perm_table.population_age_10_19
+,perm_table.population_age_20_29
+,perm_table.population_age_30_39
+,perm_table.population_age_40_49
+,perm_table.population_age_50_59
+,perm_table.population_age_60_69
+,perm_table.population_age_70_79
+,perm_table.population_age_80_and_older
+,perm_table.gdp_usd
+,perm_table.gdp_per_capita_usd
+-- ,perm_table.openstreetmap_id
+-- ,perm_table.latitude
+-- ,perm_table.longitude
+,perm_table.area_sq_km
+,perm_table.smoking_prevalence
+,perm_table.diabetes_prevalence
+,perm_table.infant_mortality_rate
+,perm_table.nurses_per_1000
+,perm_table.physicians_per_1000
+,perm_table.health_expenditure_usd
+,perm_table.out_of_pocket_health_expenditure_usd
+-- ,perm_table.school_closing
+-- ,perm_table.workplace_closing
+-- ,perm_table.cancel_public_events
+-- ,perm_table.restrictions_on_gatherings
+-- ,perm_table.public_transport_closing
+-- ,perm_table.stay_at_home_requirements
+-- ,perm_table.restrictions_on_internal_movement
+-- ,perm_table.international_travel_controls
+-- ,perm_table.income_support
+-- ,perm_table.debt_relief
+-- ,perm_table.fiscal_measures
+-- ,perm_table.international_support
+-- ,perm_table.public_information_campaigns
+-- ,perm_table.testing_policy
+-- ,perm_table.contact_tracing
+-- ,perm_table.emergency_investment_in_healthcare
+-- ,perm_table.investment_in_vaccines
+-- ,perm_table.facial_coverings
+-- ,perm_table.vaccination_policy
+-- ,perm_table.stringency_index
+-- ,perm_table.average_temperature_celsius
+-- ,perm_table.minimum_temperature_celsius
+-- ,perm_table.maximum_temperature_celsius
+-- ,perm_table.rainfall_mm
+-- ,perm_table.snowfall_mm
+-- ,perm_table.dew_point
+-- ,perm_table.relative_humidity
+,perm_table.new_tested
+,perm_table.population_largest_city
+-- ,perm_table.population_clustered
+-- ,perm_table.human_capital_index
+,perm_table.area_rural_sq_km
+,perm_table.area_urban_sq_km
+,perm_table.life_expectancy
+,perm_table.adult_male_mortality_rate
+,perm_table.adult_female_mortality_rate
+-- ,perm_table.pollution_mortality_rate
+-- ,perm_table.comorbidity_mortality_rate
+-- ,perm_table.mobility_retail_and_recreation
+-- ,perm_table.mobility_grocery_and_pharmacy
+-- ,perm_table.mobility_parks
+-- ,perm_table.mobility_transit_stations
+-- ,perm_table.mobility_workplaces
+-- ,perm_table.mobility_residential
+,perm_table.hospital_beds_per_1000
+,perm_table.new_hospitalized_patients
+,perm_table.cumulative_hospitalized_patients
+,perm_table.new_intensive_care_patients
+,perm_table.cumulative_intensive_care_patients
+FROM `dulcet-answer-373817.dbt_ld.covid19_open_data` as perm_table, temp_table
+WHERE perm_table.country_name = temp_table.country_name
+    );
+  
+[0m18:05:08.395823 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:f7d8feb2-558e-4d31-9f0f-9b17e1a09f97:US&page=queryresults
+[0m18:05:08.398814 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:05:08.399818 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '437f456e-fdc7-4ae6-8d7b-6ae3a2c5db14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249658A5480>]}
+[0m18:05:08.399818 [info ] [Thread-1 (]: 3 of 16 OK created sql table model dbt_amanohar.stg_covid ...................... [[32mCREATE TABLE (21.3m rows, 3.0 GB processed)[0m in 20.69s]
+[0m18:05:08.400816 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.stg_covid
+[0m18:05:08.400816 [debug] [Thread-1 (]: Began running node model.metrics.dbt_metrics_default_calendar
+[0m18:05:08.401815 [info ] [Thread-1 (]: 4 of 16 START sql table model dbt_amanohar.dbt_metrics_default_calendar ........ [RUN]
+[0m18:05:08.402816 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.metrics.dbt_metrics_default_calendar"
+[0m18:05:08.402816 [debug] [Thread-1 (]: Began compiling node model.metrics.dbt_metrics_default_calendar
+[0m18:05:08.402816 [debug] [Thread-1 (]: Compiling model.metrics.dbt_metrics_default_calendar
+[0m18:05:08.415100 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:05:08.416100 [debug] [Thread-1 (]: On model.metrics.dbt_metrics_default_calendar: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.metrics.dbt_metrics_default_calendar"} */
+
+
+        select 
+
+    datetime_diff(
+        cast(cast('2030-01-01' as date) as datetime),
+        cast(cast('1990-01-01' as date) as datetime),
+        day
+    )
+
+  
+[0m18:05:09.894467 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:a8b77c78-ff6f-4f64-9559-bdf53705e733:US&page=queryresults
+[0m18:05:09.907468 [debug] [Thread-1 (]: Writing injected SQL for node "model.metrics.dbt_metrics_default_calendar"
+[0m18:05:09.909467 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:05:09.909467 [debug] [Thread-1 (]: Began executing node model.metrics.dbt_metrics_default_calendar
+[0m18:05:09.911468 [debug] [Thread-1 (]: Writing runtime sql for node "model.metrics.dbt_metrics_default_calendar"
+[0m18:05:09.912467 [debug] [Thread-1 (]: On model.metrics.dbt_metrics_default_calendar: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.metrics.dbt_metrics_default_calendar"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`dbt_metrics_default_calendar`
+    
+    
+    OPTIONS()
+    as (
+      
+
+with days as (
+    
+
+
+
+
+
+with rawdata as (
+
+    
+
+    
+
+    with p as (
+        select 0 as generated_number union all select 1
+    ), unioned as (
+
+    select
+
+    
+    p0.generated_number * power(2, 0)
+     + 
+    
+    p1.generated_number * power(2, 1)
+     + 
+    
+    p2.generated_number * power(2, 2)
+     + 
+    
+    p3.generated_number * power(2, 3)
+     + 
+    
+    p4.generated_number * power(2, 4)
+     + 
+    
+    p5.generated_number * power(2, 5)
+     + 
+    
+    p6.generated_number * power(2, 6)
+     + 
+    
+    p7.generated_number * power(2, 7)
+     + 
+    
+    p8.generated_number * power(2, 8)
+     + 
+    
+    p9.generated_number * power(2, 9)
+     + 
+    
+    p10.generated_number * power(2, 10)
+     + 
+    
+    p11.generated_number * power(2, 11)
+     + 
+    
+    p12.generated_number * power(2, 12)
+     + 
+    
+    p13.generated_number * power(2, 13)
+    
+    
+    + 1
+    as generated_number
+
+    from
+
+    
+    p as p0
+     cross join 
+    
+    p as p1
+     cross join 
+    
+    p as p2
+     cross join 
+    
+    p as p3
+     cross join 
+    
+    p as p4
+     cross join 
+    
+    p as p5
+     cross join 
+    
+    p as p6
+     cross join 
+    
+    p as p7
+     cross join 
+    
+    p as p8
+     cross join 
+    
+    p as p9
+     cross join 
+    
+    p as p10
+     cross join 
+    
+    p as p11
+     cross join 
+    
+    p as p12
+     cross join 
+    
+    p as p13
+    
+    
+
+    )
+
+    select *
+    from unioned
+    where generated_number <= 14610
+    order by generated_number
+
+
+
+),
+
+all_periods as (
+
+    select (
+        
+
+        datetime_add(
+            cast( cast('1990-01-01' as date) as datetime),
+        interval row_number() over (order by 1) - 1 day
+        )
+
+
+    ) as date_day
+    from rawdata
+
+),
+
+filtered as (
+
+    select *
+    from all_periods
+    where date_day <= cast('2030-01-01' as date)
+
+)
+
+select * from filtered
+
+
+),
+
+final as (
+    select 
+        cast(date_day as date) as date_day,
+        cast(timestamp_trunc(
+        cast(date_day as timestamp),
+        week
+    ) as date) as date_week,
+        cast(timestamp_trunc(
+        cast(date_day as timestamp),
+        month
+    ) as date) as date_month,
+        cast(timestamp_trunc(
+        cast(date_day as timestamp),
+        quarter
+    ) as date) as date_quarter,
+        cast(timestamp_trunc(
+        cast(date_day as timestamp),
+        year
+    ) as date) as date_year
+    from days
+)
+
+select * from final
+    );
+  
+[0m18:05:14.381592 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:6f6c48a0-6a4d-43e9-aeb5-3e0be4293ec5:US&page=queryresults
+[0m18:05:14.383591 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:05:14.384592 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '437f456e-fdc7-4ae6-8d7b-6ae3a2c5db14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249658A5360>]}
+[0m18:05:14.385370 [info ] [Thread-1 (]: 4 of 16 OK created sql table model dbt_amanohar.dbt_metrics_default_calendar ... [[32mCREATE TABLE (14.6k rows, 0 processed)[0m in 5.98s]
+[0m18:05:14.385370 [debug] [Thread-1 (]: Finished running node model.metrics.dbt_metrics_default_calendar
+[0m18:05:14.386467 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.tgt_pollutant_mo_yr
+[0m18:05:14.386467 [info ] [Thread-1 (]: 5 of 16 START sql table model dbt_amanohar.tgt_pollutant_mo_yr ................. [RUN]
+[0m18:05:14.387486 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.tgt_pollutant_mo_yr"
+[0m18:05:14.387486 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.tgt_pollutant_mo_yr
+[0m18:05:14.388470 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.tgt_pollutant_mo_yr
+[0m18:05:14.395524 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.tgt_pollutant_mo_yr"
+[0m18:05:14.396525 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:05:14.397525 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.tgt_pollutant_mo_yr
+[0m18:05:14.399525 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.tgt_pollutant_mo_yr"
+[0m18:05:14.400592 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:05:14.400592 [debug] [Thread-1 (]: On model.dbt_ld_demo.tgt_pollutant_mo_yr: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.tgt_pollutant_mo_yr"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`tgt_pollutant_mo_yr`
+    
+    
+    OPTIONS()
+    as (
+      WITH country_key as
+(SELECT country_name, alpha_2_code
+FROM `dulcet-answer-373817.dbt_ld.country_codes`
+)
+
+SELECT *
+FROM `dulcet-answer-373817`.`dbt_amanohar`.`pollutant_avg_yr`
+LEFT JOIN country_key ON country_key.alpha_2_code = pollutant_avg_yr.country
+    );
+  
+[0m18:05:17.492268 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:3ef907dc-d24e-45ff-92c9-a4db017036ff:US&page=queryresults
+[0m18:05:17.500962 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:05:17.503952 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '437f456e-fdc7-4ae6-8d7b-6ae3a2c5db14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249659C0D60>]}
+[0m18:05:17.504952 [info ] [Thread-1 (]: 5 of 16 OK created sql table model dbt_amanohar.tgt_pollutant_mo_yr ............ [[32mCREATE TABLE (378.0 rows, 10.7 KB processed)[0m in 3.12s]
+[0m18:05:17.504952 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.tgt_pollutant_mo_yr
+[0m18:05:17.506084 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.country_pop_info
+[0m18:05:17.506582 [info ] [Thread-1 (]: 6 of 16 START sql table model dbt_amanohar.country_pop_info .................... [RUN]
+[0m18:05:17.507619 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.country_pop_info"
+[0m18:05:17.507619 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.country_pop_info
+[0m18:05:17.508619 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.country_pop_info
+[0m18:05:17.512620 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.country_pop_info"
+[0m18:05:17.513619 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:05:17.514635 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.country_pop_info
+[0m18:05:17.518627 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.country_pop_info"
+[0m18:05:17.519626 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:05:17.520625 [debug] [Thread-1 (]: On model.dbt_ld_demo.country_pop_info: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.country_pop_info"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`country_pop_info`
+    
+    
+    OPTIONS()
+    as (
+      SELECT 
+country_code,
+country_name,
+area_sq_km,
+smoking_prevalence,
+diabetes_prevalence,
+infant_mortality_rate,
+nurses_per_1000,
+physicians_per_1000,
+health_expenditure_usd,
+out_of_pocket_health_expenditure_usd as OOP_health_spend_usd,
+-- school_closing,
+-- workplace_closing,
+-- cancel_public_events,
+-- restrictions_on_gatherings,
+-- public_transport_closing,
+-- stay_at_home_requirements,
+-- restrictions_on_internal_movement,
+-- international_travel_controls,
+-- income_support,
+-- debt_relief,
+-- fiscal_measures,
+-- international_support,
+-- public_information_campaigns,
+-- testing_policy,
+-- contact_tracing,
+-- emergency_investment_in_healthcare,
+-- investment_in_vaccines,
+-- facial_coverings,
+-- vaccination_policy,
+-- stringency_index,
+-- average_temperature_celsius,
+-- minimum_temperature_celsius,
+-- maximum_temperature_celsius,
+-- rainfall_mm,
+-- snowfall_mm,
+-- dew_point,
+-- relative_humidity,
+-- population_largest_city,
+-- population_clustered,
+-- area_rural_sq_km,
+-- area_urban_sq_km,
+-- mobility_retail_and_recreation,
+-- mobility_grocery_and_pharmacy,
+-- mobility_parks,
+-- mobility_transit_stations,
+-- mobility_workplaces,
+-- mobility_residential,
+hospital_beds_per_1000
+FROM `dulcet-answer-373817`.`dbt_amanohar`.`stg_covid`
+WHERE
+out_of_pocket_health_expenditure_usd IS NOT NULL
+    );
+  
+[0m18:05:20.864941 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:c3225aee-4d88-495c-9b3e-efa43abf6e5d:US&page=queryresults
+[0m18:05:20.867944 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:05:20.870042 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '437f456e-fdc7-4ae6-8d7b-6ae3a2c5db14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249655EF7F0>]}
+[0m18:05:20.870778 [info ] [Thread-1 (]: 6 of 16 OK created sql table model dbt_amanohar.country_pop_info ............... [[32mCREATE TABLE (19.8k rows, 441.6 MB processed)[0m in 3.36s]
+[0m18:05:20.872501 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.country_pop_info
+[0m18:05:20.873481 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.covid_date
+[0m18:05:20.873981 [info ] [Thread-1 (]: 7 of 16 START sql table model dbt_amanohar.covid_date .......................... [RUN]
+[0m18:05:20.874776 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.covid_date"
+[0m18:05:20.875313 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.covid_date
+[0m18:05:20.875718 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.covid_date
+[0m18:05:20.882237 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.covid_date"
+[0m18:05:20.884277 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:05:20.885271 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.covid_date
+[0m18:05:20.890496 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.covid_date"
+[0m18:05:20.892496 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:05:20.894496 [debug] [Thread-1 (]: On model.dbt_ld_demo.covid_date: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.covid_date"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`covid_date`
+    
+    
+    OPTIONS()
+    as (
+      SELECT
+date
+,country_code
+,country_name
+,new_confirmed
+,new_deceased
+,cumulative_confirmed
+,cumulative_deceased
+,cumulative_tested
+,new_persons_vaccinated
+,cumulative_persons_vaccinated
+,new_persons_fully_vaccinated
+,cumulative_persons_fully_vaccinated
+,new_vaccine_doses_administered
+,cumulative_vaccine_doses_administered
+,population
+,population_male
+,population_female
+,population_rural
+,population_urban
+,population_density
+,gdp_usd
+,gdp_per_capita_usd
+-- ,openstreetmap_id
+-- ,latitude
+-- ,longitude
+-- ,average_temperature_celsius
+-- ,new_hospitalized_patients
+-- ,new_intensive_care_patients
+FROM `dulcet-answer-373817`.`dbt_amanohar`.`stg_covid`
+WHERE  
+cumulative_tested IS NOT NULL 
+AND new_persons_vaccinated IS NOT NULL 
+AND new_confirmed IS NOT NULL 
+AND new_deceased IS NOT NULL
+    );
+  
+[0m18:05:27.644235 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:6a9fda87-1d86-4007-a55c-71e5f1a8c88e:US&page=queryresults
+[0m18:05:27.650231 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:05:27.653147 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '437f456e-fdc7-4ae6-8d7b-6ae3a2c5db14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249659E11B0>]}
+[0m18:05:27.656297 [info ] [Thread-1 (]: 7 of 16 OK created sql table model dbt_amanohar.covid_date ..................... [[32mCREATE TABLE (309.1k rows, 1.3 GB processed)[0m in 6.78s]
+[0m18:05:27.658062 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.covid_date
+[0m18:05:27.659086 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.covid_pop
+[0m18:05:27.661083 [info ] [Thread-1 (]: 8 of 16 START sql table model dbt_amanohar.covid_pop ........................... [RUN]
+[0m18:05:27.663085 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.covid_pop"
+[0m18:05:27.664088 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.covid_pop
+[0m18:05:27.665172 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.covid_pop
+[0m18:05:27.680190 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.covid_pop"
+[0m18:05:27.683169 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:05:27.684166 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.covid_pop
+[0m18:05:27.690330 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.covid_pop"
+[0m18:05:27.693414 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:05:27.696414 [debug] [Thread-1 (]: On model.dbt_ld_demo.covid_pop: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.covid_pop"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`covid_pop`
+    
+    
+    OPTIONS()
+    as (
+      SELECT country_code
+        ,country_name
+        ,population
+        ,COALESCE(new_confirmed, 0) as new_confirmed
+        ,COALESCE(new_deceased, 0) as new_deceased
+        ,COALESCE(cumulative_confirmed, 0) as cumulative_confirmed
+        ,COALESCE(cumulative_deceased, 0) as cumulative_deceased
+        ,COALESCE(cumulative_tested, 0) as cumulative_tested
+        ,COALESCE(new_persons_vaccinated, 0) as new_persons_vaccinated
+        ,COALESCE(cumulative_persons_vaccinated,0) as cumulative_persons_vaccinated
+		,COALESCE(new_persons_fully_vaccinated,0) as new_persons_fully_vaccinated
+        ,COALESCE(cumulative_persons_fully_vaccinated,0) as cumulative_persons_fully_vaccinated
+        
+        ,COALESCE(cumulative_vaccine_doses_administered,0) as cumulative_vaccine_doses_administered
+FROM `dulcet-answer-373817`.`dbt_amanohar`.`stg_covid`
+WHERE 
+cumulative_vaccine_doses_administered != 0
+
+AND cumulative_persons_fully_vaccinated != 0
+AND cumulative_persons_vaccinated != 0
+AND new_confirmed!= 0
+AND cumulative_confirmed != 0
+AND cumulative_tested != 0
+    );
+  
+[0m18:05:34.043048 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:944383e9-7b98-47b9-850b-6051a33c0c2e:US&page=queryresults
+[0m18:05:34.047051 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:05:34.049042 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '437f456e-fdc7-4ae6-8d7b-6ae3a2c5db14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024965923070>]}
+[0m18:05:34.050052 [info ] [Thread-1 (]: 8 of 16 OK created sql table model dbt_amanohar.covid_pop ...................... [[32mCREATE TABLE (256.7k rows, 879.8 MB processed)[0m in 6.39s]
+[0m18:05:34.052053 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.covid_pop
+[0m18:05:34.054055 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.covid_running_tot
+[0m18:05:34.054966 [info ] [Thread-1 (]: 9 of 16 START sql view model dbt_amanohar.covid_running_tot .................... [RUN]
+[0m18:05:34.057045 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.covid_running_tot"
+[0m18:05:34.059040 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.covid_running_tot
+[0m18:05:34.059040 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.covid_running_tot
+[0m18:05:34.074961 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.covid_running_tot"
+[0m18:05:34.077969 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:05:34.079960 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.covid_running_tot
+[0m18:05:34.101956 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.covid_running_tot"
+[0m18:05:34.103974 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:05:34.108055 [debug] [Thread-1 (]: On model.dbt_ld_demo.covid_running_tot: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.covid_running_tot"} */
+
+
+  create or replace view `dulcet-answer-373817`.`dbt_amanohar`.`covid_running_tot`
+  OPTIONS()
+  as 
+
+WITH temptable as (SELECT EXTRACT(MONTH FROM date) as month,EXTRACT(YEAR FROM date) as year, country_name, new_confirmed 
+FROM `dulcet-answer-373817`.`dbt_amanohar`.`stg_covid`
+WHERE new_confirmed IS NOT NULL)
+SELECT DISTINCT month, year, country_name,SUM(new_confirmed) 
+  OVER (PARTITION BY year ORDER BY month) as total_confirmed 
+FROM temptable
+ORDER BY month;
+
+
+[0m18:05:35.390833 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:cc3565c9-6cba-46d6-9b37-72a4f9602aee:US&page=queryresults
+[0m18:05:35.395817 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:05:35.397817 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '437f456e-fdc7-4ae6-8d7b-6ae3a2c5db14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024965945330>]}
+[0m18:05:35.398741 [info ] [Thread-1 (]: 9 of 16 OK created sql view model dbt_amanohar.covid_running_tot ............... [[32mCREATE VIEW (0 processed)[0m in 1.34s]
+[0m18:05:35.400817 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.covid_running_tot
+[0m18:05:35.401798 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.pop_info
+[0m18:05:35.403818 [info ] [Thread-1 (]: 10 of 16 START sql table model dbt_amanohar.pop_info ........................... [RUN]
+[0m18:05:35.405762 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.pop_info"
+[0m18:05:35.406740 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.pop_info
+[0m18:05:35.407741 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.pop_info
+[0m18:05:35.419815 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.pop_info"
+[0m18:05:35.422820 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:05:35.423837 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.pop_info
+[0m18:05:35.431924 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.pop_info"
+[0m18:05:35.434004 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:05:35.437022 [debug] [Thread-1 (]: On model.dbt_ld_demo.pop_info: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.pop_info"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`pop_info`
+    
+    
+    OPTIONS()
+    as (
+      SELECT DISTINCT country_name
+        , (population) as population
+        , (population_male) as male_pop
+        , (population_female) as female_pop
+		, (population_rural) as rural_pop
+        , (population_urban) as urban_pop
+        , (population_density) as pop_density
+        , (population_age_00_09) as child_pop
+        , (population_age_10_19) as teen_pop
+        , (population_age_20_29) as twenties_pop
+		, (population_age_30_39) as thirties_pop
+        , (population_age_40_49) as forties_pop
+        , (population_age_50_59) as fifties_pop
+        , (population_age_60_69) as sixties_pop
+        , (population_age_70_79) as seventies_pop
+        , (population_age_80_and_older) as eighties_pop
+FROM `dulcet-answer-373817`.`dbt_amanohar`.`stg_covid`
+WHERE 
+population is not null
+and population_male is not null
+and population_female is not null
+-- and population_rural is not null
+-- and population_urban is not null
+-- and population_density is not null
+-- and population_age_00_09 is not null
+-- and population_age_10_19 is not null
+-- and population_age_20_29 is not null
+-- and population_age_30_39 is not null
+-- and population_age_40_49 is not null
+-- and population_age_50_59 is not null
+-- and population_age_60_69 is not null
+-- and population_age_70_79 is not null
+-- and population_age_80_and_older is not null
+ORDER BY country_name ASC
+    );
+  
+[0m18:05:40.381361 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:b0d592b8-b389-45bc-a8a3-835c94480053:US&page=queryresults
+[0m18:05:40.385337 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:05:40.387335 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '437f456e-fdc7-4ae6-8d7b-6ae3a2c5db14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024965A35E70>]}
+[0m18:05:40.388339 [info ] [Thread-1 (]: 10 of 16 OK created sql table model dbt_amanohar.pop_info ...................... [[32mCREATE TABLE (16.7k rows, 1.7 GB processed)[0m in 4.98s]
+[0m18:05:40.390344 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.pop_info
+[0m18:05:40.391248 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.stg_covid_nation_list
+[0m18:05:40.392314 [info ] [Thread-1 (]: 11 of 16 START sql table model dbt_amanohar.stg_covid_nation_list .............. [RUN]
+[0m18:05:40.395250 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.stg_covid_nation_list"
+[0m18:05:40.396306 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.stg_covid_nation_list
+[0m18:05:40.397249 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.stg_covid_nation_list
+[0m18:05:40.404333 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.stg_covid_nation_list"
+[0m18:05:40.406333 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:05:40.407251 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.stg_covid_nation_list
+[0m18:05:40.418347 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.stg_covid_nation_list"
+[0m18:05:40.421353 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:05:40.427246 [debug] [Thread-1 (]: On model.dbt_ld_demo.stg_covid_nation_list: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.stg_covid_nation_list"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`stg_covid_nation_list`
+    
+    
+    OPTIONS()
+    as (
+      SELECT DISTINCT country_name, MAX(population) as max_pop
+FROM `dulcet-answer-373817`.`dbt_amanohar`.`stg_covid`
+GROUP BY country_name
+ORDER BY country_name
+    );
+  
+[0m18:05:44.351033 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:8979a51e-0bb1-4286-9842-33e5b10e96f4:US&page=queryresults
+[0m18:05:44.354108 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:05:44.355125 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '437f456e-fdc7-4ae6-8d7b-6ae3a2c5db14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024965A2B0D0>]}
+[0m18:05:44.356112 [info ] [Thread-1 (]: 11 of 16 OK created sql table model dbt_amanohar.stg_covid_nation_list ......... [[32mCREATE TABLE (20.0 rows, 376.3 MB processed)[0m in 3.96s]
+[0m18:05:44.357118 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.stg_covid_nation_list
+[0m18:05:44.357118 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.Month_us_cases
+[0m18:05:44.358032 [info ] [Thread-1 (]: 12 of 16 START sql table model dbt_amanohar.Month_us_cases ..................... [RUN]
+[0m18:05:44.359043 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.Month_us_cases"
+[0m18:05:44.360030 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.Month_us_cases
+[0m18:05:44.361114 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.Month_us_cases
+[0m18:05:44.871857 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.Month_us_cases"
+[0m18:05:44.873870 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:05:44.874876 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.Month_us_cases
+[0m18:05:44.883328 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.Month_us_cases"
+[0m18:05:44.884572 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:05:44.885584 [debug] [Thread-1 (]: On model.dbt_ld_demo.Month_us_cases: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.Month_us_cases"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`Month_us_cases`
+    
+    
+    OPTIONS()
+    as (
+      
+
+select *
+from 
+-- depends on: `dulcet-answer-373817`.`dbt_amanohar`.`dbt_metrics_default_calendar`
+    
+
+(
+
+with calendar as (
+
+    select 
+        * 
+    from `dulcet-answer-373817`.`dbt_amanohar`.`dbt_metrics_default_calendar`
+     
+)
+
+
+
+, confirmed_cases_time__aggregate as (
+    select
+        date_month,
+        date_year,
+                
+        country_name,
+        sum(property_to_aggregate) as confirmed_cases_time,
+        logical_or(metric_date_day is not null) as has_data
+        
+
+    from (
+
+    
+        select 
+        
+            cast(base_model.date as date) as metric_date_day, -- timestamp field
+            calendar_table.date_month as date_month,
+            calendar_table.date_day as window_filter_date,
+
+            
+            calendar_table.date_year,
+                
+                base_model.country_name,
+                (new_confirmed) as property_to_aggregate
+
+        from `dulcet-answer-373817`.`dbt_amanohar`.`stg_covid` base_model 
+        
+
+    left join `dulcet-answer-373817`.`dbt_amanohar`.`dbt_metrics_default_calendar` calendar_table
+    
+        on cast(base_model.date as date) = calendar_table.date_day
+    
+
+ 
+
+        where 1=1
+        
+        
+    ) as base_query
+
+    where 1=1
+
+    
+
+    
+        group by
+        1, 2, 3
+
+
+
+)
+
+, confirmed_cases_time__dims as (
+    select distinct
+        
+        country_name
+        
+    from confirmed_cases_time__aggregate
+)
+
+, confirmed_cases_time__spine_time as (
+
+    select
+        calendar.date_month, calendar.date_year
+        , confirmed_cases_time__dims.country_name
+
+    from calendar
+    cross join confirmed_cases_time__dims
+    
+        group by
+        1, 2, 3
+
+
+
+)
+
+, confirmed_cases_time__final as (
+    
+    select
+        
+        parent_metric_cte.date_month,
+        parent_metric_cte.date_year,
+        parent_metric_cte.country_name,
+        coalesce(confirmed_cases_time, 0) as confirmed_cases_time
+
+    from confirmed_cases_time__spine_time as parent_metric_cte
+    left outer join confirmed_cases_time__aggregate
+        using (
+            date_month
+            , country_name
+        )
+
+        where (
+            parent_metric_cte.date_month >= (
+                select 
+                    min(case when has_data then date_month end) 
+                from confirmed_cases_time__aggregate
+            )
+            and parent_metric_cte.date_month <= (
+                select 
+                    max(case when has_data then date_month end) 
+                from confirmed_cases_time__aggregate
+            )
+             
+        )      
+         
+    )
+
+
+
+, secondary_calculations as (
+
+    select 
+        *
+
+            
+        , coalesce(
+            cast(confirmed_cases_time as FLOAT64) / nullif(
+            
+            lag(
+                confirmed_cases_time, 1
+            ) over (
+                partition by country_name 
+                order by date_month
+            )
+            , 0) 
+        , 0) as confirmed_cases_time_pop_1wk
+
+            
+        , coalesce(confirmed_cases_time, 0) - coalesce(
+        
+            lag(
+                confirmed_cases_time, 1
+            ) over (
+                partition by country_name 
+                order by date_month
+            )
+        , 0) as confirmed_cases_time_difference_to_1_month_ago
+
+            
+        , 
+        avg(confirmed_cases_time)over (
+            partition by date_month
+            , country_name
+            order by date_month
+            rows between unbounded preceding and current row
+        ) as confirmed_cases_time_this_month_average
+
+            
+        , 
+        sum(confirmed_cases_time)over (
+            partition by date_year
+            , country_name
+            order by date_month
+            rows between unbounded preceding and current row
+        ) as confirmed_cases_time_sum_for_year
+
+            
+        , 
+        
+        avg(confirmed_cases_time)
+        over (
+            partition by country_name 
+            order by date_month
+            
+            rows between 3 preceding and current row
+            
+        )
+     as confirmed_cases_time_avg_past_4wks
+
+            
+        , 
+        
+        min(confirmed_cases_time)
+        over (
+            partition by country_name 
+            order by date_month
+            
+            rows between 3 preceding and current row
+            
+        )
+     as confirmed_cases_time_rolling_min_4_month
+
+
+    from confirmed_cases_time__final
+)
+
+
+
+, final as (
+
+        select
+            *
+        from secondary_calculations
+    )
+
+    select * from final 
+
+    
+    where country_name='United States of America'
+    
+        order by
+        1 desc, 2 desc, 3 desc
+
+
+
+
+
+) metric_subq
+    );
+  
+[0m18:05:50.133633 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:a0753f16-ed79-4c9d-8ba9-732cc946c575:US&page=queryresults
+[0m18:05:50.137227 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:05:50.138229 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '437f456e-fdc7-4ae6-8d7b-6ae3a2c5db14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024965902860>]}
+[0m18:05:50.139227 [info ] [Thread-1 (]: 12 of 16 OK created sql table model dbt_amanohar.Month_us_cases ................ [[32mCREATE TABLE (33.0 rows, 474.3 MB processed)[0m in 5.78s]
+[0m18:05:50.141227 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.Month_us_cases
+[0m18:05:50.141227 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.YR_cases
+[0m18:05:50.142230 [info ] [Thread-1 (]: 13 of 16 START sql table model dbt_amanohar.YR_cases ........................... [RUN]
+[0m18:05:50.144227 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.YR_cases"
+[0m18:05:50.145327 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.YR_cases
+[0m18:05:50.146228 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.YR_cases
+[0m18:05:50.166643 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.YR_cases"
+[0m18:05:50.168897 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:05:50.169612 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.YR_cases
+[0m18:05:50.173615 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.YR_cases"
+[0m18:05:50.175642 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:05:50.180899 [debug] [Thread-1 (]: On model.dbt_ld_demo.YR_cases: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.YR_cases"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`YR_cases`
+    
+    
+    OPTIONS()
+    as (
+      
+
+select *
+from 
+-- depends on: `dulcet-answer-373817`.`dbt_amanohar`.`dbt_metrics_default_calendar`
+    
+
+(
+
+with calendar as (
+
+    select 
+        * 
+    from `dulcet-answer-373817`.`dbt_amanohar`.`dbt_metrics_default_calendar`
+     
+)
+
+
+
+, confirmed_cases_time__aggregate as (
+    select
+        date_year,
+        country_name,
+        sum(property_to_aggregate) as confirmed_cases_time,
+        logical_or(metric_date_day is not null) as has_data
+        
+
+    from (
+
+    
+        select 
+        
+            cast(base_model.date as date) as metric_date_day, -- timestamp field
+            calendar_table.date_year as date_year,
+            calendar_table.date_day as window_filter_date,
+
+            
+                base_model.country_name,
+                (new_confirmed) as property_to_aggregate
+
+        from `dulcet-answer-373817`.`dbt_amanohar`.`stg_covid` base_model 
+        
+
+    left join `dulcet-answer-373817`.`dbt_amanohar`.`dbt_metrics_default_calendar` calendar_table
+    
+        on cast(base_model.date as date) = calendar_table.date_day
+    
+
+ 
+
+        where 1=1
+        
+        
+    ) as base_query
+
+    where 1=1
+
+    
+
+    
+        group by
+        1, 2
+
+
+
+)
+
+, confirmed_cases_time__dims as (
+    select distinct
+        
+        country_name
+        
+    from confirmed_cases_time__aggregate
+)
+
+, confirmed_cases_time__spine_time as (
+
+    select
+        calendar.date_year
+        , confirmed_cases_time__dims.country_name
+
+    from calendar
+    cross join confirmed_cases_time__dims
+    
+        group by
+        1, 2
+
+
+
+)
+
+, confirmed_cases_time__final as (
+    
+    select
+        
+        parent_metric_cte.date_year,
+        parent_metric_cte.country_name,
+        coalesce(confirmed_cases_time, 0) as confirmed_cases_time
+
+    from confirmed_cases_time__spine_time as parent_metric_cte
+    left outer join confirmed_cases_time__aggregate
+        using (
+            date_year
+            , country_name
+        )
+
+        where (
+            parent_metric_cte.date_year >= (
+                select 
+                    min(case when has_data then date_year end) 
+                from confirmed_cases_time__aggregate
+            )
+            and parent_metric_cte.date_year <= (
+                select 
+                    max(case when has_data then date_year end) 
+                from confirmed_cases_time__aggregate
+            )
+             
+        )      
+         
+    )
+
+
+
+, secondary_calculations as (
+
+    select 
+        *
+
+
+    from confirmed_cases_time__final
+)
+
+
+
+
+
+    select * from confirmed_cases_time__final
+        order by
+        1 desc, 2 desc
+
+
+
+) metric_subq
+    );
+  
+[0m18:05:54.518714 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:2e5d2f40-8f72-4832-98e8-1b3dad377c58:US&page=queryresults
+[0m18:05:54.520721 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:05:54.520721 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '437f456e-fdc7-4ae6-8d7b-6ae3a2c5db14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002496593A8F0>]}
+[0m18:05:54.521714 [info ] [Thread-1 (]: 13 of 16 OK created sql table model dbt_amanohar.YR_cases ...................... [[32mCREATE TABLE (60.0 rows, 474.2 MB processed)[0m in 4.38s]
+[0m18:05:54.521714 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.YR_cases
+[0m18:05:54.522718 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.percent_vaccin
+[0m18:05:54.522718 [info ] [Thread-1 (]: 14 of 16 START sql table model dbt_amanohar.percent_vaccin ..................... [RUN]
+[0m18:05:54.523711 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.percent_vaccin"
+[0m18:05:54.523711 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.percent_vaccin
+[0m18:05:54.524714 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.percent_vaccin
+[0m18:05:54.528735 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.percent_vaccin"
+[0m18:05:54.530731 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:05:54.531712 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.percent_vaccin
+[0m18:05:54.537877 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.percent_vaccin"
+[0m18:05:54.539873 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:05:54.543875 [debug] [Thread-1 (]: On model.dbt_ld_demo.percent_vaccin: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.percent_vaccin"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`percent_vaccin`
+    
+    
+    OPTIONS()
+    as (
+      SELECT 
+t1.country_name
+,MAX(t1.health_expenditure_usd) as health_expenditure_usd
+,AVG(COALESCE(t1.OOP_health_spend_usd,0)) as OOP_health_spend_usd
+,CEILING(MAX(t2.cumulative_vaccine_doses_administered)/MAX(t2.population)) as perc_vaccin
+FROM `dulcet-answer-373817`.`dbt_amanohar`.`country_pop_info` as t1
+LEFT JOIN `dulcet-answer-373817`.`dbt_amanohar`.`covid_pop` as t2
+ON t1.country_name = t2.country_name
+WHERE t2.population != 0
+GROUP BY country_name
+    );
+  
+[0m18:06:30.909091 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:7796a187-2b01-46b5-b53a-ad78614070f4:US&page=queryresults
+[0m18:06:30.911180 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:30.912102 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '437f456e-fdc7-4ae6-8d7b-6ae3a2c5db14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024965947AF0>]}
+[0m18:06:30.912102 [info ] [Thread-1 (]: 14 of 16 OK created sql table model dbt_amanohar.percent_vaccin ................ [[32mCREATE TABLE (18.0 rows, 6.9 MB processed)[0m in 36.39s]
+[0m18:06:30.913169 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.percent_vaccin
+[0m18:06:30.914194 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.vulnerable_pop
+[0m18:06:30.914194 [info ] [Thread-1 (]: 15 of 16 START sql table model dbt_amanohar.vulnerable_pop ..................... [RUN]
+[0m18:06:30.915193 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.vulnerable_pop"
+[0m18:06:30.916145 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.vulnerable_pop
+[0m18:06:30.916145 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.vulnerable_pop
+[0m18:06:30.922185 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.vulnerable_pop"
+[0m18:06:30.925190 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:30.926193 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.vulnerable_pop
+[0m18:06:30.933190 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.vulnerable_pop"
+[0m18:06:30.936184 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:06:30.940187 [debug] [Thread-1 (]: On model.dbt_ld_demo.vulnerable_pop: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.vulnerable_pop"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`vulnerable_pop`
+    
+    
+    OPTIONS()
+    as (
+      SELECT DISTINCT 
+        t1.country_name
+		,(t1.urban_pop/ t1.rural_pop) as accel_multip
+        ,ROUND((t2.max_pop/t1.pop_density)/100) as accel_factor_pop_den
+        ,ROUND(((t1.sixties_pop + t1.seventies_pop + t1.eighties_pop)/ t2.max_pop) *100) as perc_vulner_pop
+FROM `dulcet-answer-373817`.`dbt_amanohar`.`pop_info` t1
+LEFT JOIN `dulcet-answer-373817`.`dbt_amanohar`.`stg_covid_nation_list` t2 
+ON t1.country_name = t2.country_name
+WHERE t1.rural_pop != 0 AND t1.pop_density != 0
+GROUP BY country_name, max_pop, urban_pop, rural_pop, population, pop_density, sixties_pop, seventies_pop, eighties_pop
+    );
+  
+[0m18:06:34.184015 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:7a9d80de-d40a-4af7-8aac-c0c9acf621ad:US&page=queryresults
+[0m18:06:34.188287 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:34.190455 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '437f456e-fdc7-4ae6-8d7b-6ae3a2c5db14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249658A57B0>]}
+[0m18:06:34.191454 [info ] [Thread-1 (]: 15 of 16 OK created sql table model dbt_amanohar.vulnerable_pop ................ [[32mCREATE TABLE (20.0 rows, 574.1 KB processed)[0m in 3.28s]
+[0m18:06:34.192454 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.vulnerable_pop
+[0m18:06:34.193456 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.CO_risk_vs_pollution
+[0m18:06:34.194455 [info ] [Thread-1 (]: 16 of 16 START sql table model dbt_amanohar.CO_risk_vs_pollution ............... [RUN]
+[0m18:06:34.196453 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.CO_risk_vs_pollution"
+[0m18:06:34.196453 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.CO_risk_vs_pollution
+[0m18:06:34.197453 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.CO_risk_vs_pollution
+[0m18:06:34.217538 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.CO_risk_vs_pollution"
+[0m18:06:34.219542 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:34.220511 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.CO_risk_vs_pollution
+[0m18:06:34.227638 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ld_demo.CO_risk_vs_pollution"
+[0m18:06:34.229538 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:06:34.232540 [debug] [Thread-1 (]: On model.dbt_ld_demo.CO_risk_vs_pollution: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.dbt_ld_demo.CO_risk_vs_pollution"} */
+
+  
+    
+
+    create or replace table `dulcet-answer-373817`.`dbt_amanohar`.`CO_risk_vs_pollution`
+    
+    
+    OPTIONS()
+    as (
+      -- WITH temptable as (
+-- UPDATE `dulcet-answer-373817`.`dbt_amanohar`.`tgt_pollutant_mo_yr`
+-- SET country_name = 'United States of America'
+-- WHERE country_name = 'United States of America (the)';
+-- ),
+-- final_temp as (
+-- UPDATE temptable
+-- SET country_name = 'United Kingdom'
+-- WHERE country_name = 'United Kingdom of Great Britain and Northern Ireland (the)';
+-- )
+
+SELECT DISTINCT vulnerable_pop.country_name, vulnerable_pop.perc_vulner_pop, tgt_pollutant_mo_yr.AMT_PARTICULATE
+FROM `dulcet-answer-373817`.`dbt_amanohar`.`vulnerable_pop`
+LEFT JOIN `dulcet-answer-373817`.`dbt_amanohar`.`tgt_pollutant_mo_yr`
+ON tgt_pollutant_mo_yr.country_name = vulnerable_pop.country_name
+WHERE tgt_pollutant_mo_yr.pollutant = 'co'
+    );
+  
+[0m18:06:37.352173 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:54aa0a8f-10e7-4978-b693-1ce1fd36c25d:US&page=queryresults
+[0m18:06:37.355184 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:37.357184 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '437f456e-fdc7-4ae6-8d7b-6ae3a2c5db14', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024966A51750>]}
+[0m18:06:37.358181 [info ] [Thread-1 (]: 16 of 16 OK created sql table model dbt_amanohar.CO_risk_vs_pollution .......... [[32mCREATE TABLE (14.0 rows, 9.3 KB processed)[0m in 3.16s]
+[0m18:06:37.359181 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.CO_risk_vs_pollution
+[0m18:06:37.361184 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m18:06:37.362181 [info ] [MainThread]: 
+[0m18:06:37.362181 [info ] [MainThread]: Finished running 15 table models, 1 view model in 0 hours 2 minutes and 0.36 seconds (120.36s).
+[0m18:06:37.363173 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:06:37.363173 [debug] [MainThread]: Connection 'create_dulcet-answer-373817_dbt_amanohar' was properly closed.
+[0m18:06:37.364173 [debug] [MainThread]: Connection 'list_dulcet-answer-373817_dbt_amanohar' was properly closed.
+[0m18:06:37.364173 [debug] [MainThread]: Connection 'model.dbt_ld_demo.CO_risk_vs_pollution' was properly closed.
+[0m18:06:37.374170 [info ] [MainThread]: 
+[0m18:06:37.374170 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:06:37.375219 [info ] [MainThread]: 
+[0m18:06:37.375219 [info ] [MainThread]: Done. PASS=16 WARN=0 ERROR=0 SKIP=0 TOTAL=16
+[0m18:06:37.376175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249658B7AF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249658B7A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249658B78B0>]}
+[0m18:06:37.376175 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-01-20 18:06:47.382130 | 91ba8a29-d9d2-498a-84e7-78e0728c15d6 ==============================
+[0m18:06:47.382130 [info ] [MainThread]: Running with dbt=1.3.1
+[0m18:06:47.382130 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\adithya.manohar\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'compile': True, 'which': 'generate', 'rpc_method': 'docs.generate', 'indirect_selection': 'eager'}
+[0m18:06:47.383130 [debug] [MainThread]: Tracking: tracking
+[0m18:06:47.529913 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C120CE0700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C120CE0A30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C120CE07F0>]}
+[0m18:06:47.700225 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:06:47.701226 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:06:47.708223 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '91ba8a29-d9d2-498a-84e7-78e0728c15d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C120F800D0>]}
+[0m18:06:47.718237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '91ba8a29-d9d2-498a-84e7-78e0728c15d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C120E21420>]}
+[0m18:06:47.718237 [info ] [MainThread]: Found 16 models, 3 tests, 0 snapshots, 0 analyses, 420 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 1 metric
+[0m18:06:47.718237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '91ba8a29-d9d2-498a-84e7-78e0728c15d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C11D5DDC90>]}
+[0m18:06:47.720050 [info ] [MainThread]: 
+[0m18:06:47.721070 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m18:06:47.723070 [debug] [ThreadPool]: Acquiring new bigquery connection "list_dulcet-answer-373817_dbt_amanohar"
+[0m18:06:47.723070 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:06:48.240519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '91ba8a29-d9d2-498a-84e7-78e0728c15d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C120E210F0>]}
+[0m18:06:48.242029 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:06:48.242029 [info ] [MainThread]: 
+[0m18:06:48.250173 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.base_pollutant_mo_yr
+[0m18:06:48.250173 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.base_pollutant_mo_yr"
+[0m18:06:48.251331 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.base_pollutant_mo_yr
+[0m18:06:48.251331 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.base_pollutant_mo_yr
+[0m18:06:48.253330 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.base_pollutant_mo_yr"
+[0m18:06:48.254329 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:48.254329 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.base_pollutant_mo_yr
+[0m18:06:48.254329 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:48.255329 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.base_pollutant_mo_yr
+[0m18:06:48.255329 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.pollutant_avg_yr
+[0m18:06:48.256332 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.pollutant_avg_yr"
+[0m18:06:48.256332 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.pollutant_avg_yr
+[0m18:06:48.256332 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.pollutant_avg_yr
+[0m18:06:48.258410 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.pollutant_avg_yr"
+[0m18:06:48.259412 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:48.259412 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.pollutant_avg_yr
+[0m18:06:48.259412 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:48.260333 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.pollutant_avg_yr
+[0m18:06:48.260333 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.stg_covid
+[0m18:06:48.261335 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.stg_covid"
+[0m18:06:48.261335 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.stg_covid
+[0m18:06:48.261335 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.stg_covid
+[0m18:06:48.263410 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.stg_covid"
+[0m18:06:48.264433 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:48.264433 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.stg_covid
+[0m18:06:48.265411 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:48.265411 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.stg_covid
+[0m18:06:48.266412 [debug] [Thread-1 (]: Began running node model.metrics.dbt_metrics_default_calendar
+[0m18:06:48.267330 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.metrics.dbt_metrics_default_calendar"
+[0m18:06:48.267330 [debug] [Thread-1 (]: Began compiling node model.metrics.dbt_metrics_default_calendar
+[0m18:06:48.267330 [debug] [Thread-1 (]: Compiling model.metrics.dbt_metrics_default_calendar
+[0m18:06:48.282330 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:06:48.283330 [debug] [Thread-1 (]: On model.metrics.dbt_metrics_default_calendar: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "node_id": "model.metrics.dbt_metrics_default_calendar"} */
+
+
+        select 
+
+    datetime_diff(
+        cast(cast('2030-01-01' as date) as datetime),
+        cast(cast('1990-01-01' as date) as datetime),
+        day
+    )
+
+  
+[0m18:06:49.708742 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:ce2f9151-c884-481e-8e35-6b682e97ea6b:US&page=queryresults
+[0m18:06:49.722742 [debug] [Thread-1 (]: Writing injected SQL for node "model.metrics.dbt_metrics_default_calendar"
+[0m18:06:49.724098 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:49.725011 [debug] [Thread-1 (]: Began executing node model.metrics.dbt_metrics_default_calendar
+[0m18:06:49.725404 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:49.725904 [debug] [Thread-1 (]: Finished running node model.metrics.dbt_metrics_default_calendar
+[0m18:06:49.726403 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.tgt_pollutant_mo_yr
+[0m18:06:49.727633 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.tgt_pollutant_mo_yr"
+[0m18:06:49.727633 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.tgt_pollutant_mo_yr
+[0m18:06:49.728569 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.tgt_pollutant_mo_yr
+[0m18:06:49.731955 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.tgt_pollutant_mo_yr"
+[0m18:06:49.732957 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:49.732957 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.tgt_pollutant_mo_yr
+[0m18:06:49.732957 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:49.733956 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.tgt_pollutant_mo_yr
+[0m18:06:49.733956 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.country_pop_info
+[0m18:06:49.734956 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.country_pop_info"
+[0m18:06:49.734956 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.country_pop_info
+[0m18:06:49.735954 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.country_pop_info
+[0m18:06:49.743492 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.country_pop_info"
+[0m18:06:49.744491 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:49.744491 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.country_pop_info
+[0m18:06:49.745496 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:49.745888 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.country_pop_info
+[0m18:06:49.747307 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.covid_date
+[0m18:06:49.747307 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.covid_date"
+[0m18:06:49.747307 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.covid_date
+[0m18:06:49.748306 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.covid_date
+[0m18:06:49.751307 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.covid_date"
+[0m18:06:49.752603 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:49.752871 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.covid_date
+[0m18:06:49.752871 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:49.753937 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.covid_date
+[0m18:06:49.753937 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.covid_pop
+[0m18:06:49.753937 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.covid_pop"
+[0m18:06:49.754936 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.covid_pop
+[0m18:06:49.754936 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.covid_pop
+[0m18:06:49.757936 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.covid_pop"
+[0m18:06:49.758936 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:49.758936 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.covid_pop
+[0m18:06:49.759935 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:49.759935 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.covid_pop
+[0m18:06:49.759935 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.covid_running_tot
+[0m18:06:49.760942 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.covid_running_tot"
+[0m18:06:49.761936 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.covid_running_tot
+[0m18:06:49.761936 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.covid_running_tot
+[0m18:06:49.764938 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.covid_running_tot"
+[0m18:06:49.765937 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:49.765937 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.covid_running_tot
+[0m18:06:49.765937 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:49.766938 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.covid_running_tot
+[0m18:06:49.766938 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.pop_info
+[0m18:06:49.767948 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.pop_info"
+[0m18:06:49.767948 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.pop_info
+[0m18:06:49.767948 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.pop_info
+[0m18:06:49.770938 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.pop_info"
+[0m18:06:49.770938 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:49.771938 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.pop_info
+[0m18:06:49.771938 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:49.772939 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.pop_info
+[0m18:06:49.772939 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.stg_covid_nation_list
+[0m18:06:49.772939 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.stg_covid_nation_list"
+[0m18:06:49.773938 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.stg_covid_nation_list
+[0m18:06:49.773938 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.stg_covid_nation_list
+[0m18:06:49.775939 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.stg_covid_nation_list"
+[0m18:06:49.777495 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:49.778140 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.stg_covid_nation_list
+[0m18:06:49.778140 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:49.779150 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.stg_covid_nation_list
+[0m18:06:49.780152 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.Month_us_cases
+[0m18:06:49.780496 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.Month_us_cases"
+[0m18:06:49.780996 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.Month_us_cases
+[0m18:06:49.780996 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.Month_us_cases
+[0m18:06:50.009029 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.Month_us_cases"
+[0m18:06:50.010029 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:50.011033 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.Month_us_cases
+[0m18:06:50.011033 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:50.012029 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.Month_us_cases
+[0m18:06:50.012601 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.YR_cases
+[0m18:06:50.012905 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.YR_cases"
+[0m18:06:50.012905 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.YR_cases
+[0m18:06:50.012905 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.YR_cases
+[0m18:06:50.020958 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.YR_cases"
+[0m18:06:50.021958 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:50.022959 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.YR_cases
+[0m18:06:50.022959 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:50.022959 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.YR_cases
+[0m18:06:50.023959 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.percent_vaccin
+[0m18:06:50.023959 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.percent_vaccin"
+[0m18:06:50.024959 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.percent_vaccin
+[0m18:06:50.024959 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.percent_vaccin
+[0m18:06:50.027960 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.percent_vaccin"
+[0m18:06:50.028961 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:50.028961 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.percent_vaccin
+[0m18:06:50.028961 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:50.029959 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.percent_vaccin
+[0m18:06:50.029959 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.vulnerable_pop
+[0m18:06:50.030958 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.vulnerable_pop"
+[0m18:06:50.030958 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.vulnerable_pop
+[0m18:06:50.030958 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.vulnerable_pop
+[0m18:06:50.033467 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.vulnerable_pop"
+[0m18:06:50.035915 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:50.035915 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.vulnerable_pop
+[0m18:06:50.036914 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:50.037914 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.vulnerable_pop
+[0m18:06:50.037914 [debug] [Thread-1 (]: Began running node test.dbt_ld_demo.accepted_values_stg_covid_nation_list_country_name__Argentina__Austria__Brazil__Canada__Chile__Colombia__Germany__India__Indonesia__Israel__Mexico__Netherlands__Peru__Philippines__Poland__Spain__United_Kingdom__United_States_of_America__Italy.b6f2d57b4e
+[0m18:06:50.038915 [debug] [Thread-1 (]: Acquiring new bigquery connection "test.dbt_ld_demo.accepted_values_stg_covid_nation_list_country_name__Argentina__Austria__Brazil__Canada__Chile__Colombia__Germany__India__Indonesia__Israel__Mexico__Netherlands__Peru__Philippines__Poland__Spain__United_Kingdom__United_States_of_America__Italy.b6f2d57b4e"
+[0m18:06:50.039914 [debug] [Thread-1 (]: Began compiling node test.dbt_ld_demo.accepted_values_stg_covid_nation_list_country_name__Argentina__Austria__Brazil__Canada__Chile__Colombia__Germany__India__Indonesia__Israel__Mexico__Netherlands__Peru__Philippines__Poland__Spain__United_Kingdom__United_States_of_America__Italy.b6f2d57b4e
+[0m18:06:50.039914 [debug] [Thread-1 (]: Compiling test.dbt_ld_demo.accepted_values_stg_covid_nation_list_country_name__Argentina__Austria__Brazil__Canada__Chile__Colombia__Germany__India__Indonesia__Israel__Mexico__Netherlands__Peru__Philippines__Poland__Spain__United_Kingdom__United_States_of_America__Italy.b6f2d57b4e
+[0m18:06:50.056917 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_ld_demo.accepted_values_stg_covid_nation_list_country_name__Argentina__Austria__Brazil__Canada__Chile__Colombia__Germany__India__Indonesia__Israel__Mexico__Netherlands__Peru__Philippines__Poland__Spain__United_Kingdom__United_States_of_America__Italy.b6f2d57b4e"
+[0m18:06:50.059079 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:50.059548 [debug] [Thread-1 (]: Began executing node test.dbt_ld_demo.accepted_values_stg_covid_nation_list_country_name__Argentina__Austria__Brazil__Canada__Chile__Colombia__Germany__India__Indonesia__Israel__Mexico__Netherlands__Peru__Philippines__Poland__Spain__United_Kingdom__United_States_of_America__Italy.b6f2d57b4e
+[0m18:06:50.059548 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:50.060614 [debug] [Thread-1 (]: Finished running node test.dbt_ld_demo.accepted_values_stg_covid_nation_list_country_name__Argentina__Austria__Brazil__Canada__Chile__Colombia__Germany__India__Indonesia__Israel__Mexico__Netherlands__Peru__Philippines__Poland__Spain__United_Kingdom__United_States_of_America__Italy.b6f2d57b4e
+[0m18:06:50.060614 [debug] [Thread-1 (]: Began running node test.dbt_ld_demo.not_null_stg_covid_nation_list_country_name.13bf958d3b
+[0m18:06:50.061253 [debug] [Thread-1 (]: Acquiring new bigquery connection "test.dbt_ld_demo.not_null_stg_covid_nation_list_country_name.13bf958d3b"
+[0m18:06:50.061253 [debug] [Thread-1 (]: Began compiling node test.dbt_ld_demo.not_null_stg_covid_nation_list_country_name.13bf958d3b
+[0m18:06:50.061253 [debug] [Thread-1 (]: Compiling test.dbt_ld_demo.not_null_stg_covid_nation_list_country_name.13bf958d3b
+[0m18:06:50.070447 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_ld_demo.not_null_stg_covid_nation_list_country_name.13bf958d3b"
+[0m18:06:50.071451 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:50.072450 [debug] [Thread-1 (]: Began executing node test.dbt_ld_demo.not_null_stg_covid_nation_list_country_name.13bf958d3b
+[0m18:06:50.072450 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:50.073450 [debug] [Thread-1 (]: Finished running node test.dbt_ld_demo.not_null_stg_covid_nation_list_country_name.13bf958d3b
+[0m18:06:50.073450 [debug] [Thread-1 (]: Began running node test.dbt_ld_demo.unique_stg_covid_nation_list_country_name.90133479ca
+[0m18:06:50.074447 [debug] [Thread-1 (]: Acquiring new bigquery connection "test.dbt_ld_demo.unique_stg_covid_nation_list_country_name.90133479ca"
+[0m18:06:50.074447 [debug] [Thread-1 (]: Began compiling node test.dbt_ld_demo.unique_stg_covid_nation_list_country_name.90133479ca
+[0m18:06:50.075451 [debug] [Thread-1 (]: Compiling test.dbt_ld_demo.unique_stg_covid_nation_list_country_name.90133479ca
+[0m18:06:50.080447 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_ld_demo.unique_stg_covid_nation_list_country_name.90133479ca"
+[0m18:06:50.082446 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:50.082446 [debug] [Thread-1 (]: Began executing node test.dbt_ld_demo.unique_stg_covid_nation_list_country_name.90133479ca
+[0m18:06:50.083445 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:50.083445 [debug] [Thread-1 (]: Finished running node test.dbt_ld_demo.unique_stg_covid_nation_list_country_name.90133479ca
+[0m18:06:50.084447 [debug] [Thread-1 (]: Began running node model.dbt_ld_demo.CO_risk_vs_pollution
+[0m18:06:50.084447 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_ld_demo.CO_risk_vs_pollution"
+[0m18:06:50.085448 [debug] [Thread-1 (]: Began compiling node model.dbt_ld_demo.CO_risk_vs_pollution
+[0m18:06:50.085448 [debug] [Thread-1 (]: Compiling model.dbt_ld_demo.CO_risk_vs_pollution
+[0m18:06:50.088447 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ld_demo.CO_risk_vs_pollution"
+[0m18:06:50.089507 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:50.090446 [debug] [Thread-1 (]: Began executing node model.dbt_ld_demo.CO_risk_vs_pollution
+[0m18:06:50.090810 [debug] [Thread-1 (]: finished collecting timing info
+[0m18:06:50.090810 [debug] [Thread-1 (]: Finished running node model.dbt_ld_demo.CO_risk_vs_pollution
+[0m18:06:50.091826 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:06:50.092828 [debug] [MainThread]: Connection 'list_dulcet-answer-373817_dbt_amanohar' was properly closed.
+[0m18:06:50.092828 [debug] [MainThread]: Connection 'model.dbt_ld_demo.CO_risk_vs_pollution' was properly closed.
+[0m18:06:50.103074 [info ] [MainThread]: Done.
+[0m18:06:50.373280 [debug] [MainThread]: Acquiring new bigquery connection "generate_catalog"
+[0m18:06:50.373280 [info ] [MainThread]: Building catalog
+[0m18:06:50.375310 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:06:50.860127 [debug] [ThreadPool]: Acquiring new bigquery connection "dulcet-answer-373817.information_schema"
+[0m18:06:50.872934 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:06:50.875115 [debug] [ThreadPool]: On dulcet-answer-373817.information_schema: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_ld_demo", "target_name": "dev", "connection_name": "dulcet-answer-373817.information_schema"} */
+
+    with tables as (
+        select
+            project_id as table_database,
+            dataset_id as table_schema,
+            table_id as original_table_name,
+
+            concat(project_id, '.', dataset_id, '.', table_id) as relation_id,
+
+            row_count,
+            size_bytes as size_bytes,
+            case
+                when type = 1 then 'table'
+                when type = 2 then 'view'
+                else 'external'
+            end as table_type,
+
+            REGEXP_CONTAINS(table_id, '^.+[0-9]{8}$') and coalesce(type, 0) = 1 as is_date_shard,
+            REGEXP_EXTRACT(table_id, '^(.+)[0-9]{8}$') as shard_base_name,
+            REGEXP_EXTRACT(table_id, '^.+([0-9]{8})$') as shard_name
+
+        from `dulcet-answer-373817`.`dbt_amanohar`.__TABLES__
+        where (upper(dataset_id) = upper('dbt_amanohar'))
+    ),
+
+    extracted as (
+
+        select *,
+            case
+                when is_date_shard then shard_base_name
+                else original_table_name
+            end as table_name
+
+        from tables
+
+    ),
+
+    unsharded_tables as (
+
+        select
+            table_database,
+            table_schema,
+            table_name,
+            coalesce(table_type, 'external') as table_type,
+            is_date_shard,
+
+            struct(
+                min(shard_name) as shard_min,
+                max(shard_name) as shard_max,
+                count(*) as shard_count
+            ) as table_shards,
+
+            sum(size_bytes) as size_bytes,
+            sum(row_count) as row_count,
+
+            max(relation_id) as relation_id
+
+        from extracted
+        group by 1,2,3,4,5
+
+    ),
+
+    info_schema_columns as (
+
+        select
+            concat(table_catalog, '.', table_schema, '.', table_name) as relation_id,
+            table_catalog as table_database,
+            table_schema,
+            table_name,
+
+            -- use the "real" column name from the paths query below
+            column_name as base_column_name,
+            ordinal_position as column_index,
+
+            is_partitioning_column,
+            clustering_ordinal_position
+
+        from `dulcet-answer-373817`.`dbt_amanohar`.INFORMATION_SCHEMA.COLUMNS
+        where ordinal_position is not null
+
+    ),
+
+    info_schema_column_paths as (
+
+        select
+            concat(table_catalog, '.', table_schema, '.', table_name) as relation_id,
+            field_path as column_name,
+            data_type as column_type,
+            column_name as base_column_name,
+            description as column_comment
+
+        from `dulcet-answer-373817`.`dbt_amanohar`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS
+
+    ),
+
+    columns as (
+
+        select * except (base_column_name)
+        from info_schema_columns
+        join info_schema_column_paths using (relation_id, base_column_name)
+
+    ),
+
+    column_stats as (
+
+        select
+            table_database,
+            table_schema,
+            table_name,
+            max(relation_id) as relation_id,
+            max(case when is_partitioning_column = 'YES' then 1 else 0 end) = 1 as is_partitioned,
+            max(case when is_partitioning_column = 'YES' then column_name else null end) as partition_column,
+            max(case when clustering_ordinal_position is not null then 1 else 0 end) = 1 as is_clustered,
+            array_to_string(
+                array_agg(
+                    case
+                        when clustering_ordinal_position is not null then column_name
+                        else null
+                    end ignore nulls
+                    order by clustering_ordinal_position
+                ), ', '
+            ) as clustering_columns
+
+        from columns
+        group by 1,2,3
+
+    )
+
+    select
+        unsharded_tables.table_database,
+        unsharded_tables.table_schema,
+        case
+            when is_date_shard then concat(unsharded_tables.table_name, '*')
+            else unsharded_tables.table_name
+        end as table_name,
+        unsharded_tables.table_type,
+
+        -- coalesce name and type for External tables - these columns are not
+        -- present in the COLUMN_FIELD_PATHS resultset
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields -- BQ does
+        -- not treat these nested properties as independent fields
+        row_number() over (
+            partition by relation_id
+            order by columns.column_index, columns.column_name
+        ) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        columns.column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_shards.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_shards.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_shards.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        (unsharded_tables.table_type = 'table') as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        (unsharded_tables.table_type = 'table') as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        is_clustered as `stats__clustering_fields__include`
+
+    -- join using relation_id (an actual relation, not a shard prefix) to make
+    -- sure that column metadata is picked up through the join. This will only
+    -- return the column information for the "max" table in a date-sharded table set
+    from unsharded_tables
+    left join columns using (relation_id)
+    left join column_stats using (relation_id)
+  
+[0m18:06:53.788634 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dulcet-answer-373817&j=bq:b4cd8e5c-c3d2-4757-8146-f5c2347d923b:US&page=queryresults
+[0m18:06:53.843035 [info ] [MainThread]: Catalog written to C:\Users\adithya.manohar\Documents\dbt_repo\dbt_lightdash_poc\target\catalog.json
+[0m18:06:53.843997 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C120CE0700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C121027550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C121024DF0>]}
+[0m18:06:53.843997 [debug] [MainThread]: Flushing usage events
+[0m18:06:54.167166 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m18:06:54.169064 [debug] [MainThread]: Connection 'dulcet-answer-373817.information_schema' was properly closed.
+
+
+============================== 2023-01-20 18:08:32.663265 | f5c8e588-fd7b-4aa0-b168-936aa6822790 ==============================
+[0m18:08:32.663265 [info ] [MainThread]: Running with dbt=1.3.1
+[0m18:08:32.664267 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\adithya.manohar\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'port': 8080, 'open_browser': True, 'which': 'serve', 'indirect_selection': 'eager'}
+[0m18:08:32.664267 [debug] [MainThread]: Tracking: tracking
+[0m18:08:32.822406 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D768390400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D768390730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7683904F0>]}
+[0m18:08:32.931138 [info ] [MainThread]: Serving docs at 0.0.0.0:8080
+[0m18:08:32.931138 [info ] [MainThread]: To access from your browser, navigate to:  http://localhost:8080
+[0m18:08:32.932138 [info ] [MainThread]: 
+[0m18:08:32.932138 [info ] [MainThread]: 
+[0m18:08:32.932962 [info ] [MainThread]: Press Ctrl+C to exit.
+[0m18:11:54.044034 [debug] [MainThread]: Flushing usage events
+[0m18:11:54.347914 [info ] [MainThread]: ctrl-c
