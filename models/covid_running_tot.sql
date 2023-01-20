@@ -1,3 +1,6 @@
+
+{{ config(materialized='view') }}
+
 WITH temptable as (SELECT EXTRACT(MONTH FROM date) as month,EXTRACT(YEAR FROM date) as year, country_name, new_confirmed 
 FROM {{ ref('stg_covid') }}
 WHERE new_confirmed IS NOT NULL)
