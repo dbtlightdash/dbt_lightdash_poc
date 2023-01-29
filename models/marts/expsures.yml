@@ -1,0 +1,22 @@
+version: 2
+
+exposures:
+  
+  - name: CO_risk_vs_population
+    type: dashboard
+    # maturity: high
+    # url: https://bi.tool/dashboards/1
+    description: >
+      Demo Exposure for "CO atmo vs Covid"?
+
+    depends_on:
+      - ref('tgt_pollutant_mo_yr')
+      - ref('vulnerable_pop')
+      - ref('pollutant_avg_yr')
+      - ref('pop_info')
+      - ref('stg_covid_nation_list')
+      - ref('stg_covid')
+
+    owner:
+      name: Claire from Data
+      email: data@jaffleshop.com
