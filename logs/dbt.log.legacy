@@ -31862,3 +31862,51 @@ WHERE tgt_pollutant_mo_yr.pollutant = 'co'
 2023-01-30 14:36:35.809423 (Thread-40): handling status request
 2023-01-30 14:36:35.809829 (Thread-40): 14:36:35  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1725e90a-32f4-4877-acbe-e455586340ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95e4630f40>]}
 2023-01-30 14:36:35.833150 (Thread-40): sending response (<Response 1515 bytes [200 OK]>) to 10.0.4.166
+2023-01-30 14:37:03.515337 (Thread-41): 14:37:03  Unable to do partial parsing because config vars, config profile, or config target have changed
+2023-01-30 14:37:03.515785 (Thread-41): 14:37:03  Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '1725e90a-32f4-4877-acbe-e455586340ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95e5fc5880>]}
+2023-01-30 14:37:03.745486 (Thread-42): handling status request
+2023-01-30 14:37:03.745967 (Thread-42): 14:37:03  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1725e90a-32f4-4877-acbe-e455586340ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95e445e400>]}
+2023-01-30 14:37:03.746508 (Thread-42): sending response (<Response 1498 bytes [200 OK]>) to 10.0.4.166
+2023-01-30 14:37:04.077427 (Thread-43): handling status request
+2023-01-30 14:37:04.077857 (Thread-43): 14:37:04  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1725e90a-32f4-4877-acbe-e455586340ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95e445e070>]}
+2023-01-30 14:37:04.078368 (Thread-43): sending response (<Response 1515 bytes [200 OK]>) to 10.0.4.166
+2023-01-30 14:37:53.720342 (Thread-44): handling status request
+2023-01-30 14:37:53.720758 (Thread-44): 14:37:53  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1725e90a-32f4-4877-acbe-e455586340ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95e445e0d0>]}
+2023-01-30 14:37:53.721238 (Thread-44): sending response (<Response 1515 bytes [200 OK]>) to 10.0.4.166
+2023-01-30 14:41:13.253762 (Thread-45): handling status request
+2023-01-30 14:41:13.255166 (Thread-45): 14:41:13  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1725e90a-32f4-4877-acbe-e455586340ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95e43fd6d0>]}
+2023-01-30 14:41:13.255629 (Thread-45): sending response (<Response 1515 bytes [200 OK]>) to 10.0.4.166
+2023-01-30 14:41:24.825932 (Thread-46): handling status request
+2023-01-30 14:41:24.826430 (Thread-46): 14:41:24  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1725e90a-32f4-4877-acbe-e455586340ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95e445ed60>]}
+2023-01-30 14:41:24.826871 (Thread-46): sending response (<Response 1515 bytes [200 OK]>) to 10.0.4.166
+2023-01-30 14:41:36.986696 (Thread-47): handling status request
+2023-01-30 14:41:36.987129 (Thread-47): 14:41:36  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1725e90a-32f4-4877-acbe-e455586340ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95e43fd370>]}
+2023-01-30 14:41:36.987599 (Thread-47): sending response (<Response 1498 bytes [200 OK]>) to 10.0.4.166
+2023-01-30 14:41:40.693623 (Thread-48): handling status request
+2023-01-30 14:41:40.694028 (Thread-48): 14:41:40  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1725e90a-32f4-4877-acbe-e455586340ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95e43fda30>]}
+2023-01-30 14:41:40.694511 (Thread-48): sending response (<Response 1498 bytes [200 OK]>) to 10.0.4.166
+2023-01-30 14:41:53.040735 (Thread-49): handling status request
+2023-01-30 14:41:53.041209 (Thread-49): 14:41:53  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1725e90a-32f4-4877-acbe-e455586340ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95e43fd9d0>]}
+2023-01-30 14:41:53.041655 (Thread-49): sending response (<Response 1498 bytes [200 OK]>) to 10.0.4.166
+2023-01-30 14:41:53.439593 (Thread-50): 14:41:53  Unable to do partial parsing because config vars, config profile, or config target have changed
+2023-01-30 14:41:53.439979 (Thread-50): 14:41:53  Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '1725e90a-32f4-4877-acbe-e455586340ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95e43d89a0>]}
+2023-01-30 14:41:53.644877 (Thread-51): handling status request
+2023-01-30 14:41:53.645300 (Thread-51): 14:41:53  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1725e90a-32f4-4877-acbe-e455586340ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f960791e190>]}
+2023-01-30 14:41:53.645777 (Thread-51): sending response (<Response 1498 bytes [200 OK]>) to 10.0.4.166
+2023-01-30 14:41:53.769062 (Thread-52): handling status request
+2023-01-30 14:41:53.769481 (Thread-52): 14:41:53  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1725e90a-32f4-4877-acbe-e455586340ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f960791e3a0>]}
+2023-01-30 14:41:53.769984 (Thread-52): sending response (<Response 1515 bytes [200 OK]>) to 10.0.4.166
+2023-01-30 14:41:56.539778 (Thread-53): handling status request
+2023-01-30 14:41:56.540199 (Thread-53): 14:41:56  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1725e90a-32f4-4877-acbe-e455586340ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95e43e6100>]}
+2023-01-30 14:41:56.540655 (Thread-53): sending response (<Response 1498 bytes [200 OK]>) to 10.0.4.166
+2023-01-30 14:42:05.796401 (Thread-54): handling status request
+2023-01-30 14:42:05.796827 (Thread-54): 14:42:05  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1725e90a-32f4-4877-acbe-e455586340ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95e43e62e0>]}
+2023-01-30 14:42:05.797305 (Thread-54): sending response (<Response 1498 bytes [200 OK]>) to 10.0.4.166
+2023-01-30 14:42:06.149038 (Thread-55): 14:42:06  Unable to do partial parsing because config vars, config profile, or config target have changed
+2023-01-30 14:42:06.149438 (Thread-55): 14:42:06  Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '1725e90a-32f4-4877-acbe-e455586340ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95e445e640>]}
+2023-01-30 14:42:06.350626 (Thread-56): handling status request
+2023-01-30 14:42:06.351030 (Thread-56): 14:42:06  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1725e90a-32f4-4877-acbe-e455586340ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95e4630550>]}
+2023-01-30 14:42:06.351487 (Thread-56): sending response (<Response 1498 bytes [200 OK]>) to 10.0.4.166
+2023-01-30 14:42:06.426596 (Thread-57): handling status request
+2023-01-30 14:42:06.426986 (Thread-57): 14:42:06  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1725e90a-32f4-4877-acbe-e455586340ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95e449fbe0>]}
+2023-01-30 14:42:06.427424 (Thread-57): sending response (<Response 1515 bytes [200 OK]>) to 10.0.4.166
