@@ -1,0 +1,19 @@
+version: 2
+
+exposures:
+  
+  - name: LightDash_Exposures
+    type: dashboard
+    # maturity: high
+    # url: https://bi.tool/dashboards/1
+    description: >
+      Demo Exposure: Covid Exposures over time
+
+    depends_on:
+      - ref('tgt_pollutant_mo_yr')
+      - ref('YR_cases')
+      - ref('Month_us_cases')
+
+    owner:
+      name: Claire from Time Data
+      email: data@covid_vs_time.com

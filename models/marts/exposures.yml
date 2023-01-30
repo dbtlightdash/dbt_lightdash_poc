@@ -2,21 +2,18 @@ version: 2
 
 exposures:
   
-  - name: EXPO_CO_risk_vs_pop
+  - name: PowerBI_Exposures
     type: dashboard
     # maturity: high
     # url: https://bi.tool/dashboards/1
     description: >
-      Demo Exposure for "CO atmo vs Covid"?
+      Demo Exposure for "CO atmo vs Covid"
 
     depends_on:
       - ref('tgt_pollutant_mo_yr')
       - ref('vulnerable_pop')
       - ref('pollutant_avg_yr')
-      - ref('pop_info')
-      - ref('stg_covid_nation_list')
-      - ref('stg_covid')
 
     owner:
-      name: Claire from Data
-      email: data@jaffleshop.com
+      name: Vineet from Polution Monitoring
+      email: data@PollutionInAtmosphere.com
