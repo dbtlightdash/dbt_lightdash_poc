@@ -1,8 +1,8 @@
 version: 2 
 metrics:
-  - name: confirmed_cases_time
+  - name: Total_New_Confirmed_Cases
     model: ref('stg_covid')
-    label: Total Num Data Points
+    label: Total New/Confirmed Cases
     timestamp: date
     time_grains: [month, year, all_time]
     calculation_method: sum

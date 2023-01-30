@@ -2,7 +2,7 @@ version: 2
 
 exposures:
   
-  - name: LightDash_Exposures
+  - name: Covid_cases_vs_atmo_pollution(LightDash)
     type: dashboard
     # maturity: high
     # url: https://bi.tool/dashboards/1

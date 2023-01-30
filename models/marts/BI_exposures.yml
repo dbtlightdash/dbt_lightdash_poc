@@ -2,7 +2,7 @@ version: 2
 
 exposures:
   
-  - name: PowerBI_Exposures
+  - name: Vulnerable_pop_pollutant_risk(PowerBI)
     type: dashboard
     # maturity: high
     # url: https://bi.tool/dashboards/1

@@ -2,7 +2,7 @@
 
 select *
 from 
-{{ metrics.calculate(metric('confirmed_cases_time'), 
+{{ metrics.calculate(metric('Total_New_Confirmed_Cases'), 
     grain='month', 
     dimensions=['country_name'],
     secondary_calculations=[
