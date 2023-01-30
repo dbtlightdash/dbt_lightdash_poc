@@ -1,7 +1,7 @@
-{% macro version_aware_ref(model_name, version=None) %}
-  {% if version is None %}
-    {% do return(ref(model_name)) %}
-  {% else %}
-    {% do return(ref(model_name_v ~ version)) %}
-  {% endif %}
-{% endmacro %}
+# {% macro version_aware_ref(model_name, version=None) %}
+#   {% if version is None %}
+#     {% do return(ref(model_name)) %}
+#   {% else %}
+#     {% do return(ref(model_name_v ~ version)) %}
+#   {% endif %}
+# {% endmacro %}
